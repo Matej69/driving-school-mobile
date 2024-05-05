@@ -1,0 +1,15 @@
+import { Text, View } from 'react-native'
+import React, { Component } from 'react'
+import { Link } from 'expo-router'
+import { SafeAreaView } from 'react-native-safe-area-context'
+
+const MainPage = () => {
+  return (
+    <SafeAreaView>
+      <Text className='bg-slate-200'>111</Text>
+    </SafeAreaView>
+  )
+}
+
+
+export default MainPage
