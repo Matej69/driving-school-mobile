@@ -1,10 +1,11 @@
 
 import { Text, View } from '@/components/Themed';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function FirstAid() {
   return (
-    <View>
+    <SafeAreaView>
       <Text>FirstAid</Text>
-    </View>
+    </SafeAreaView>
   );
 }

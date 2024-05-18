@@ -1,10 +1,11 @@
 
 import { Text, View } from '@/components/Themed';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function FinishedExam() {
   return (
-    <View>
+    <SafeAreaView>
       <Text>FinishedExam</Text>
-    </View>
+    </SafeAreaView>
   );
 }
