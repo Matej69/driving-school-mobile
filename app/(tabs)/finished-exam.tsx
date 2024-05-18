@@ -1,10 +1,10 @@
 
 import { Text, View } from '@/components/Themed';
 
-export default function TabTwoScreen() {
+export default function FinishedExam() {
   return (
     <View>
-      <Text>Tab Two</Text>
+      <Text>FinishedExam</Text>
     </View>
   );
 }

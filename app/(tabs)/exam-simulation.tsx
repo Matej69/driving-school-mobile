@@ -1,10 +1,10 @@
 
 import { Text, View } from '@/components/Themed';
 
-export default function Questions() {
+export default function ExamSimulationScreen() {
   return (
     <View>
-      <Text>Questions</Text>
+      <Text>Exam simulation</Text>
     </View>
   );
 }

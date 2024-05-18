@@ -1,10 +1,10 @@
 
 import { Text, View } from '@/components/Themed';
 
-export default function Questions() {
+export default function FirstAid() {
   return (
     <View>
-      <Text>Questions</Text>
+      <Text>FirstAid</Text>
     </View>
   );
 }

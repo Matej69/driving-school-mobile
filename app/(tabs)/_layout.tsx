@@ -15,6 +15,8 @@ function TabBarIcon(props: {
   return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
 }
 
+const activeIconColor = '#0551C3';
+
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
@@ -22,15 +24,14 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        // Disable the static render of the header on web
-        // to prevent a hydration error in React Navigation v6.
-        headerShown: useClientOnlyValue(false, true),
+        headerShown: true
       }}>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarActiveTintColor: activeIconColor,
+          title: 'Popis pitanja',
+          tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -48,12 +49,30 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="exam-simulation"
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarActiveTintColor: activeIconColor,
+          title: 'Simulacija ispita',
+          tabBarIcon: ({ color }) => <TabBarIcon name="clipboard" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="finished-exam"
+        options={{
+          tabBarActiveTintColor: activeIconColor,
+          title: 'Riješeni ispiti',
+          tabBarIcon: ({ color }) => <TabBarIcon name="check-square" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="first-aid"
+        options={{
+          tabBarActiveTintColor: activeIconColor,
+          title: 'Prva pomoć',
+          tabBarIcon: ({ color }) => <TabBarIcon name="ambulance" color={color} />,
         }}
       />
     </Tabs>
+    
   );
 }
