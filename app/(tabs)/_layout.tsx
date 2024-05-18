@@ -20,6 +20,7 @@ export default function TabLayout() {
 
   return (
     <Tabs
+    initialRouteName='index'
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         // Disable the static render of the header on web
@@ -36,7 +37,7 @@ export default function TabLayout() {
               <Pressable>
                 {({ pressed }) => (
                   <FontAwesome
-                    name="info-circle"
+                    name="align-justify"
                     size={25}
                     color={Colors[colorScheme ?? 'light'].text}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
