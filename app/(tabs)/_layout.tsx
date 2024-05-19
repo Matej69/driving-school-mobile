@@ -3,13 +3,15 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
 import { ColorSchemeName, Pressable, TouchableOpacity } from 'react-native';
 
-import Colors from '@/constants/Colors';
+import Colors from '@/app/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
 import * as Animatable from 'react-native-animatable'
 import { ZoomIn, ZoomInLeft } from 'react-native-reanimated';
 import { Text } from '@/components/Themed';
 import { useTabNavigation } from '../hooks/useTabNavigation';
+
+const colors = require('../../colors');
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
@@ -19,7 +21,6 @@ function TabBarIcon(props: {
   return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
 }
 
-const activeIconColor = '#0551C3';
 
 export default function TabLayout() {
   const { navItemRefs, setActiveTab } = useTabNavigation({initActiveTab: 0});
@@ -46,7 +47,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          tabBarActiveTintColor: activeIconColor,
+          tabBarActiveTintColor: colors.base,
           title: 'Popis pitanja',
           tabBarIcon: ({ color }) => 
             <Animatable.View ref={(el) => navItemRefs.current[0] = el } animation={'zoomIn'}>
@@ -58,7 +59,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="exam-simulation"
         options={{
-          tabBarActiveTintColor: activeIconColor,
+          tabBarActiveTintColor: colors.base,
           title: 'Simulacija ispita',
           tabBarIcon: ({ color }) => 
             <Animatable.View ref={(el) => navItemRefs.current[1] = el } animation={'zoomIn'}>
@@ -70,7 +71,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="finished-exam"
         options={{
-          tabBarActiveTintColor: activeIconColor,
+          tabBarActiveTintColor: colors.base,
           title: 'Riješeni ispiti',
           tabBarIcon: ({ color }) => 
             <Animatable.View ref={(el) => navItemRefs.current[2] = el } animation={'zoomIn'}>
@@ -82,7 +83,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="first-aid"
         options={{
-          tabBarActiveTintColor: activeIconColor,
+          tabBarActiveTintColor: colors.base,
           title: 'Prva pomoć',
           tabBarIcon: ({ color }) => 
             <Animatable.View ref={(el) => navItemRefs.current[3] = el } animation={'zoomIn'}>
