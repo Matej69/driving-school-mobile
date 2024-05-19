@@ -6,9 +6,6 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 
-import { useColorScheme } from '@/components/useColorScheme';
-import { SafeAreaView } from 'react-native-safe-area-context';
-
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -32,7 +29,6 @@ export default function RootLayout() {
 }
 
 function RootLayoutNav() {
-  const colorScheme = useColorScheme();
 
   return (
     <ThemeProvider value={DefaultTheme}>
