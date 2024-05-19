@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Link, Tabs } from 'expo-router';
-import { ColorSchemeName, Pressable } from 'react-native';
+import { ColorSchemeName, Pressable, TouchableOpacity } from 'react-native';
 
 import Colors from '@/constants/Colors';
 import { useColorScheme } from '@/components/useColorScheme';
 import { useClientOnlyValue } from '@/components/useClientOnlyValue';
+import * as Animatable from 'react-native-animatable'
+import { ZoomIn, ZoomInLeft } from 'react-native-reanimated';
+import { Text } from '@/components/Themed';
+import { useTabNavigation } from '../hooks/useTabNavigation';
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
@@ -17,25 +21,8 @@ function TabBarIcon(props: {
 
 const activeIconColor = '#0551C3';
 
-const backIcon = (colorScheme: ColorSchemeName): any => {
-  return(
-    <Link href="/modal" asChild>
-      <Pressable>
-        {({ pressed }) => (
-          <FontAwesome
-          name="arrow-left"
-          size={25}
-          color={Colors[colorScheme ?? 'light'].text}
-          style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
-          />
-        )}
-      </Pressable>
-    </Link>
-  )
-}
-
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
+  const { navItemRefs, setActiveTab } = useTabNavigation({initActiveTab: 0});
 
   return (
     <Tabs
@@ -49,7 +36,7 @@ export default function TabLayout() {
           borderTopEndRadius: 18
         },
         tabBarIconStyle: {
-          marginTop: 6          
+          marginTop: 6
         },
         tabBarLabelStyle: {
           fontWeight: 'bold',
@@ -61,32 +48,48 @@ export default function TabLayout() {
         options={{
           tabBarActiveTintColor: activeIconColor,
           title: 'Popis pitanja',
-          tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
+          tabBarIcon: ({ color }) => 
+            <Animatable.View ref={(el) => navItemRefs.current[0] = el } animation={'zoomIn'}>
+              <TabBarIcon name="book" color={color} />
+            </Animatable.View>
         }}
+        listeners={{ tabPress: (e) => setActiveTab(0) }}
       />
       <Tabs.Screen
         name="exam-simulation"
         options={{
           tabBarActiveTintColor: activeIconColor,
           title: 'Simulacija ispita',
-          tabBarIcon: ({ color }) => <TabBarIcon name="clipboard" color={color} />,
+          tabBarIcon: ({ color }) => 
+            <Animatable.View ref={(el) => navItemRefs.current[1] = el } animation={'zoomIn'}>
+              <TabBarIcon name="clipboard" color={color} />
+            </Animatable.View>
         }}
+        listeners={{ tabPress: (e) => setActiveTab(1) }}
       />
       <Tabs.Screen
         name="finished-exam"
         options={{
           tabBarActiveTintColor: activeIconColor,
           title: 'Riješeni ispiti',
-          tabBarIcon: ({ color }) => <TabBarIcon name="check-square" color={color} />,
+          tabBarIcon: ({ color }) => 
+            <Animatable.View ref={(el) => navItemRefs.current[2] = el } animation={'zoomIn'}>
+              <TabBarIcon name="check-square" color={color} />
+            </Animatable.View>
         }}
+        listeners={{ tabPress: (e) => setActiveTab(2) }}
       />
       <Tabs.Screen
         name="first-aid"
         options={{
           tabBarActiveTintColor: activeIconColor,
           title: 'Prva pomoć',
-          tabBarIcon: ({ color }) => <TabBarIcon name="ambulance" color={color} />,
+          tabBarIcon: ({ color }) => 
+            <Animatable.View ref={(el) => navItemRefs.current[3] = el } animation={'zoomIn'}>
+              <TabBarIcon name="ambulance" color={color} />
+            </Animatable.View>
         }}
+        listeners={{ tabPress: (e) => setActiveTab(3) }}
       />
     </Tabs>    
   );
