@@ -5,7 +5,7 @@ const colors = {
     'base-bg': '#003990',
     'base-text': '#49464D',
     inactive: '#E6D9F4',
-    disabled: '#89838F',
+    disabled: '#d4d3d5',
     background: '#ffffff',
     'section-item': '#fafafa',
 }
