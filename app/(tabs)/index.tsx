@@ -5,10 +5,12 @@ import { View } from 'react-native-animatable';
 import React from 'react';
 import { QuestionCard } from '../components/QuestionCard';
 import { Question } from '../types/types';
+import { usePagination } from '../hooks/usePagination';
+import colors from '../colors';
 
 
 
-const questions: Question[] = [
+let questions: Question[] = [
   { 
     id: 1,
     title: 'Prema položaju automobila ispred vas na prometnoj traci kako bi trebao postupiti vozač tog automobila u situaciji kao na slici', 
@@ -31,25 +33,35 @@ const questions: Question[] = [
   }*/
 ]
 
+Array.from([2,3,4,5,6,7,8,9,10,11]).forEach(index => {
+  questions.push({...questions[0], id: index})
+})
+
 
 
 export default function Questions() {
 
+  const { Component: PaginationComponent, firstItemIndexOnPage, lastItemIndexOnPage } = usePagination({ _currentPage: 1, _itemsCount: questions.length, _pageSize: 10});
+
+  const questionsForPage = questions.slice(firstItemIndexOnPage, lastItemIndexOnPage + 1);
 
   return (
-    <SafeAreaView className='flex flex-col p-2'>
-      <ScrollView>
-        {
-          questions.map((question, i) => (
-            <View key={`question-card-${i}`}>
-              <CardContainer color='failure'>
-                <QuestionCard question={question} canBeAnswered={false}/>
-              </CardContainer>
-              { i != questions.length - 1 && <View className='mt-2' /> }
-            </View>
-          ))
-        }
-      </ScrollView>
+    <SafeAreaView style={{ backgroundColor: colors.base }} className='flex flex-col'>
+        <View style={{ padding: 6 }}>
+          <PaginationComponent></PaginationComponent>
+        </View>
+          <ScrollView style={{ backgroundColor: colors.rootBackground, padding: 4 }}>
+            {
+              questionsForPage.map((question, i) => (
+                <View key={`question-card-${i}`}>
+                  <CardContainer color='failure'>
+                    <QuestionCard question={question} canBeAnswered={false}/>
+                  </CardContainer>
+                  { i != questions.length - 1 && <View className='mt-2' /> }
+                </View>
+              ))
+            }
+          </ScrollView>
     </SafeAreaView>
   );
 }

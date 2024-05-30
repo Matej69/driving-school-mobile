@@ -7,6 +7,7 @@ const colors = {
     inactive: '#E6D9F4',
     disabled: '#d4d3d5',
     background: '#ffffff',
+    rootBackground: '#f2f2f2',
     'section-item': '#fafafa',
 }
 
