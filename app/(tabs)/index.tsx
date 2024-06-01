@@ -14,6 +14,7 @@ let questions: Question[] = [
   { 
     id: 1,
     title: 'Prema položaju automobila ispred vas na prometnoj traci kako bi trebao postupiti vozač tog automobila u situaciji kao na slici', 
+    img: '../../assets/images/questions/yolo.png',
     answers: [
       { id: 0, text: 'aa aa a automobila ispred vas na prometa a automobila ispred vas na promet a a a a a a a a automobila ispred vas na prometnoj traci automobila ispred vas na prometnoj traci aaaaaaaaaaaaaaaaaaaa', correct: true, checked: true },
       { id: 1, text: 'ba a a a a a a a a a automobila ispred vas na a a automobila ispred vas na prometprometnoj traci automobila ispred vas na prometnoj traci aaaaaaaaaaaaaaaaaaaa', correct: true, checked: false },

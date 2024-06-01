@@ -35,7 +35,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
         <View>
             <Text className="text-gray-600 font-bold">{question.title}</Text>
             <View className="mt-1"/>
-            { question.img && <Image style={{ width: '50%', resizeMode: 'contain' }} source={require('../../assets/images/questions/yolo.png')}/> }
+            { question.img && <Image style={{ resizeMode: 'contain', width: '70%', height: undefined, aspectRatio: 1 }} source={require('../../assets/images/questions/yolo.png')}/> }
             <View className="mt-1"/>
             {
                 question.answers.map((answer, i) => (
