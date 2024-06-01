@@ -1,4 +1,4 @@
-import { Image, Text, View } from "react-native"
+import { Image, Text, TouchableOpacity, View } from "react-native"
 
 import React from "react"
 import { AnswerItem } from "./AnswerItem"
@@ -39,10 +39,10 @@ export const QuestionCard = (p: QuestionCardProps) => {
             <View className="mt-1"/>
             {
                 question.answers.map((answer, i) => (
-                    <View key={`question-answer-${i}`}>
-                        <AnswerItem text={answer.text} checked={answer.checked} onClick={() => {p.canBeAnswered && toogleQuestionCheck(answer.id)}} {...styleProps(answer.correct, answer.checked)} />
-                        { i !== question.answers.length - 1 && <View className="mt-1"/>}                        
-                    </View>
+                    <TouchableOpacity key={`question-answer-${i}`} disabled={!p.canBeAnswered} onPress={() => {p.canBeAnswered && toogleQuestionCheck(answer.id)}}>
+                        <AnswerItem text={answer.text} checked={answer.checked} {...styleProps(answer.correct, answer.checked)} />
+                        { i !== question.answers.length - 1 && <View className="mt-1"/>}
+                    </TouchableOpacity>
                 ))
             }	
         </View>

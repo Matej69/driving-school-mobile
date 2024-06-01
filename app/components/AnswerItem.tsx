@@ -15,7 +15,7 @@ type AnswerItemProps = {
     onClick?: () => void
 }
 
-export const AnswerItem = ({ text, icon, itemBorderColor, checkboxFillColor, checkboxBorderColor, checked = false, onClick = () => {} }: AnswerItemProps) => {
+export const AnswerItem = ({ text, icon, itemBorderColor, checkboxFillColor, checkboxBorderColor, checked = false }: AnswerItemProps) => {
 
 
     return (
@@ -23,7 +23,6 @@ export const AnswerItem = ({ text, icon, itemBorderColor, checkboxFillColor, che
             <View className="p-1">
                 <View className="w-10 h-10 rounded-md justify-center" style={{ borderWidth: 1.5, backgroundColor: checkboxFillColor, borderColor: checkboxBorderColor }}>
                     { checked && <Ionicons size={36} color={'white'} style={{ width: '100%' }} name={icon} />}
-                    { /* !clickable && <Ionicons size={36} color={'white'} style={{ width: '100%' }} name="checkmark" /> */}
                 </View>
             </View>
             <View className='ml-1'></View>
