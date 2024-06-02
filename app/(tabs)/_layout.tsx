@@ -28,7 +28,7 @@ export default function TabLayout() {
         tabBarStyle: {
           height: 58,
           borderTopStartRadius: 18,
-          borderTopEndRadius: 18
+          borderTopEndRadius: 18,
         },
         tabBarIconStyle: {
           marginTop: 6
@@ -52,7 +52,7 @@ export default function TabLayout() {
       />
       <Tabs.Screen
         name="exam-simulation"
-        options={{
+        options={{          
           tabBarActiveTintColor: colors.base,
           title: 'Simulacija ispita',
           tabBarIcon: ({ color }) => 

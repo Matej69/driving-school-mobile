@@ -33,7 +33,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
 
 	return (
         <View>
-            <Text className="text-gray-600 font-bold">{question.title}</Text>
+            <Text className="text-gray-600 font-bold">{question.question}</Text>
             <View className="mt-1"/>
             { question.img && <Image style={{ resizeMode: 'contain', width: '70%', height: undefined, aspectRatio: 1 }} source={require('../../assets/images/questions/yolo.png')}/> }
             <View className="mt-1"/>

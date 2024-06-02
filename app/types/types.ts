@@ -7,7 +7,7 @@ export type Answer = {
 
 export type Question =  { 
     id: number, 
-    title: string, 
+    question: string, 
     img?: string,
-    answers: Answer[] 
+    answers: Answer[],
 }
