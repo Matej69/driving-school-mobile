@@ -8,6 +8,6 @@ export type Answer = {
 export type Question =  { 
     id: number, 
     question: string, 
-    img?: string,
+    imagesUrls?: string[],
     answers: Answer[],
 }
