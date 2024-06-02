@@ -11,9 +11,10 @@ export const usePagination = ({_pageSize, _currentPage, _itemsCount} = {
     _itemsCount: 300
 }) => {
     const [currentPage, setCurrentPage] = useState(_currentPage)
+    const [itemCount, setItemCount] = useState(_itemsCount)
     const [firstItemIndexOnPage, setFirstItemIndexOnPage] = useState((_currentPage - 1) * _pageSize)
     const [lastItemIndexOnPage, setLastItemIndexOnPage] = useState((_currentPage * _pageSize) - 1)
-    const numberOfPages = () => { return Math.ceil(_itemsCount / _pageSize) }
+    const numberOfPages = () => { return Math.ceil(itemCount / _pageSize) }
     const hasNext = () => currentPage + 1 <= numberOfPages()
     const hasPrev = () => currentPage - 1 > 0
     const goNext = () => hasNext() ? setCurrentPage(currentPage + 1) : null
@@ -36,5 +37,5 @@ export const usePagination = ({_pageSize, _currentPage, _itemsCount} = {
         </View> 
     )
 
-    return { currentPage, numberOfPages, hasNext, hasPrev, goNext, goPrev, firstItemIndexOnPage, lastItemIndexOnPage, Component }
+    return { currentPage, setCurrentPage, setItemCount, numberOfPages, hasNext, hasPrev, goNext, goPrev, firstItemIndexOnPage, lastItemIndexOnPage, Component }
 }
