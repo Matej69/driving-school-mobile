@@ -22,7 +22,8 @@
         "klindic.autoskola-testovi.com//ckeditor/kcfinder/upload_img/images/9/46.jpg"
       ],
       "type": "SELECTED",
-      "id": 1
+      "id": 1,
+      "incorrectlyAnswered": 2
     },
     {
       "question": "Kako se vozač mora ponašati tijekom vožnje u koloni, u situaciji kao na slici?",
@@ -47,7 +48,8 @@
         "klindic.autoskola-testovi.com//ckeditor/kcfinder/upload_img/images/9.1/9.jpg"
       ],
       "type": "SELECTED",
-      "id": 2
+      "id": 2,
+      "incorrectlyAnswered": 0
     },
     {
       "question": "Koje opasnosti možete očekivati na cesti izvan naselja, u situaciji kao na slici?",

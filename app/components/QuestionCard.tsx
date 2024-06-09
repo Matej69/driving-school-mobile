@@ -10,7 +10,8 @@ import colors from "../colors"
 type QuestionCardProps = {
     question: Question,
     canBeAnswered: boolean,
-    canExpand?: boolean
+    canExpand?: boolean,
+    incorrectlyAnswered?: number
 }
 
 export const QuestionCard = (p: QuestionCardProps) => {
@@ -50,7 +51,10 @@ export const QuestionCard = (p: QuestionCardProps) => {
                         { i !== question.answers.length - 1 && <View className="mt-1"/>}
                     </TouchableOpacity>
                 ))
-            }	
+            }
+            {
+                !!question.incorrectlyAnswered && <Text className="text-xs mt-3" style={{ color: colors.failure }}>{question.incorrectlyAnswered} puta pogrešno odgovoreno</Text>
+            }
         </View>
     )
 } 

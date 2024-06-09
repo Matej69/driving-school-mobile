@@ -10,4 +10,5 @@ export type Question =  {
     question: string, 
     imagesUrls?: string[],
     answers: Answer[],
+    incorrectlyAnswered: number
 }
