@@ -21,12 +21,12 @@ export default function Questions() {
   const [filteredQuestions, setFilteredQuestions] = useState(allQuestions)
   
   const [displayedQuestions, setDisplayedQuestions] = useState(filteredQuestions.slice(firstItemIndexOnPage, lastItemIndexOnPage + 1));
-
+  
   const [unappliedSearchValue, setUnappliedSearchValue] = useState('');
   const [searchValue, setSearchValue] = useState('');
-
+  
   const search = () => {
-    const newFilteredQuestions = searchValue.length > 0 ? filteredQuestions.filter(q => q.question.toLowerCase().indexOf(searchValue.toLowerCase()) > -1) : allQuestions
+    const newFilteredQuestions = searchValue.length > 0 ? allQuestions.filter(q => q.question.toLowerCase().indexOf(searchValue.toLowerCase()) > -1) : allQuestions
     if(newFilteredQuestions.length == 0) {
       alert(`0 rezultata za '${searchValue}'`)
       return
@@ -34,15 +34,15 @@ export default function Questions() {
     setFilteredQuestions(newFilteredQuestions)
     setCurrentPage(1)
     setItemCount(newFilteredQuestions.length)
-
+    
     const questionsForPage = newFilteredQuestions.slice(firstItemIndexOnPage, lastItemIndexOnPage + 1);
     questionsForPage.forEach(q => 
       q.answers.forEach(a => { 
         if(a.correct) 
           a.checked = true
-        }
-      ))
-      setDisplayedQuestions(questionsForPage);
+      }
+    ))
+    setDisplayedQuestions(questionsForPage);
   }
 
   // Keep only needed questions and mark them as checked if they are correct so filled checkbox is redered
