@@ -1,6 +1,6 @@
 import { Image, Text, TouchableOpacity, View } from "react-native"
 
-import React from "react"
+import React, { useEffect } from "react"
 import { AnswerItem } from "./AnswerItem"
 import { Answer, Question } from "../types/types"
 import { useQuestion } from "../hooks/useQuestion"
@@ -11,7 +11,8 @@ type QuestionCardProps = {
     question: Question,
     canBeAnswered: boolean,
     canExpand?: boolean,
-    incorrectlyAnswered?: number
+    incorrectlyAnswered?: number,
+    onAnswerChange?: (q: Question) => void
 }
 
 export const QuestionCard = (p: QuestionCardProps) => {
@@ -31,6 +32,13 @@ export const QuestionCard = (p: QuestionCardProps) => {
         }
         return { checkboxFillColor: colors['inactive'], checkboxBorderColor: colors['inactive'], itemBorderColor: colors['inactive'], icon: undefined }
     }
+    const onAnswerPress = (answer: Answer) => {
+        p.canBeAnswered && toogleQuestionCheck(answer.id)
+    }
+
+    useEffect(() => {
+        p.onAnswerChange?.(question)
+    }, [question])
 
 	return (
         <View>
@@ -46,7 +54,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
             <View className="mt-1"/>
             {
                 question.answers.map((answer, i) => (
-                    <TouchableOpacity key={`question-answer-${i}`} disabled={!p.canBeAnswered} onPress={() => {p.canBeAnswered && toogleQuestionCheck(answer.id)}}>
+                    <TouchableOpacity key={`question-answer-${i}`} disabled={!p.canBeAnswered} onPress={() => {onAnswerPress(answer)}}>
                         <AnswerItem text={answer.text} checked={answer.checked} {...styleProps(answer.correct, answer.checked)} />
                         { i !== question.answers.length - 1 && <View className="mt-1"/>}
                     </TouchableOpacity>

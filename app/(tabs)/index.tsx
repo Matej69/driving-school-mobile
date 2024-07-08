@@ -19,7 +19,6 @@ export default function Questions() {
   const { Component: PaginationComponent, firstItemIndexOnPage, lastItemIndexOnPage, setCurrentPage, setItemCount } = usePagination({ _currentPage: 1, _itemsCount: allQuestions.length, _pageSize: 10});
 
   const [filteredQuestions, setFilteredQuestions] = useState(allQuestions)
-  
   const [displayedQuestions, setDisplayedQuestions] = useState(filteredQuestions.slice(firstItemIndexOnPage, lastItemIndexOnPage + 1));
   
   const [unappliedSearchValue, setUnappliedSearchValue] = useState('');
@@ -68,7 +67,7 @@ export default function Questions() {
  
 
   return (
-    <SafeAreaView style={{ backgroundColor: colors.base, marginBottom: 48 }} className='flex flex-col'>
+    <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
         <View style={{ display: 'flex', flexDirection: 'row', padding: 6}}>
           <View style={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
             <TextInput

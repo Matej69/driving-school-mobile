@@ -7,6 +7,8 @@ import { createContext, useEffect } from 'react';
 import 'react-native-reanimated';
 import { GlobalContext } from './context/GlobalContext';
 import { Question } from './types/types';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import React from 'react';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -37,9 +39,11 @@ function RootLayoutNav(p: {questions: Question[]}) {
   return (
     <ThemeProvider value={DefaultTheme}>
       <GlobalContext.Provider value={{ allQuestions: p.questions }}>
-        <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        </Stack>
+        <GestureHandlerRootView style={{flex:1}}>
+          <Stack>
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          </Stack>
+        </GestureHandlerRootView>
       </GlobalContext.Provider>
     </ThemeProvider>
   );
