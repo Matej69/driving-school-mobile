@@ -23,10 +23,10 @@ const generateExamQuestions = (questionPool: Question[], amountToGenerate: numbe
   }
   const generatedQuestions: Question[] = []
   while(generatedQuestions.length != amountToGenerate) {
-    const randId = Math.floor(Math.random() * (questionPool.length - 1) + 1)
-    const alreadyGenerated = generatedQuestions.some(el => el.id == randId)
+    const randIndex = Math.floor(Math.random() * (questionPool.length - 1) + 1)
+    const alreadyGenerated = generatedQuestions.some(el => el.id == questionPool[randIndex].id)
     if(!alreadyGenerated) {
-      generatedQuestions.push({...questionPool[randId]})
+      generatedQuestions.push({...questionPool[randIndex]})
     }
   }
   return generatedQuestions
@@ -39,7 +39,6 @@ export default function ExamSimulationScreen() {
   = usePagination({ _currentPage: 1, _itemsCount: QUESTIONS_PER_EXAM, _pageSize: 1});
   
   const displayedQuestion = examQuestions[currentPage - 1]
-  console.log(displayedQuestion.answers)
   
   const { questionGridSelectionItems, updateItemsStyles } = useExamSimulationQuestionSelection({questions: examQuestions, currentlySelectedQuestionId: 1});
 
