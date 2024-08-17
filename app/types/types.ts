@@ -12,3 +12,5 @@ export type Question =  {
     answers: Answer[],
     incorrectlyAnswered: number
 }
+
+export type AnswerInteractivityType = 'CAN_BE_ANSWERED' | 'ANSWERED_AND_DISABLED' | 'CORRECT_ANSWERED_SHOWN'

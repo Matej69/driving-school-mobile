@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { usePagination } from '../hooks/usePagination';
 import { Ionicons } from '@expo/vector-icons';
 import { GlobalContext } from '../context/GlobalContext';
-import { Question } from '../types/types';
+import { AnswerInteractivityType, Question } from '../types/types';
 import { CardContainer } from '../components/CardContainer';
 import { QuestionCard } from '../components/QuestionCard';
 import BottomSheet from '@gorhom/bottom-sheet';
@@ -44,10 +44,8 @@ export default function ExamSimulationScreen() {
   
   // Keeps track of changes and is displayed but not saved until we go to another question
   const [displayedNonSavedQuestion, setDisplayedNonSavedQuestion] = useState(deepCopy(examQuestions[currentPage - 1]))
-  // Reference to actuall saved question
-  //const displayedQuestion = examQuestions[currentPage - 1]
   
-  const canChangeAnswer = !examQuestions[currentPage - 1].answers.some(a => a.checked);
+  const answerInteractivityType: AnswerInteractivityType = examQuestions[currentPage - 1].answers.some(a => a.checked) ? 'ANSWERED_AND_DISABLED' : 'CAN_BE_ANSWERED'
 
   const saveQuestionAnswers = (): Question[]  => {
     const questionToChange = examQuestions.find(q => q.id === displayedNonSavedQuestion.id)
@@ -64,28 +62,19 @@ export default function ExamSimulationScreen() {
   const openBottomDrawer = () => ref.current?.expand()
   const onGridItemClick = (id: number, index: number) => {
     setCurrentPage(index + 1);
-     //const newExamQuestions = saveQuestionAnswers()
-    //updateItemsStyles(newExamQuestions, id)
     ref.current?.close()
   }
 
 
   const onAnswerChange = (newQuestionState: Question) => {
     setDisplayedNonSavedQuestion(deepCopy({...newQuestionState}))
-    //const questionToChange = examQuestions.find(q => q.id === newQuestionState.id)
-    //if(questionToChange) {
-    //  questionToChange.answers = [...newQuestionState.answers]
-    //  setExamQuestions([...examQuestions])
-    //}
   }
 
 
 
   useEffect(() => {
-    //setDisplayedNonSavedQuestion(examQuestions[currentPage - 1])
-    //updateItemsStyles(examQuestions, examQuestions[currentPage - 1].id)
-    setDisplayedNonSavedQuestion(deepCopy(examQuestions[currentPage - 1]))
     const newExamQuestions = saveQuestionAnswers()
+    setDisplayedNonSavedQuestion(deepCopy(newExamQuestions[currentPage - 1]))
     const selectedQId = newExamQuestions[currentPage - 1].id
     updateItemsStyles(newExamQuestions, selectedQId)
   }, [currentPage])
@@ -104,7 +93,7 @@ export default function ExamSimulationScreen() {
       <ScrollView style={{ backgroundColor: colors.rootBackground, padding: 4 }}>
         <View key={`question-card-${displayedNonSavedQuestion.id}`}>
           <CardContainer color='base'>
-            <QuestionCard onAnswerChange={onAnswerChange} question={displayedNonSavedQuestion} canBeAnswered={canChangeAnswer}/>
+            <QuestionCard onAnswerChange={onAnswerChange} question={displayedNonSavedQuestion} answerInteractivityType={answerInteractivityType}/>
           </CardContainer>
         </View>
       </ScrollView>

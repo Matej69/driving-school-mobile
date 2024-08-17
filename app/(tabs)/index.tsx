@@ -84,7 +84,7 @@ export default function Questions() {
                 <View key={`question-card-${question.id}`}>
                   <CardContainer color='base'>
                   <Text>{question.id}</Text>
-                    <QuestionCard question={question} canBeAnswered={false}/>
+                    <QuestionCard question={question} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'}/>
                   </CardContainer>
                   { i != filteredQuestions.length - 1 && <View className='mt-2' /> }
                 </View>
