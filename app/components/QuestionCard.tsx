@@ -19,6 +19,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
 
     const { question, toogleQuestionCheck } = useQuestion({question: p.question});
 
+    const answerItemDisabled = () => p.answerInteractivityType == 'CORRECT_ANSWERED_SHOWN'
     const canAnswer = () => p.answerInteractivityType == 'CAN_BE_ANSWERED'
 
     const styleProps = (correct: boolean, checked: boolean): {checkboxFillColor?: string, checkboxBorderColor?: string, itemBorderColor: string, icon?: 'checkmark' | 'close'} =>  {
@@ -63,7 +64,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
             <View className="mt-1"/>
             {
                 question.answers.map((answer, i) => (
-                    <TouchableOpacity key={`question-answer-${i}`} onPress={() => {onAnswerPress(answer)}}>
+                    <TouchableOpacity key={`question-answer-${i}`} disabled={answerItemDisabled()} onPress={() => {onAnswerPress(answer)}}>
                         <AnswerItem text={answer.text} checked={answer.checked} {...styleProps(answer.correct, answer.checked)} />
                         { i !== question.answers.length - 1 && <View className="mt-1"/>}
                     </TouchableOpacity>
