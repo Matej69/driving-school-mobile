@@ -13,6 +13,8 @@ import BottomSheet from '@gorhom/bottom-sheet';
 import { BottomDrawer } from '../components/BottomDrawer';
 import { QuestionsGridSelection } from '../components/QuestionsGridSelection';
 import { useExamSimulationQuestionSelection } from '../hooks/useExamSimulationQuestionSelection';
+import { util } from 'prettier';
+import { deepCopy } from '../utils/utils';
 
 const QUESTIONS_PER_EXAM = 38;
 
@@ -38,49 +40,77 @@ export default function ExamSimulationScreen() {
   const { Component: PaginationComponent, firstItemIndexOnPage, lastItemIndexOnPage, setCurrentPage, setItemCount, currentPage } 
   = usePagination({ _currentPage: 1, _itemsCount: QUESTIONS_PER_EXAM, _pageSize: 1});
   
-  const displayedQuestion = examQuestions[currentPage - 1]
-  
   const { questionGridSelectionItems, updateItemsStyles } = useExamSimulationQuestionSelection({questions: examQuestions, currentlySelectedQuestionId: 1});
+  
+  // Keeps track of changes and is displayed but not saved until we go to another question
+  const [displayedNonSavedQuestion, setDisplayedNonSavedQuestion] = useState(deepCopy(examQuestions[currentPage - 1]))
+  // Reference to actuall saved question
+  //const displayedQuestion = examQuestions[currentPage - 1]
+  
+  const canChangeAnswer = !examQuestions[currentPage - 1].answers.some(a => a.checked);
+
+  const saveQuestionAnswers = (): Question[]  => {
+    const questionToChange = examQuestions.find(q => q.id === displayedNonSavedQuestion.id)
+    let newExamQuestions: Question[] = []
+    if(questionToChange) {
+      questionToChange.answers = [...displayedNonSavedQuestion.answers]
+      newExamQuestions = [...examQuestions] 
+      setExamQuestions(newExamQuestions)
+    }
+    return newExamQuestions
+  }
 
   const ref = useRef<BottomSheet>(null);
   const openBottomDrawer = () => ref.current?.expand()
-  const onItemClick = (id: number, index: number) => {
-    setCurrentPage(index + 1); 
-    updateItemsStyles(examQuestions, id)
-    ref.current?.close() 
+  const onGridItemClick = (id: number, index: number) => {
+    setCurrentPage(index + 1);
+     //const newExamQuestions = saveQuestionAnswers()
+    //updateItemsStyles(newExamQuestions, id)
+    ref.current?.close()
   }
+
 
   const onAnswerChange = (newQuestionState: Question) => {
-    const questionToChange = examQuestions.find(q => q.id === newQuestionState.id)
-    if(questionToChange) {
-      questionToChange.answers = [...newQuestionState.answers]
-      setExamQuestions([...examQuestions])
-    }
+    setDisplayedNonSavedQuestion(deepCopy({...newQuestionState}))
+    //const questionToChange = examQuestions.find(q => q.id === newQuestionState.id)
+    //if(questionToChange) {
+    //  questionToChange.answers = [...newQuestionState.answers]
+    //  setExamQuestions([...examQuestions])
+    //}
   }
 
+
+
   useEffect(() => {
-    updateItemsStyles(examQuestions, examQuestions[currentPage - 1].id)
-  }, [examQuestions])
+    //setDisplayedNonSavedQuestion(examQuestions[currentPage - 1])
+    //updateItemsStyles(examQuestions, examQuestions[currentPage - 1].id)
+    setDisplayedNonSavedQuestion(deepCopy(examQuestions[currentPage - 1]))
+    const newExamQuestions = saveQuestionAnswers()
+    const selectedQId = newExamQuestions[currentPage - 1].id
+    updateItemsStyles(newExamQuestions, selectedQId)
+  }, [currentPage])
+
+
 
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
-      <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: 10, padding: 6}}>
-        <PaginationComponent></PaginationComponent>
-        <TouchableOpacity onPress={openBottomDrawer}>
-          <Ionicons size={36} color='white' name='menu' />
-        </TouchableOpacity>
-      </View>
+        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: 10, padding: 6}}>
+          <PaginationComponent></PaginationComponent>
+          <TouchableOpacity onPress={openBottomDrawer}>
+            <Ionicons size={36} color='white' name='menu' />
+          </TouchableOpacity>
+        </View>
       <ScrollView style={{ backgroundColor: colors.rootBackground, padding: 4 }}>
-        <View key={`question-card-${displayedQuestion.id}`}>
+        <View key={`question-card-${displayedNonSavedQuestion.id}`}>
           <CardContainer color='base'>
-            <QuestionCard onAnswerChange={onAnswerChange} question={displayedQuestion} canBeAnswered={true}/>
+            <QuestionCard onAnswerChange={onAnswerChange} question={displayedNonSavedQuestion} canBeAnswered={canChangeAnswer}/>
           </CardContainer>
         </View>
       </ScrollView>
       <BottomDrawer ref={ref}>
         <QuestionsGridSelection 
-          onItemClick={onItemClick}
+          onItemClick={onGridItemClick}
           items={questionGridSelectionItems}/>
       </BottomDrawer>
     </SafeAreaView>
