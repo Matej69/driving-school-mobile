@@ -45,7 +45,12 @@ export default function ExamSimulationScreen() {
   // Keeps track of changes and is displayed but not saved until we go to another question
   const [displayedNonSavedQuestion, setDisplayedNonSavedQuestion] = useState(deepCopy(examQuestions[currentPage - 1]))
   
-  const answerInteractivityType: AnswerInteractivityType = examQuestions[currentPage - 1].answers.some(a => a.checked) ? 'ANSWERED_AND_DISABLED' : 'CAN_BE_ANSWERED'
+  const getAnswerInteractivityType = (): AnswerInteractivityType => {
+    return examQuestions[currentPage - 1].answers.some(a => a.checked) ? 'ANSWERED_AND_DISABLED' : 'CAN_BE_ANSWERED'
+  }
+
+  const [answerInteractivityType, setAnswerInteractivityType] = useState<AnswerInteractivityType>(getAnswerInteractivityType())
+
 
   const saveQuestionAnswers = (): Question[]  => {
     const questionToChange = examQuestions.find(q => q.id === displayedNonSavedQuestion.id)
@@ -67,7 +72,7 @@ export default function ExamSimulationScreen() {
 
 
   const onAnswerChange = (newQuestionState: Question) => {
-    setDisplayedNonSavedQuestion(deepCopy({...newQuestionState}))
+    setDisplayedNonSavedQuestion(deepCopy(newQuestionState))
   }
 
 
@@ -77,9 +82,13 @@ export default function ExamSimulationScreen() {
     setDisplayedNonSavedQuestion(deepCopy(newExamQuestions[currentPage - 1]))
     const selectedQId = newExamQuestions[currentPage - 1].id
     updateItemsStyles(newExamQuestions, selectedQId)
+    setAnswerInteractivityType(getAnswerInteractivityType())
   }, [currentPage])
 
-
+  console.log("*******")
+  console.log(displayedNonSavedQuestion)
+  console.log(answerInteractivityType)
+  console.log("*******")
 
 
   return (
