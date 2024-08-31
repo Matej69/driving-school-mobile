@@ -1,6 +1,6 @@
 
-import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
-import { Button, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import React, { Fragment, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { Button, Modal, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import colors from '../colors';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { usePagination } from '../hooks/usePagination';
@@ -15,6 +15,7 @@ import { QuestionsGridSelection } from '../components/QuestionsGridSelection';
 import { useExamSimulationQuestionSelection } from '../hooks/useExamSimulationQuestionSelection';
 import { util } from 'prettier';
 import { deepCopy } from '../utils/utils';
+import { DsModal } from '../components/Modal';
 
 const QUESTIONS_PER_EXAM = 38;
 
@@ -44,6 +45,8 @@ export default function ExamSimulationScreen() {
   
   // Keeps track of changes and is displayed but not saved until we go to another question
   const [displayedNonSavedQuestion, setDisplayedNonSavedQuestion] = useState(deepCopy(examQuestions[currentPage - 1]))
+
+  const [finishExamModalActive, setFinishExamModalActive] = useState(false)
   
   const getAnswerInteractivityType = (): AnswerInteractivityType => {
     return examQuestions[currentPage - 1].answers.some(a => a.checked) ? 'ANSWERED_AND_DISABLED' : 'CAN_BE_ANSWERED'
@@ -85,10 +88,21 @@ export default function ExamSimulationScreen() {
     setAnswerInteractivityType(getAnswerInteractivityType())
   }, [currentPage])
 
-  console.log("*******")
-  console.log(displayedNonSavedQuestion)
-  console.log(answerInteractivityType)
-  console.log("*******")
+
+
+  const onFinishExamClick = useCallback(() => {
+    ref.current?.close()
+    setFinishExamModalActive(true)
+  }, [])
+  
+  const questionGridBottomActions = useMemo(() => {
+    return(
+      <TouchableOpacity onPress={onFinishExamClick} style={{ width: '100%', backgroundColor: colors.base, padding: 14, borderRadius: 6, marginTop: 8, justifyContent: 'center', alignItems: 'center'}}>
+        <Text style={{ fontSize: 20, color: 'white', fontWeight: 'bold' }}>ZAVRŠI ISPIT</Text>
+      </TouchableOpacity>
+    )
+  }, [])
+  
 
 
   return (
@@ -109,8 +123,26 @@ export default function ExamSimulationScreen() {
       <BottomDrawer ref={ref}>
         <QuestionsGridSelection 
           onItemClick={onGridItemClick}
-          items={questionGridSelectionItems}/>
+          items={questionGridSelectionItems}
+          bottomActions={questionGridBottomActions}
+        />
       </BottomDrawer>
+      { /* Exam finish condirmation modal */ }
+      <DsModal 
+        visible={finishExamModalActive} 
+        title='Završi ispit' 
+        subtitle='Završi ispit i pogledaj rezultat'
+        actions={[
+          <TouchableOpacity onPress={() => setFinishExamModalActive(false)} style={{ borderWidth: 2, borderStyle: 'solid', borderColor: colors.base, borderRadius: 8, padding: 12 }}>
+            <Text style={{ textAlign: 'center', fontWeight: 'bold', color: colors.base }}>ODUSTANI</Text>
+          </TouchableOpacity>,
+          <TouchableOpacity onPress={() => setFinishExamModalActive(false)} style={{ borderWidth: 2, borderStyle: 'solid', borderColor: colors.base, borderRadius: 8, backgroundColor: colors.base, padding: 12 }}>
+            <Text style={{ textAlign: 'center', fontWeight: 'bold', color: colors['section-item'] }}>ZAVRŠI</Text>
+          </TouchableOpacity>    
+        ]          
+        }
+      >
+        </DsModal>
     </SafeAreaView>
   );
 }
