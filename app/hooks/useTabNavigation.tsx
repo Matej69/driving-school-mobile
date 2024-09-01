@@ -1,32 +1,39 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import useStore from "../store/store";
+import { useNavigation } from "@react-navigation/native";
+import { NavigationRoutesKeys } from "../types/types";
 
-export const useTabNavigation = ({initActiveTab}: {initActiveTab: number}) => {
+export const useTabNavigation = () => {
     const navItemRefs: { current: any[] } = useRef([]);
-    const [activeTab, setActiveTab] = useState(initActiveTab);
-    const [prevActiveTab, setPrevActiveTab] = useState(initActiveTab);
-    
-    const iconAnimation = {
+    const { prevActiveTab, activeTab, setActiveTab } = useStore()
+    const navigation = useNavigation();
+
+    const iconAnimation = useMemo(() => ({
         scaleMin : 0.7,
         scaleMax : 1,
-    }
+    }), [])
 
-    const animations = {
+    const animations = useMemo(() => ({
         inactiveToActive: { 0: {scale: iconAnimation.scaleMin}, 1: {scale: iconAnimation.scaleMax} },
         activeToInactive: { 0: {scale: iconAnimation.scaleMax, rotate: '90deg'}, 1: {scale: iconAnimation.scaleMin, rotate: '0deg'} },
         default: { 0: {scale: iconAnimation.scaleMin}, 1: {scale: iconAnimation.scaleMin} }
-    }
+    }),[])
       
     useEffect(() => {
-        navItemRefs.current.forEach((item, i) => {
-            if(i === activeTab && prevActiveTab !== activeTab)
+        navItemRefs.current.forEach(item => {
+            if(item === activeTab && prevActiveTab !== activeTab)
                 item.animate(animations.inactiveToActive)
-            else if(i === prevActiveTab && prevActiveTab !== activeTab)
+            else if(item === prevActiveTab && prevActiveTab !== activeTab)
                 item.animate(animations.activeToInactive)
             else
                 item.animate(animations.default)
         })
-        setPrevActiveTab(activeTab);       
       }, [activeTab])
 
-    return { navItemRefs, activeTab, setActiveTab }
+      const navigate = (routeKey: NavigationRoutesKeys) => {
+        setActiveTab(routeKey)
+        navigation.navigate(routeKey as never)
+      }
+
+    return { navItemRefs, activeTab, setActiveTab, navigate }
 }

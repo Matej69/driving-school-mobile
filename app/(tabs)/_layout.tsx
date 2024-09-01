@@ -4,6 +4,7 @@ import { Link, Tabs } from 'expo-router';
 
 import * as Animatable from 'react-native-animatable'
 import { useTabNavigation } from '../hooks/useTabNavigation';
+import { NavigationRoutes, NavigationRoutesKeys } from '../types/types';
 
 const colors = require('../colors');
 
@@ -17,7 +18,7 @@ function TabBarIcon(props: {
 
 
 export default function TabLayout() {
-  const { navItemRefs, setActiveTab } = useTabNavigation({initActiveTab: 0});
+  const { navItemRefs, setActiveTab } = useTabNavigation();
 
   return (
     <Tabs
@@ -44,11 +45,11 @@ export default function TabLayout() {
           tabBarActiveTintColor: colors.base,
           title: 'Popis pitanja',
           tabBarIcon: ({ color }) => 
-            <Animatable.View ref={(el) => navItemRefs.current[0] = el } animation={'zoomIn'}>
+            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['index']] = el } animation={'zoomIn'}>
               <TabBarIcon name="book" color={color} />
             </Animatable.View>
         }}
-        listeners={{ tabPress: (e) => setActiveTab(0) }}
+        listeners={{ tabPress: (e) => setActiveTab('index') }}
       />
       <Tabs.Screen
         name="exam-simulation"
@@ -56,11 +57,11 @@ export default function TabLayout() {
           tabBarActiveTintColor: colors.base,
           title: 'Simulacija ispita',
           tabBarIcon: ({ color }) => 
-            <Animatable.View ref={(el) => navItemRefs.current[1] = el } animation={'zoomIn'}>
+            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['exam-simulation']] = el } animation={'zoomIn'}>
               <TabBarIcon name="clipboard" color={color} />
             </Animatable.View>
         }}
-        listeners={{ tabPress: (e) => setActiveTab(1) }}
+        listeners={{ tabPress: (e) => setActiveTab('exam-simulation') }}
       />
       <Tabs.Screen
         name="finished-exam"
@@ -68,11 +69,11 @@ export default function TabLayout() {
           tabBarActiveTintColor: colors.base,
           title: 'Riješeni ispiti',
           tabBarIcon: ({ color }) => 
-            <Animatable.View ref={(el) => navItemRefs.current[2] = el } animation={'zoomIn'}>
+            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['finished-exam']] = el } animation={'zoomIn'}>
               <TabBarIcon name="check-square" color={color} />
             </Animatable.View>
         }}
-        listeners={{ tabPress: (e) => setActiveTab(2) }}
+        listeners={{ tabPress: (e) => setActiveTab('finished-exam') }}
       />
       <Tabs.Screen
         name="first-aid"
@@ -80,11 +81,11 @@ export default function TabLayout() {
           tabBarActiveTintColor: colors.base,
           title: 'Prva pomoć',
           tabBarIcon: ({ color }) => 
-            <Animatable.View ref={(el) => navItemRefs.current[3] = el } animation={'zoomIn'}>
+            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['first-aid']] = el } animation={'zoomIn'}>
               <TabBarIcon name="ambulance" color={color} />
             </Animatable.View>
         }}
-        listeners={{ tabPress: (e) => setActiveTab(3) }}
+        listeners={{ tabPress: (e) => setActiveTab('first-aid') }}
       />
     </Tabs>    
   );

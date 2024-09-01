@@ -16,6 +16,9 @@ import { useExamSimulationQuestionSelection } from '../hooks/useExamSimulationQu
 import { util } from 'prettier';
 import { deepCopy } from '../utils/utils';
 import { DsModal } from '../components/Modal';
+import { useTabNavigation } from '../hooks/useTabNavigation';
+import useStore from '../store/store';
+import { useNavigation } from '@react-navigation/native';
 
 const QUESTIONS_PER_EXAM = 38;
 
@@ -36,6 +39,9 @@ const generateExamQuestions = (questionPool: Question[], amountToGenerate: numbe
 }
 
 export default function ExamSimulationScreen() {
+  const { activeTab, setActiveTab } = useStore()
+  const { navigate } = useTabNavigation()
+  
   const { allQuestions } = useContext(GlobalContext);
   const [examQuestions, setExamQuestions] = useState(generateExamQuestions(allQuestions, QUESTIONS_PER_EXAM))
   const { Component: PaginationComponent, firstItemIndexOnPage, lastItemIndexOnPage, setCurrentPage, setItemCount, currentPage } 
@@ -66,11 +72,11 @@ export default function ExamSimulationScreen() {
     return newExamQuestions
   }
 
-  const ref = useRef<BottomSheet>(null);
-  const openBottomDrawer = () => ref.current?.expand()
+  const gridSelectionRef = useRef<BottomSheet>(null);
+  const openBottomDrawer = () => gridSelectionRef.current?.expand()
   const onGridItemClick = (id: number, index: number) => {
     setCurrentPage(index + 1);
-    ref.current?.close()
+    gridSelectionRef.current?.close()
   }
 
 
@@ -88,10 +94,10 @@ export default function ExamSimulationScreen() {
     setAnswerInteractivityType(getAnswerInteractivityType())
   }, [currentPage])
 
-
+  
 
   const onFinishExamClick = useCallback(() => {
-    ref.current?.close()
+    gridSelectionRef.current?.close()
     setFinishExamModalActive(true)
   }, [])
   
@@ -101,6 +107,19 @@ export default function ExamSimulationScreen() {
         <Text style={{ fontSize: 20, color: 'white', fontWeight: 'bold' }}>ZAVRŠI ISPIT</Text>
       </TouchableOpacity>
     )
+  }, [])
+
+
+
+  const onFinishExamConfirmationClick = useCallback(() => {
+    setFinishExamModalActive(false)
+    // Save exam to storage
+    // redirect to finished exams
+    navigate('finished-exam');
+  }, [])
+
+  const onFinishExamCancelClick = useCallback(() => {
+    setFinishExamModalActive(false)
   }, [])
   
 
@@ -120,7 +139,7 @@ export default function ExamSimulationScreen() {
           </CardContainer>
         </View>
       </ScrollView>
-      <BottomDrawer ref={ref}>
+      <BottomDrawer ref={gridSelectionRef}>
         <QuestionsGridSelection 
           onItemClick={onGridItemClick}
           items={questionGridSelectionItems}
@@ -133,10 +152,10 @@ export default function ExamSimulationScreen() {
         title='Završi ispit' 
         subtitle='Završi ispit i pogledaj rezultat'
         actions={[
-          <TouchableOpacity onPress={() => setFinishExamModalActive(false)} style={{ borderWidth: 2, borderStyle: 'solid', borderColor: colors.base, borderRadius: 8, padding: 12 }}>
+          <TouchableOpacity onPress={onFinishExamCancelClick} style={{ borderWidth: 2, borderStyle: 'solid', borderColor: colors.base, borderRadius: 8, padding: 12 }}>
             <Text style={{ textAlign: 'center', fontWeight: 'bold', color: colors.base }}>ODUSTANI</Text>
           </TouchableOpacity>,
-          <TouchableOpacity onPress={() => setFinishExamModalActive(false)} style={{ borderWidth: 2, borderStyle: 'solid', borderColor: colors.base, borderRadius: 8, backgroundColor: colors.base, padding: 12 }}>
+          <TouchableOpacity onPress={onFinishExamConfirmationClick} style={{ borderWidth: 2, borderStyle: 'solid', borderColor: colors.base, borderRadius: 8, backgroundColor: colors.base, padding: 12 }}>
             <Text style={{ textAlign: 'center', fontWeight: 'bold', color: colors['section-item'] }}>ZAVRŠI</Text>
           </TouchableOpacity>    
         ]          
