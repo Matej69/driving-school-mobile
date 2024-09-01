@@ -39,8 +39,7 @@ const generateExamQuestions = (questionPool: Question[], amountToGenerate: numbe
 }
 
 export default function ExamSimulationScreen() {
-  const { activeTab, setActiveTab } = useStore()
-  const { navigate } = useTabNavigation()
+  const { activeTab, navigate } = useTabNavigation()
   
   const { allQuestions } = useContext(GlobalContext);
   const [examQuestions, setExamQuestions] = useState(generateExamQuestions(allQuestions, QUESTIONS_PER_EXAM))
@@ -83,7 +82,6 @@ export default function ExamSimulationScreen() {
   const onAnswerChange = (newQuestionState: Question) => {
     setDisplayedNonSavedQuestion(deepCopy(newQuestionState))
   }
-
 
 
   useEffect(() => {

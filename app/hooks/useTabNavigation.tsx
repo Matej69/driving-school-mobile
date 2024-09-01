@@ -32,7 +32,7 @@ export const useTabNavigation = () => {
 
       const navigate = (routeKey: NavigationRoutesKeys) => {
         setActiveTab(routeKey)
-        navigation.navigate(routeKey as never)
+        navigation.navigate(routeKey as never);
       }
 
     return { navItemRefs, activeTab, setActiveTab, navigate }
