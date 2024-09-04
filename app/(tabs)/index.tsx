@@ -1,4 +1,4 @@
-import { ScrollView, Text, TextInput, TextInputFocusEventData } from 'react-native';
+import { ScrollView, Text, TextInput, TextInputFocusEventData, Touchable, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { CardContainer } from '../components/CardContainer';
 import { View } from 'react-native-animatable';
@@ -9,6 +9,7 @@ import { usePagination } from '../hooks/usePagination';
 import colors from '../colors';
 import { GlobalContext } from '../context/GlobalContext';
 import { Ionicons } from '@expo/vector-icons';
+import { storage } from '../storage/storage';
 
 
 // klindic.autoskola-testovi.com//ckeditor/kcfinder/upload_img/images/10/5.jpg

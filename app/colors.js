@@ -8,7 +8,7 @@ const colors = {
     disabled: '#d4d3d5',
     background: '#ffffff',
     rootBackground: '#f2f2f2',
-    'section-item': '#fafafa',
+    'section-item': '#fafafa'
 }
 
 module.exports = colors

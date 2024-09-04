@@ -24,6 +24,7 @@ export default function TabLayout() {
     <Tabs
       sceneContainerStyle= {{ backgroundColor: 'auto' }}
       screenOptions={{
+        unmountOnBlur: true,
         headerShown: false,
         tabBarInactiveTintColor: '#ccc',
         tabBarStyle: {
@@ -64,16 +65,16 @@ export default function TabLayout() {
         listeners={{ tabPress: (e) => setActiveTab('exam-simulation') }}
       />
       <Tabs.Screen
-        name="finished-exam"
+        name="finished-exams"
         options={{
           tabBarActiveTintColor: colors.base,
           title: 'Riješeni ispiti',
           tabBarIcon: ({ color }) => 
-            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['finished-exam']] = el } animation={'zoomIn'}>
+            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['finished-exams']] = el } animation={'zoomIn'}>
               <TabBarIcon name="check-square" color={color} />
             </Animatable.View>
         }}
-        listeners={{ tabPress: (e) => setActiveTab('finished-exam') }}
+        listeners={{ tabPress: (e) => setActiveTab('finished-exams') }}
       />
       <Tabs.Screen
         name="first-aid"

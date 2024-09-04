@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export type StorageKey = 'questions' | 'finished-exams'
 
-export const load = async <ReturnType> (key: StorageKey): Promise<ReturnType | null> => {
+const load = async <ReturnType> (key: StorageKey): Promise<ReturnType | null> => {
     try {
         const value = await AsyncStorage.getItem(key);
         return value ? JSON.parse(value) as ReturnType : null;
@@ -13,7 +13,7 @@ export const load = async <ReturnType> (key: StorageKey): Promise<ReturnType | n
       }
   };
 
-export const save = async <ObjToSaveType> (key: StorageKey, objectToSave: ObjToSaveType): Promise<boolean> => {
+const save = async <ObjToSaveType> (key: StorageKey, objectToSave: ObjToSaveType): Promise<boolean> => {
     try {
         await AsyncStorage.setItem(key, JSON.stringify(objectToSave))
         return true
@@ -23,14 +23,14 @@ export const save = async <ObjToSaveType> (key: StorageKey, objectToSave: ObjToS
       }
   };
 
-  
-  export type MergePositionType = 'start' | 'end'
+
+export type MergePositionType = 'start' | 'end'
   
   /**
    * Works only on lists by adding element in existing list
    * If existing loaded list is null it will save object as list where object is only element
    */
-export const merge = async <ObjToAddType, LoadType extends ObjToAddType[]> (
+const merge = async <ObjToAddType, LoadType extends ObjToAddType[]> (
     key: StorageKey, 
     objectToSave: ObjToAddType,
     mergePositionType: MergePositionType): Promise<boolean> => 
@@ -64,16 +64,29 @@ export const merge = async <ObjToAddType, LoadType extends ObjToAddType[]> (
  * Finished exams
 */
 
-const loadFinishedExams = (): FinishedExamStorage[]  => {
-    // load from storage
-    return examStorageMockedData
+const loadFinishedExams = async(): Promise<FinishedExamStorage[] | null> => {
+    return load('finished-exams')
+}
+const saveFinishedExams = async(objectToSave: FinishedExamStorage): Promise<boolean> => {
+    return save('finished-exams', objectToSave)
+}
+const mergeFinishedExams = async(objectToSave: FinishedExamStorage, mergePositionType: MergePositionType): Promise<boolean> => {
+    return merge('finished-exams', objectToSave, mergePositionType)
+}
+
+
+
+export const storage = {
+    loadFinishedExams,
+    saveFinishedExams, 
+    mergeFinishedExams
 }
 
 
 
 const examStorageMockedData: FinishedExamStorage[] = [
     {
-        date: new Date(),
+        date: new Date().toString(),
         questions: [
             { 
                 id: 1, 
@@ -94,7 +107,7 @@ const examStorageMockedData: FinishedExamStorage[] = [
         ]
     },
     {
-        date: new Date(),
+        date: new Date().toString(),
         questions: [
             { 
                 id: 2, 

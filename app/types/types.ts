@@ -13,20 +13,25 @@ export type Question =  {
     incorrectlyAnswered: number
 }
 
-export type AnswerInteractivityType = 'CAN_BE_ANSWERED' | 'ANSWERED_AND_DISABLED' | 'CORRECT_ANSWERED_SHOWN'
+export type FinishedExam = {
+    date: Date,
+    questions: Question[]
+}
 
+export type AnswerInteractivityType = 'CAN_BE_ANSWERED' | 'ANSWERED_AND_DISABLED' | 'CORRECT_ANSWERED_SHOWN'
 
 export type FinishedExamAnswerStorage = Pick<Answer, 'id' | 'checked'>
 export type FinishedExamQuestionStorage = Pick<Question, 'id'> & { answers: Array<FinishedExamAnswerStorage> }
 export type FinishedExamStorage = {
-    date: Date,
+    date: string,
     questions: FinishedExamQuestionStorage[]
 }
+
 
 export const NavigationRoutes = {
     'index': 0,
     'exam-simulation': 1,
-    'finished-exam': 2,
+    'finished-exams': 2,
     'first-aid': 3
 }
 export type NavigationRoutesKeys = keyof typeof NavigationRoutes

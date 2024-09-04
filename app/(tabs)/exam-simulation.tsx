@@ -19,6 +19,8 @@ import { DsModal } from '../components/Modal';
 import { useTabNavigation } from '../hooks/useTabNavigation';
 import useStore from '../store/store';
 import { useNavigation } from '@react-navigation/native';
+import { storage } from '../storage/storage';
+import { finishedExamToStorage } from '../mapper/mapper';
 
 const QUESTIONS_PER_EXAM = 38;
 
@@ -60,12 +62,12 @@ export default function ExamSimulationScreen() {
   const [answerInteractivityType, setAnswerInteractivityType] = useState<AnswerInteractivityType>(getAnswerInteractivityType())
 
 
-  const saveQuestionAnswers = (): Question[]  => {
+  const saveNonSavedDisplayedToQuestionAnswers = (): Question[]  => {
     const questionToChange = examQuestions.find(q => q.id === displayedNonSavedQuestion.id)
     let newExamQuestions: Question[] = []
     if(questionToChange) {
       questionToChange.answers = [...displayedNonSavedQuestion.answers]
-      newExamQuestions = [...examQuestions] 
+      newExamQuestions = [...examQuestions]
       setExamQuestions(newExamQuestions)
     }
     return newExamQuestions
@@ -85,7 +87,7 @@ export default function ExamSimulationScreen() {
 
 
   useEffect(() => {
-    const newExamQuestions = saveQuestionAnswers()
+    const newExamQuestions = saveNonSavedDisplayedToQuestionAnswers()
     setDisplayedNonSavedQuestion(deepCopy(newExamQuestions[currentPage - 1]))
     const selectedQId = newExamQuestions[currentPage - 1].id
     updateItemsStyles(newExamQuestions, selectedQId)
@@ -109,12 +111,14 @@ export default function ExamSimulationScreen() {
 
 
 
-  const onFinishExamConfirmationClick = useCallback(() => {
-    setFinishExamModalActive(false)
+  const onFinishExamConfirmationClick = async() => {
     // Save exam to storage
-    // redirect to finished exams
-    navigate('finished-exam');
-  }, [])
+    const examQuestions = saveNonSavedDisplayedToQuestionAnswers()
+    const examQuestionsForStorage = finishedExamToStorage(examQuestions)
+    await storage.mergeFinishedExams(examQuestionsForStorage, 'start')
+    setFinishExamModalActive(false)
+    navigate('finished-exams');
+  }
 
   const onFinishExamCancelClick = useCallback(() => {
     setFinishExamModalActive(false)

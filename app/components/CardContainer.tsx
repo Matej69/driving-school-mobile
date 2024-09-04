@@ -4,7 +4,7 @@ import { Text, View } from "react-native"
 import React from "react"
 import colors from "../colors"
 
-type Colors = 'success' | 'failure' | 'base' 
+export type Colors = 'success' | 'failure' | 'base'
 
 type CardContainerProps = {
     color: Colors,
