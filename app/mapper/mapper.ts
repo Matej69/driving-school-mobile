@@ -37,22 +37,17 @@ const storageToFinishedExamQuestions = (examsQuestionStorage: FinishedExamQuesti
         })
 }
 
-export const storageToFinishedExam = (examStorage: FinishedExamStorage[], allQuestions: Question[]): FinishedExam[] => {
-    // Map that holds exam date as first level id and has Map<number, Question> as value
-    // Questions will be duplicated in multiple exam date groups but will allow for faster access
-    const storedExamMap = new Map<string, Map<number, Question>>()
-    examStorage.forEach(exam => {
-        let questions = new Map<number, Question>()
+export const storageToFinishedExam = (examsStorage: FinishedExamStorage[], allQuestions: Question[]): FinishedExam[] => {
+    const exams: FinishedExam[] = examsStorage.map(exam => {
+        let questionsMap = new Map<number, Question>()
         exam.questions.forEach((storedQ => {
-            if(!questions.has(storedQ.id))
-                questions.set(storedQ.id, allQuestions.find(q => q.id == storedQ.id)!)
+            if(!questionsMap.has(storedQ.id))
+                questionsMap.set(storedQ.id, allQuestions.find(q => q.id == storedQ.id)!)
         }))
-        storedExamMap.set(exam.date, questions)
+        return {
+            date: new Date(exam.date),
+            questions: storageToFinishedExamQuestions(exam.questions, questionsMap)
+        } as FinishedExam
     })
-    // Pass proper question myp by date key
-    const exams: FinishedExam[] = examStorage.map(s => ({
-        date: new Date(s.date),
-        questions: storageToFinishedExamQuestions(s.questions, storedExamMap.get(s.date)!)
-    } as FinishedExam))
     return exams;
 }
