@@ -1,130 +1,62 @@
-import { FinishedExamStorage } from "../types/types"
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { FinishedExamStorage, Question } from "../types/types"
+import * as FileSystem from 'expo-file-system';
 
-export type StorageKey = 'questions' | 'finished-exams'
+// Equivalent to stored file name
+export type StorageKey = 'questions'
 
-const load = async <ReturnType> (key: StorageKey): Promise<ReturnType | null> => {
+
+  const load = async<ReturnType> (fileName: StorageKey): Promise<ReturnType | undefined> => {
+    const filePath = `${FileSystem.documentDirectory}${fileName}.json`;
     try {
-        const value = await AsyncStorage.getItem(key);
-        return value ? JSON.parse(value) as ReturnType : null;
-      } catch (error) {
-        console.error('Error loading item:', error);
-        return null
+      const fileExists = await fileExist(fileName);
+      if (fileExists) {
+        const content = await FileSystem.readAsStringAsync(filePath, {
+          encoding: FileSystem.EncodingType.UTF8,
+        });
+        return JSON.parse(content) as ReturnType;
+      } else {
+        console.log(`File '${filePath}' not found`);
       }
+    } catch (error) {
+      console.error('Error loading file:', error);
+    }
   };
 
-const save = async <ObjToSaveType> (key: StorageKey, objectToSave: ObjToSaveType): Promise<boolean> => {
+  const save = async <ObjToSaveType> (fileName: StorageKey, objectToSave: ObjToSaveType): Promise<boolean> => {
+    const filePath = `${FileSystem.documentDirectory}${fileName}.json`;    
     try {
-        await AsyncStorage.setItem(key, JSON.stringify(objectToSave))
-        return true
-      } catch (error) {
-        console.error('Error saving item:', error);
-        return false
-      }
+      await FileSystem.writeAsStringAsync(filePath, JSON.stringify(objectToSave), {
+        encoding: FileSystem.EncodingType.UTF8,
+      });
+      return true
+    } catch (error) {
+      console.error('Error saving file:', error);
+      return false
+    }
+  };
+
+  const fileExist = async (fileName: StorageKey) => {
+    const filePath = `${FileSystem.documentDirectory}${fileName}.json`;
+    const info = await FileSystem.getInfoAsync(filePath);
+    return info.exists;
   };
 
 
-export type MergePositionType = 'start' | 'end'
-  
-  /**
-   * Works only on lists by adding element in existing list
-   * If existing loaded list is null it will save object as list where object is only element
-   */
-const merge = async <ObjToAddType, LoadType extends ObjToAddType[]> (
-    key: StorageKey, 
-    objectToSave: ObjToAddType,
-    mergePositionType: MergePositionType): Promise<boolean> => 
-    {
-        try {
-            const value = await load<LoadType>(key);
-            if(!value) {
-                await AsyncStorage.setItem(key, JSON.stringify([objectToSave]))
-            }
-            else {
-                switch(mergePositionType) {
-                    case "start": value.unshift(objectToSave); break;
-                    case "end": value.push(objectToSave); break;
-                }     
-                await AsyncStorage.setItem(key, JSON.stringify(value))
-            }
-            return true
-        } catch (error) {
-          console.error('Error merging item:', error);
-          return false
-        }
-    };
 
 /**
  * Questions
  */
 
-
-
-/*
- * Finished exams
-*/
-
-const loadFinishedExams = async(): Promise<FinishedExamStorage[] | null> => {
-    return load('finished-exams')
+const loadQuestions = async(): Promise<Question[] | undefined> => {
+    return load('questions')
 }
-const saveFinishedExams = async(objectToSave: FinishedExamStorage): Promise<boolean> => {
-    return save('finished-exams', objectToSave)
+// Save requires all questions to be loaded and then saved as completely new file - merge should maybe be implemented
+const saveQuestions = async(objectToSave: Question[]): Promise<boolean> => {
+    return save('questions', objectToSave)
 }
-const mergeFinishedExams = async(objectToSave: FinishedExamStorage, mergePositionType: MergePositionType): Promise<boolean> => {
-    return merge('finished-exams', objectToSave, mergePositionType)
-}
-
-
 
 export const storage = {
-    loadFinishedExams,
-    saveFinishedExams, 
-    mergeFinishedExams
+    fileExist,
+    loadQuestions,
+    saveQuestions
 }
-
-
-
-const examStorageMockedData: FinishedExamStorage[] = [
-    {
-        date: new Date().toString(),
-        questions: [
-            { 
-                id: 1, 
-                answers: [
-                    { id: 1, checked: true },
-                    { id: 2, checked: false },
-                    { id: 3, checked: true },
-                    { id: 4, checked: true }                            
-                ]},
-            {
-                id: 2, 
-                answers: [
-                    { id: 1, checked: true },
-                    { id: 2, checked: false },
-                    { id: 3, checked: true },
-                    { id: 4, checked: true }                            
-                ]}
-        ]
-    },
-    {
-        date: new Date().toString(),
-        questions: [
-            { 
-                id: 2, 
-                answers: [
-                    { id: 1, checked: true },
-                    { id: 2, checked: false },
-                    { id: 3, checked: true },
-                    { id: 4, checked: true }                            
-                ]},
-            {
-                id: 2, 
-                answers: [
-                    { id: 1, checked: true },
-                    { id: 2, checked: false },
-                    { id: 3, checked: true },
-                    { id: 4, checked: true }                            
-                ]}
-        ]
-    },
-]

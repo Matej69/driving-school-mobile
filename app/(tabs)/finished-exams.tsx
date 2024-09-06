@@ -3,10 +3,10 @@ import React, { useContext, useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import colors from '../colors';
-import { storage } from '../storage/storage';
+import { storage } from '../async-storage/async-storage';
 import { FinishedExam, FinishedExamStorage } from '../types/types';
 import { FinishedExamItem } from '../components/FinishedExamItem';
-import { storageToFinishedExam } from '../mapper/mapper';
+import { storageToFinishedExams } from '../mapper/mapper';
 import { GlobalContext } from '../context/GlobalContext';
 
 
@@ -18,7 +18,7 @@ export default function FinishedExams() {
   useEffect(() => {
     (async() => {
       const storageExams = await storage.loadFinishedExams()
-      const exams = storageExams ? storageToFinishedExam(storageExams, allQuestions) : []
+      const exams = storageExams ? storageToFinishedExams(storageExams, allQuestions) : []
       setExams(exams)
     })()
   }, [])

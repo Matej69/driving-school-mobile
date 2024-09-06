@@ -3,14 +3,26 @@ import { DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { createContext, useEffect } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import 'react-native-reanimated';
 import { GlobalContext } from './context/GlobalContext';
 import { Question } from './types/types';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import React from 'react';
+import { storage } from './storage/storage';
+import { logDuration } from './utils/utils';
 
 SplashScreen.preventAutoHideAsync();
+
+const loadQuestions = async (): Promise<Question[] | undefined> => {
+  const questionsExist = await storage.fileExist('questions')
+  if(questionsExist) {
+    return storage.loadQuestions()
+  }
+  const questionsFromAssets: Question[] = require('../assets/questions.json');
+  const saved = await storage.saveQuestions(questionsFromAssets)
+  return saved ? (await storage.loadQuestions()) : undefined
+}
 
 
 export default function RootLayout() {
@@ -18,7 +30,16 @@ export default function RootLayout() {
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
     ...FontAwesome.font,
   });
-  const questions = require('../assets/all-questions.json');
+
+  const [questions, setQuestions] = useState<Question[]>([])
+
+  // On initial app load move questions from assets to storage or just load them if it was done before
+  useEffect(() => {
+    (async() => {
+      const loadedQuestions = await loadQuestions() || []
+      setQuestions(loadedQuestions)
+    })()
+  }, [])
 
   // Expo Router uses Error Boundaries to catch errors in the navigation tree.
   useEffect(() => {

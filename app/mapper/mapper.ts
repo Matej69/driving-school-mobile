@@ -37,7 +37,7 @@ const storageToFinishedExamQuestions = (examsQuestionStorage: FinishedExamQuesti
         })
 }
 
-export const storageToFinishedExam = (examsStorage: FinishedExamStorage[], allQuestions: Question[]): FinishedExam[] => {
+export const storageToFinishedExams = (examsStorage: FinishedExamStorage[], allQuestions: Question[]): FinishedExam[] => {
     const exams: FinishedExam[] = examsStorage.map(exam => {
         let questionsMap = new Map<number, Question>()
         exam.questions.forEach((storedQ => {

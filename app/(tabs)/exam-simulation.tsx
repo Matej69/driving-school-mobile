@@ -19,7 +19,7 @@ import { DsModal } from '../components/Modal';
 import { useTabNavigation } from '../hooks/useTabNavigation';
 import useStore from '../store/store';
 import { useNavigation } from '@react-navigation/native';
-import { storage } from '../storage/storage';
+import { storage } from '../async-storage/async-storage';
 import { finishedExamToStorage } from '../mapper/mapper';
 
 const QUESTIONS_PER_EXAM = 38;
