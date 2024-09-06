@@ -10,7 +10,6 @@ import { Question } from './types/types';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import React from 'react';
 import { storage } from './storage/storage';
-import { logDuration } from './utils/utils';
 
 SplashScreen.preventAutoHideAsync();
 
