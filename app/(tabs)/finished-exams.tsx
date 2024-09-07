@@ -28,13 +28,14 @@ export default function FinishedExams() {
 
   useEffect(() => {
     (async() => {
+      // Load all exams
       const storageExams = await storage.loadFinishedExams()
       const exams = storageExams ? storageToFinishedExams(storageExams, allQuestions) : []
       setExams(exams)
+      // Load specific exam that should be displayed - param is received by finishing exam
       if(params.examDate) {
         const examDateAsDate = new Date(params.examDate)
         const targetExam = exams.find(e => e.date.getTime() === examDateAsDate.getTime())
-        console.log(params.examDate)
         setSelectedExam(targetExam)
         resetParams()
       }
@@ -46,6 +47,9 @@ export default function FinishedExams() {
     if(exam)
       setSelectedExam(exam)
   }, [exams])
+
+
+  if(exams )
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
