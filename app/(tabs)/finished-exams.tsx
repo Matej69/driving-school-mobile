@@ -11,19 +11,33 @@ import { GlobalContext } from '../context/GlobalContext';
 import { CardContainer } from '../components/CardContainer';
 import { QuestionCard } from '../components/QuestionCard';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useLocalSearchParams } from "expo-router";
+import { useTabNavigation } from '../hooks/useTabNavigation';
+
 
 
 export default function FinishedExams() {
+  const params = useLocalSearchParams<{examDate: string}>();
   const [exams, setExams] = useState<FinishedExam[]>([])
   const [selectedExam, setSelectedExam] = useState<FinishedExam>()
   const { allQuestions } = useContext(GlobalContext);
+  const { resetParams } = useTabNavigation()
 
+
+  console.log(params)
 
   useEffect(() => {
     (async() => {
       const storageExams = await storage.loadFinishedExams()
       const exams = storageExams ? storageToFinishedExams(storageExams, allQuestions) : []
       setExams(exams)
+      if(params.examDate) {
+        const examDateAsDate = new Date(params.examDate)
+        const targetExam = exams.find(e => e.date.getTime() === examDateAsDate.getTime())
+        console.log(params.examDate)
+        setSelectedExam(targetExam)
+        resetParams()
+      }
     })()
   }, [])
 
@@ -39,7 +53,7 @@ export default function FinishedExams() {
           {
             selectedExam
             ?
-            selectedExam.questions.map((question: Question) => 
+            selectedExam?.questions.map((question: Question) => 
               <View key={`exam-question-card-${question.id}`} style={{ paddingVertical: 4 }}>
                 <CardContainer color='base'>
                   <QuestionCard question={question} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'}/>

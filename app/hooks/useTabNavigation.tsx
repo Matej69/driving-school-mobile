@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import useStore from "../store/store";
-import { useNavigation } from "@react-navigation/native";
-import { NavigationRoutesKeys } from "../types/types";
+import { NavigationRoutesKeys, ParamType } from "../types/types";
+import { useNavigation, router } from "expo-router";
 
 export const useTabNavigation = () => {
     const navItemRefs: { current: any[] } = useRef([]);
@@ -30,10 +30,17 @@ export const useTabNavigation = () => {
         })
       }, [activeTab])
 
-      const navigate = (routeKey: NavigationRoutesKeys) => {
+      const navigate = (routeKey: NavigationRoutesKeys, params?: Record<ParamType, string>) => {
         setActiveTab(routeKey)
-        navigation.navigate(routeKey as never);
+        router.push({
+            pathname: 'finished-exams',
+            params
+          });
       }
 
-    return { navItemRefs, activeTab, setActiveTab, navigate }
+      const resetParams = () => {
+        router.setParams<ParamType>({ examDate: null });
+      }
+
+    return { navItemRefs, activeTab, setActiveTab, navigate, resetParams }
 }

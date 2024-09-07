@@ -35,3 +35,5 @@ export const NavigationRoutes = {
     'first-aid': 3
 }
 export type NavigationRoutesKeys = keyof typeof NavigationRoutes
+
+export type ParamType = 'examDate'

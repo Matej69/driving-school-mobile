@@ -117,7 +117,7 @@ export default function ExamSimulationScreen() {
     const examQuestionsForStorage = finishedExamToStorage(examQuestions)
     await storage.mergeFinishedExams(examQuestionsForStorage, 'start')
     setFinishExamModalActive(false)
-    navigate('finished-exams');
+    navigate('finished-exams', { examDate: examQuestionsForStorage.date });
   }
 
   const onFinishExamCancelClick = useCallback(() => {

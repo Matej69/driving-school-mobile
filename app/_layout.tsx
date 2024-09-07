@@ -61,7 +61,7 @@ function RootLayoutNav(p: {questions: Question[]}) {
       <GlobalContext.Provider value={{ allQuestions: p.questions }}>
         <GestureHandlerRootView style={{flex:1}}>
           <Stack>
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }} initialParams={{ examDate: null }} />
           </Stack>
         </GestureHandlerRootView>
       </GlobalContext.Provider>
