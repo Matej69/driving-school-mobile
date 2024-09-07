@@ -14,13 +14,14 @@ import { BottomDrawer } from '../components/BottomDrawer';
 import { QuestionsGridSelection } from '../components/QuestionsGridSelection';
 import { useExamSimulationQuestionSelection } from '../hooks/useExamSimulationQuestionSelection';
 import { util } from 'prettier';
-import { deepCopy } from '../utils/utils';
+import { deepCopy, updateQuestionsWrongAnswers } from '../utils/utils';
 import { DsModal } from '../components/Modal';
 import { useTabNavigation } from '../hooks/useTabNavigation';
 import useStore from '../store/store';
 import { useNavigation } from '@react-navigation/native';
-import { storage } from '../async-storage/async-storage';
+import { asyncStorage } from '../async-storage/async-storage';
 import { finishedExamToStorage } from '../mapper/mapper';
+import { storage } from '../storage/storage';
 
 const QUESTIONS_PER_EXAM = 38;
 
@@ -34,7 +35,9 @@ const generateExamQuestions = (questionPool: Question[], amountToGenerate: numbe
     const randIndex = Math.floor(Math.random() * (questionPool.length - 1) + 1)
     const alreadyGenerated = generatedQuestions.some(el => el.id == questionPool[randIndex].id)
     if(!alreadyGenerated) {
-      generatedQuestions.push({...questionPool[randIndex]})
+      const generatedQuestion = {...questionPool[randIndex]}
+      generatedQuestion.answers.forEach(a => a.checked = false);
+      generatedQuestions.push(generatedQuestion)
     }
   }
   return generatedQuestions
@@ -115,7 +118,11 @@ export default function ExamSimulationScreen() {
     // Save exam to storage
     const examQuestions = saveNonSavedDisplayedToQuestionAnswers()
     const examQuestionsForStorage = finishedExamToStorage(examQuestions)
-    await storage.mergeFinishedExams(examQuestionsForStorage, 'start')
+    await asyncStorage.mergeFinishedExams(examQuestionsForStorage, 'start')
+    // Save questions with new amount of times wrong answer was give
+    const updatedAllQuestions = updateQuestionsWrongAnswers(allQuestions, examQuestions)
+    await storage.saveQuestions(updatedAllQuestions)
+    // Continue
     setFinishExamModalActive(false)
     navigate('finished-exams', { examDate: examQuestionsForStorage.date });
   }

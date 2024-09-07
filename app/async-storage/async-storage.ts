@@ -76,7 +76,7 @@ const mergeFinishedExams = async(objectToSave: FinishedExamStorage, mergePositio
 
 
 
-export const storage = {
+export const asyncStorage = {
     loadFinishedExams,
     saveFinishedExams, 
     mergeFinishedExams

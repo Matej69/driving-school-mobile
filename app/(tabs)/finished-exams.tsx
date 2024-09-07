@@ -3,7 +3,7 @@ import React, { useCallback, useContext, useEffect, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import colors from '../colors';
-import { storage } from '../async-storage/async-storage';
+import { asyncStorage } from '../async-storage/async-storage';
 import { FinishedExam, FinishedExamStorage, Question } from '../types/types';
 import { FinishedExamItem } from '../components/FinishedExamItem';
 import { storageToFinishedExams } from '../mapper/mapper';
@@ -23,13 +23,10 @@ export default function FinishedExams() {
   const { allQuestions } = useContext(GlobalContext);
   const { resetParams } = useTabNavigation()
 
-
-  console.log(params)
-
   useEffect(() => {
     (async() => {
       // Load all exams
-      const storageExams = await storage.loadFinishedExams()
+      const storageExams = await asyncStorage.loadFinishedExams()
       const exams = storageExams ? storageToFinishedExams(storageExams, allQuestions) : []
       setExams(exams)
       // Load specific exam that should be displayed - param is received by finishing exam

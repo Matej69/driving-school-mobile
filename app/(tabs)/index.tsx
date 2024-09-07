@@ -9,7 +9,7 @@ import { usePagination } from '../hooks/usePagination';
 import colors from '../colors';
 import { GlobalContext } from '../context/GlobalContext';
 import { Ionicons } from '@expo/vector-icons';
-import { storage } from '../async-storage/async-storage';
+import { asyncStorage } from '../async-storage/async-storage';
 
 
 // klindic.autoskola-testovi.com//ckeditor/kcfinder/upload_img/images/10/5.jpg
