@@ -7,16 +7,16 @@ import { QuestionCard } from '../components/QuestionCard';
 import { Question } from '../types/types';
 import { usePagination } from '../hooks/usePagination';
 import colors from '../colors';
-import { GlobalContext } from '../context/GlobalContext';
 import { Ionicons } from '@expo/vector-icons';
 import { asyncStorage } from '../async-storage/async-storage';
+import useStore from '../store/store';
 
 
 // klindic.autoskola-testovi.com//ckeditor/kcfinder/upload_img/images/10/5.jpg
 
 export default function Questions() {
 
-  const { allQuestions } = useContext(GlobalContext);
+  const { allQuestions } = useStore()
   const { Component: PaginationComponent, firstItemIndexOnPage, lastItemIndexOnPage, setCurrentPage, setItemCount } = usePagination({ _currentPage: 1, _itemsCount: allQuestions.length, _pageSize: 10});
 
   const [filteredQuestions, setFilteredQuestions] = useState(allQuestions)
@@ -84,7 +84,6 @@ export default function Questions() {
               displayedQuestions.map((question, i) => (
                 <View key={`question-card-${question.id}`}>
                   <CardContainer color='base'>
-                  <Text>{question.id}</Text>
                     <QuestionCard question={question} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'}/>
                   </CardContainer>
                   { i != filteredQuestions.length - 1 && <View className='mt-2' /> }

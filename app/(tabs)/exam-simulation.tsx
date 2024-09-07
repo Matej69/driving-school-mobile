@@ -5,7 +5,6 @@ import colors from '../colors';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { usePagination } from '../hooks/usePagination';
 import { Ionicons } from '@expo/vector-icons';
-import { GlobalContext } from '../context/GlobalContext';
 import { AnswerInteractivityType, Question } from '../types/types';
 import { CardContainer } from '../components/CardContainer';
 import { QuestionCard } from '../components/QuestionCard';
@@ -46,7 +45,7 @@ const generateExamQuestions = (questionPool: Question[], amountToGenerate: numbe
 export default function ExamSimulationScreen() {
   const { activeTab, navigate } = useTabNavigation()
   
-  const { allQuestions } = useContext(GlobalContext);
+  const { allQuestions, setAllQuestions } = useStore()
   const [examQuestions, setExamQuestions] = useState(generateExamQuestions(allQuestions, QUESTIONS_PER_EXAM))
   const { Component: PaginationComponent, firstItemIndexOnPage, lastItemIndexOnPage, setCurrentPage, setItemCount, currentPage } 
   = usePagination({ _currentPage: 1, _itemsCount: QUESTIONS_PER_EXAM, _pageSize: 1});
@@ -122,6 +121,7 @@ export default function ExamSimulationScreen() {
     // Save questions with new amount of times wrong answer was give
     const updatedAllQuestions = updateQuestionsWrongAnswers(allQuestions, examQuestions)
     await storage.saveQuestions(updatedAllQuestions)
+    setAllQuestions([...updatedAllQuestions])
     // Continue
     setFinishExamModalActive(false)
     navigate('finished-exams', { examDate: examQuestionsForStorage.date });

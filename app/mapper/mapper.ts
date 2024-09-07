@@ -1,5 +1,6 @@
 import useStore from "../store/store";
 import { Answer, FinishedExam, FinishedExamAnswerStorage, FinishedExamQuestionStorage, FinishedExamStorage, Question } from "../types/types";
+import { deepCopy } from "../utils/utils";
 
 const answersToStorage = (answers: Answer[]): FinishedExamAnswerStorage[] => {
     return answers.map(a => ({ 
@@ -25,13 +26,13 @@ export const finishedExamToStorage = (questions: Question[]): FinishedExamStorag
 /**
  * storageQuestions for specific stored finished exam combined with questionsMap(holds correct answers) will give questions filled with correct/incorrect answers
  */
-const storageToFinishedExamQuestions = (examsQuestionStorage: FinishedExamQuestionStorage[], allQuestionsMap: Map<number, Question>): Question[] => {
-    return examsQuestionStorage
+const storageToFinishedExamQuestions = (examsQuestionsStorage: FinishedExamQuestionStorage[], allQuestionsMap: Map<number, Question>): Question[] => {
+    return examsQuestionsStorage
         .filter(examQStorage => allQuestionsMap.has(examQStorage.id))
         .map(examQStorage => {
-            const question = allQuestionsMap.get(examQStorage.id)!;
+            const question = deepCopy(allQuestionsMap.get(examQStorage.id))!;
             examQStorage.answers.forEach((answer, i) => {
-                question.answers[i].checked = answer.checked                
+                question.answers[i].checked = answer.checked
             });
             return question
         })

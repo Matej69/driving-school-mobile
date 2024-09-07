@@ -5,11 +5,11 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { createContext, useEffect, useState } from 'react';
 import 'react-native-reanimated';
-import { GlobalContext } from './context/GlobalContext';
 import { Question } from './types/types';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import React from 'react';
 import { storage } from './storage/storage';
+import useStore from './store/store';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -30,13 +30,13 @@ export default function RootLayout() {
     ...FontAwesome.font,
   });
 
-  const [questions, setQuestions] = useState<Question[]>([])
+  const { allQuestions, setAllQuestions } = useStore()
 
   // On initial app load move questions from assets to storage or just load them if it was done before
   useEffect(() => {
     (async() => {
       const loadedQuestions = await loadQuestions() || []
-      setQuestions(loadedQuestions)
+      setAllQuestions(loadedQuestions)
     })()
   }, [])
 
@@ -46,25 +46,23 @@ export default function RootLayout() {
   }, [error]);
 
   useEffect(() => {
-    if (fontsLoaded && questions) {
+    if (fontsLoaded && allQuestions) {
       SplashScreen.hideAsync();
     }
   }, [fontsLoaded]);
 
-  return (fontsLoaded && questions) ? <RootLayoutNav questions={questions} /> : null;
+  return (fontsLoaded && allQuestions) ? <RootLayoutNav questions={allQuestions} /> : null;
 }
 
 
 function RootLayoutNav(p: {questions: Question[]}) {
   return (
     <ThemeProvider value={DefaultTheme}>
-      <GlobalContext.Provider value={{ allQuestions: p.questions }}>
-        <GestureHandlerRootView style={{flex:1}}>
-          <Stack>
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} initialParams={{ examDate: null }} />
-          </Stack>
-        </GestureHandlerRootView>
-      </GlobalContext.Provider>
+      <GestureHandlerRootView style={{flex:1}}>
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} initialParams={{ examDate: null }} />
+        </Stack>
+      </GestureHandlerRootView>
     </ThemeProvider>
   );
 }

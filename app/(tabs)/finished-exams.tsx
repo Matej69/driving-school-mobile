@@ -7,12 +7,12 @@ import { asyncStorage } from '../async-storage/async-storage';
 import { FinishedExam, FinishedExamStorage, Question } from '../types/types';
 import { FinishedExamItem } from '../components/FinishedExamItem';
 import { storageToFinishedExams } from '../mapper/mapper';
-import { GlobalContext } from '../context/GlobalContext';
 import { CardContainer } from '../components/CardContainer';
 import { QuestionCard } from '../components/QuestionCard';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { useLocalSearchParams } from "expo-router";
 import { useTabNavigation } from '../hooks/useTabNavigation';
+import useStore from '../store/store';
 
 
 
@@ -20,7 +20,7 @@ export default function FinishedExams() {
   const params = useLocalSearchParams<{examDate: string}>();
   const [exams, setExams] = useState<FinishedExam[]>([])
   const [selectedExam, setSelectedExam] = useState<FinishedExam>()
-  const { allQuestions } = useContext(GlobalContext);
+  const { allQuestions } = useStore()
   const { resetParams } = useTabNavigation()
 
   useEffect(() => {
@@ -45,8 +45,6 @@ export default function FinishedExams() {
       setSelectedExam(exam)
   }, [exams])
 
-
-  if(exams )
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
