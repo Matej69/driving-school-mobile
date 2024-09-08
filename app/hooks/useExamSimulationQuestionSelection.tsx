@@ -1,6 +1,7 @@
 import { useState } from "react"
 import colors from "../colors"
 import { Question } from "../types/types"
+import { isQuestionAnswered } from "../utils/utils"
 
 type Props = {
     questions: Question[],
@@ -10,10 +11,9 @@ type Props = {
 const getItemsStyles = (questions: Question[], currentlySelectedQuestionId: number) => {
     const styles: {id: number, style: {backgroundColor: string}}[] = []
     questions.forEach(q => {
-        const nonAnswered = !q.answers.some(q => q.checked)
         if(currentlySelectedQuestionId === q.id)
             styles.push({ id: q.id, style: {backgroundColor: colors.base} })
-        else if(nonAnswered)
+        else if(!isQuestionAnswered(q))
             styles.push({ id: q.id, style: {backgroundColor: colors.inactive} })
         else
             styles.push({ id: q.id, style: {backgroundColor: '#535156'} })

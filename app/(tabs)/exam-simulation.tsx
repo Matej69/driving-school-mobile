@@ -13,7 +13,7 @@ import { BottomDrawer } from '../components/BottomDrawer';
 import { QuestionsGridSelection } from '../components/QuestionsGridSelection';
 import { useExamSimulationQuestionSelection } from '../hooks/useExamSimulationQuestionSelection';
 import { util } from 'prettier';
-import { deepCopy, updateQuestionsWrongAnswers } from '../utils/utils';
+import { deepCopy, isQuestionAnswered, updateQuestionsWrongAnswers } from '../utils/utils';
 import { DsModal } from '../components/Modal';
 import { useTabNavigation } from '../hooks/useTabNavigation';
 import useStore from '../store/store';
@@ -58,7 +58,7 @@ export default function ExamSimulationScreen() {
   const [finishExamModalActive, setFinishExamModalActive] = useState(false)
   
   const getAnswerInteractivityType = (): AnswerInteractivityType => {
-    return examQuestions[currentPage - 1].answers.some(a => a.checked) ? 'ANSWERED_AND_DISABLED' : 'CAN_BE_ANSWERED'
+    return isQuestionAnswered(examQuestions[currentPage - 1]) ? 'ANSWERED_AND_DISABLED' : 'CAN_BE_ANSWERED'
   }
 
   const [answerInteractivityType, setAnswerInteractivityType] = useState<AnswerInteractivityType>(getAnswerInteractivityType())

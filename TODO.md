@@ -1,4 +1,4 @@
-[]  - change left border to red/green for finished exam view
+[x]  - change left border to red/green for finished exam view
 []  - first aid
 []  - special component for answers manual input
 
