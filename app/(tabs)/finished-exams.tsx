@@ -1,6 +1,6 @@
 
 import React, { useCallback, useContext, useEffect, useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { FlatList, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import colors from '../colors';
 import { asyncStorage } from '../async-storage/async-storage';
@@ -48,25 +48,36 @@ export default function FinishedExams() {
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
-        <ScrollView style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}>
-          {
-            selectedExam
-            ?
-            selectedExam?.questions.map((question: Question) => 
-              <View key={`exam-question-card-${question.id}`} style={{ paddingVertical: 4 }}>
-                <CardContainer color='base'>
-                  <QuestionCard question={question} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
-                </CardContainer>
-              </View>
-            )
-            :
-            exams.map((el) =>
-              <TouchableOpacity key={el.date.toString()} onPress={() => onSelectExam(el.date)} style={{ paddingVertical: 4 }}>
-                <FinishedExamItem date={el.date} questions={el.questions}></FinishedExamItem>
-              </TouchableOpacity>
-            )
+      {
+        selectedExam &&
+        <FlatList<Question> 
+          initialNumToRender={3}
+          style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
+          data={selectedExam?.questions} 
+          renderItem={el =>
+            <View key={`exam-question-card-${el.item.id}`} style={{ paddingVertical: 4 }}>
+              <CardContainer color='base'>
+                <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
+              </CardContainer>
+            </View>
           }
-        </ScrollView>
+          keyExtractor={el => `exam-question-card-${el.id}`} 
+        />
+      }
+      {
+        !selectedExam &&
+        <FlatList<FinishedExam> 
+          initialNumToRender={10}
+          style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
+          data={exams} 
+          renderItem={el =>
+            <TouchableOpacity onPress={() => onSelectExam(el.item.date)} style={{ paddingVertical: 4 }}>
+              <FinishedExamItem date={el.item.date} questions={el.item.questions}></FinishedExamItem>
+            </TouchableOpacity>
+          }
+          keyExtractor={el => el.date.toString()} 
+        />
+      }
     </SafeAreaView>
   );
 }

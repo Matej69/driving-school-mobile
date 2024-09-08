@@ -1,4 +1,4 @@
-import { ScrollView, Text, TextInput, TextInputFocusEventData, Touchable, TouchableOpacity } from 'react-native';
+import { FlatList, ScrollView, Text, TextInput, TextInputFocusEventData, Touchable, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { CardContainer } from '../components/CardContainer';
 import { View } from 'react-native-animatable';
@@ -79,18 +79,20 @@ export default function Questions() {
           </View>
           <PaginationComponent></PaginationComponent>
         </View>
-          <ScrollView style={{ backgroundColor: colors.rootBackground, padding: 4 }}>
-            {
-              displayedQuestions.map((question, i) => (
-                <View key={`question-card-${question.id}`}>
-                  <CardContainer color='base'>
-                    <QuestionCard question={question} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
-                  </CardContainer>
-                  { i != filteredQuestions.length - 1 && <View className='mt-2' /> }
-                </View>
-              ))
-            }
-          </ScrollView>
+        <FlatList<Question> 
+          initialNumToRender={3}
+          style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
+          data={displayedQuestions} 
+          renderItem={el =>
+            <View key={`question-card-${el.item.id}`}>
+              <CardContainer color='base'>
+                <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
+              </CardContainer>
+              <View className='mt-2' />
+            </View>   
+          }
+          keyExtractor={el => `question-card-${el.id}`} 
+        />
     </SafeAreaView>
   );
 }
