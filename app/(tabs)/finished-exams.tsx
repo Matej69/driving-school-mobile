@@ -13,12 +13,14 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import { useLocalSearchParams } from "expo-router";
 import { useTabNavigation } from '../hooks/useTabNavigation';
 import useStore from '../store/store';
+import { Skeleton } from '../components/skeleton';
+import { SkeletonList } from '../components/SkeletonList';
 
 
 
 export default function FinishedExams() {
   const params = useLocalSearchParams<{examDate: string}>();
-  const [exams, setExams] = useState<FinishedExam[]>([])
+  const [exams, setExams] = useState<FinishedExam[]>()
   const [selectedExam, setSelectedExam] = useState<FinishedExam>()
   const { allQuestions } = useStore()
   const { resetParams } = useTabNavigation()
@@ -40,7 +42,7 @@ export default function FinishedExams() {
   }, [])
 
   const onSelectExam = useCallback((key: Date) => {
-    const exam = exams.find(e => e.date === key)
+    const exam = exams?.find(e => e.date === key)
     if(exam)
       setSelectedExam(exam)
   }, [exams])
@@ -48,6 +50,10 @@ export default function FinishedExams() {
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
+      {
+        !exams &&
+        <SkeletonList itemsNumber={10}/>
+      }
       {
         selectedExam &&
         <FlatList<Question> 
