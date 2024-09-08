@@ -43,3 +43,6 @@ export const updateQuestionsWrongAnswers = (allQuestions: Question[], answeredQu
     })
     return allQuestions
 }
+
+export const isQuestionAnsweredCorrectly = (question: Question) => question.answers.every(a => a.checked === a.correct)
+export const isQuestionAnswered = (question: Question) => question.answers.some(a => a.checked)

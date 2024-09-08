@@ -15,6 +15,7 @@ import { useTabNavigation } from '../hooks/useTabNavigation';
 import useStore from '../store/store';
 import { Skeleton } from '../components/skeleton';
 import { SkeletonList } from '../components/SkeletonList';
+import { isQuestionAnsweredCorrectly } from '../utils/utils';
 
 
 
@@ -62,7 +63,7 @@ export default function FinishedExams() {
           data={selectedExam?.questions} 
           renderItem={el =>
             <View key={`exam-question-card-${el.item.id}`} style={{ paddingVertical: 4 }}>
-              <CardContainer color='base'>
+              <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
                 <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
               </CardContainer>
             </View>
