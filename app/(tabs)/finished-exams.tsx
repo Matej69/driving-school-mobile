@@ -55,7 +55,7 @@ export default function FinishedExams() {
             selectedExam?.questions.map((question: Question) => 
               <View key={`exam-question-card-${question.id}`} style={{ paddingVertical: 4 }}>
                 <CardContainer color='base'>
-                  <QuestionCard question={question} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'}/>
+                  <QuestionCard question={question} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
                 </CardContainer>
               </View>
             )

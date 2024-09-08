@@ -12,6 +12,7 @@ type QuestionCardProps = {
     answerInteractivityType: AnswerInteractivityType,
     canExpand?: boolean,
     incorrectlyAnswered?: number,
+    incorrectlyAnsweredShown?: boolean,
     onAnswerChange?: (q: Question) => void
 }
 
@@ -71,7 +72,8 @@ export const QuestionCard = (p: QuestionCardProps) => {
                 ))
             }
             {
-                !!question.incorrectlyAnswered && <Text className="text-xs mt-3" style={{ color: colors.failure }}>{question.incorrectlyAnswered} puta pogrešno odgovoreno</Text>
+                p.incorrectlyAnsweredShown && !!question.incorrectlyAnswered && 
+                <Text className="text-xs mt-3" style={{ color: colors.failure }}>{question.incorrectlyAnswered} puta pogrešno odgovoreno</Text>
             }
         </View>
     )
