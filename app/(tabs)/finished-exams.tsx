@@ -13,18 +13,27 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import { useLocalSearchParams } from "expo-router";
 import { useTabNavigation } from '../hooks/useTabNavigation';
 import useStore from '../store/store';
-import { Skeleton } from '../components/skeleton';
 import { SkeletonList } from '../components/SkeletonList';
 import { isQuestionAnsweredCorrectly } from '../utils/utils';
+import { useBackHandler } from '../hooks/useBackHandler';
 
-
+type ScreenType = 'finished-exam-list' | 'finished-exam-single'
 
 export default function FinishedExams() {
   const params = useLocalSearchParams<{examDate: string}>();
+  const { resetParams } = useTabNavigation()
+  const [screenType, setScreenType] = useState<ScreenType | null>(null)
   const [exams, setExams] = useState<FinishedExam[]>()
   const [selectedExam, setSelectedExam] = useState<FinishedExam>()
   const { allQuestions } = useStore()
-  const { resetParams } = useTabNavigation()
+  // Override back button for when we are viewing single exam so it returns to list of exams
+  useBackHandler(() => {
+    if(screenType == 'finished-exam-single') {
+      setScreenType('finished-exam-list')
+      return true
+    }
+    return false
+  })
 
   useEffect(() => {
     (async() => {
@@ -37,26 +46,33 @@ export default function FinishedExams() {
         const examDateAsDate = new Date(params.examDate)
         const targetExam = exams.find(e => e.date.getTime() === examDateAsDate.getTime())
         setSelectedExam(targetExam)
-        resetParams()
+        setScreenType('finished-exam-single')
       }
+      else {
+        setScreenType('finished-exam-list')
+      }
+      // Reset params required so exam list is always loaded whenever we move from another tab to finished exams(date in params doesn't reset automaticaly)
+      resetParams()
     })()
   }, [])
 
   const onSelectExam = useCallback((key: Date) => {
     const exam = exams?.find(e => e.date === key)
-    if(exam)
+    if(exam) {
       setSelectedExam(exam)
+      setScreenType('finished-exam-single')
+    }
   }, [exams])
 
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
       {
-        !exams &&
+        !screenType &&
         <SkeletonList itemsNumber={10}/>
       }
       {
-        selectedExam &&
+        screenType === 'finished-exam-single' &&
         <FlatList<Question> 
           initialNumToRender={3}
           style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
@@ -72,7 +88,7 @@ export default function FinishedExams() {
         />
       }
       {
-        !selectedExam &&
+        screenType === 'finished-exam-list' &&
         <FlatList<FinishedExam> 
           initialNumToRender={10}
           style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}

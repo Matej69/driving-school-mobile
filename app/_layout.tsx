@@ -60,7 +60,7 @@ function RootLayoutNav(p: {questions: Question[]}) {
     <ThemeProvider value={DefaultTheme}>
       <GestureHandlerRootView style={{flex:1}}>
         <Stack>
-          <Stack.Screen name="(tabs)" options={{ headerShown: false }} initialParams={{ examDate: null }} />
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }}/>
         </Stack>
       </GestureHandlerRootView>
     </ThemeProvider>

@@ -6,7 +6,6 @@ import { useNavigation, router } from "expo-router";
 export const useTabNavigation = () => {
     const navItemRefs: { current: any[] } = useRef([]);
     const { prevActiveTab, activeTab, setActiveTab } = useStore()
-    const navigation = useNavigation();
 
     const iconAnimation = useMemo(() => ({
         scaleMin : 0.7,
@@ -30,16 +29,18 @@ export const useTabNavigation = () => {
         })
       }, [activeTab])
 
-      const navigate = (routeKey: NavigationRoutesKeys, params?: Record<ParamType, string>) => {
+      const navigate = (routeKey: NavigationRoutesKeys, params?: Record<ParamType, string | undefined>) => {
         setActiveTab(routeKey)
         router.push({
-            pathname: 'finished-exams',
-            params
+            pathname: routeKey,
+            params: {...params}
           });
       }
 
+      // Reseting values must be manual and cant be empty object since it is doing some kind of emrge under the hood and would be ignored
+      // It also can not be `undefined` since it will transform it to "undefined" string 
       const resetParams = () => {
-        router.setParams<ParamType>({ examDate: null });
+        router.setParams<ParamType>({ examDate: '' });
       }
 
     return { navItemRefs, activeTab, setActiveTab, navigate, resetParams }
