@@ -2,431 +2,425 @@
     {
         "question": "Što je prva pomoć?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Prva pomoć je skup postupaka kojima se pomaže ozlijeđenoj ili iznenada oboljeloj osobi na mjestu događaja, prije dolaska hitne medicinske službe ili drugih kvalificiranih zdravstvenih djelatnika."
-          }
+            {
+                "type": "paragraph",
+                "text": "Prva pomoć je skup postupaka kojima se pomaže ozlijeđenoj ili iznenada oboljeloj osobi na mjestu događaja, prije dolaska hitne medicinske službe ili drugih kvalificiranih zdravstvenih djelatnika."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Kako se kod osobe provjerava stanje svijesti?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Stanje svijesti se provjerava tako da osobi nježno protresemo ramena i uputimo glasno i razgovijetno pitanje, npr.: „Čujete li me?“, „Što se dogodilo?“"
-          }
+            {
+                "type": "paragraph",
+                "text": "Stanje svijesti se provjerava tako da osobi nježno protresemo ramena i uputimo glasno i razgovijetno pitanje, npr.: „Čujete li me?“, „Što se dogodilo?“"
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Kada i kako skidati zaštitnu kacigu?",
         "content": [
-          {
-            "type": "guidelines",
-            "title": "Zaštitna kaciga se u pravilu ne skida, a skida se samo:",
-            "items": [
-              "Ako je unesrećena osoba bez svijesti, a s kacigom na glavi ne može joj se osloboditi dišni put",
-              "Ako je unesrećena osoba bez svijesti i povraća",
-              "Ako unesrećena osoba ne diše pa treba započeti umjetno disanje",
-              "Ako su prisutne teške ozljede glave, osobito kad se pojavi krvarenje"
-            ]
-          },
-          {
-            "type": "procedure",
-            "title": "Postupak skidanja zaštitne kacige:",
-            "steps": [
-              "Prva osoba kleči iza glave i s obje ruke obuhvaća kacigu postrance u razini donje čeljusti, održavajući glavu i vrat ozlijeđene osobe u neutralnom položaju. Druga osoba za to vrijeme kleči postrance od glave i otvara zaštitno staklo (vizir), a zatim otvara ili reže remenčić kacige ispod brade. Prva osoba i dalje održava glavu u neutralnom položaju.",
-              "Druga osoba osigurava neutralan položaj glave, pridržavajući jednom rukom vrat s donje strane, uvlačeći prste ispod ruba kacige, a istodobno drugom rukom drži donju čeljust.",
-              "Kad su glava i vrat tako osigurani, prva osoba širi kacigu koliko god je to moguće, diže je preko brade i nosa pa, polako povlačeći prema sebi, kacigu skida s glave i odlaže je postrance.",
-              "Kad je kaciga skinuta, prva osoba ponovno prihvaća glavu i održava je u neutralnom položaju, tako da polaže ruke preko ušiju ozlijeđene osobe, a kažiprstima i palcima drži donju čeljust, sve dok druga osoba ne izradi ovratnik."
-            ]
-          }
+            {
+                "type": "list",
+                "title": "Zaštitna kaciga se u pravilu ne skida, a skida se samo",
+                "items": [
+                    "Ako je unesrećena osoba bez svijesti, a s kacigom na glavi ne može joj se osloboditi dišni put",
+                    "Ako je unesrećena osoba bez svijesti i povraća",
+                    "Ako unesrećena osoba ne diše pa treba započeti umjetno disanje",
+                    "Ako su prisutne teške ozljede glave, osobito kad se pojavi krvarenje"
+                ]
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak skidanja zaštitne kacige",
+                "steps": [
+                    "Prva osoba kleči iza glave i s obje ruke obuhvaća kacigu postrance u razini donje čeljusti, održavajući glavu i vrat ozlijeđene osobe u neutralnom položaju. Druga osoba za to vrijeme kleči postrance od glave i otvara zaštitno staklo (vizir), a zatim otvara ili reže remenčić kacige ispod brade. Prva osoba i dalje održava glavu u neutralnom položaju.",
+                    "Druga osoba osigurava neutralan položaj glave, pridržavajući jednom rukom vrat s donje strane, uvlačeći prste ispod ruba kacige, a istodobno drugom rukom drži donju čeljust.",
+                    "Kad su glava i vrat tako osigurani, prva osoba širi kacigu koliko god je to moguće, diže je preko brade i nosa pa, polako povlačeći prema sebi, kacigu skida s glave i odlaže je postrance.",
+                    "Kad je kaciga skinuta, prva osoba ponovno prihvaća glavu i održava je u neutralnom položaju, tako da polaže ruke preko ušiju ozlijeđene osobe, a kažiprstima i palcima drži donju čeljust, sve dok druga osoba ne izradi ovratnik."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Koji je postupak u slučaju prometne nesreće?",
         "content": [
-          {
-            "type": "guidelines",
-            "title": "Postoje četiri koraka koja na mjestu nesreće uvijek treba poduzeti:",
-            "items": [
-              "pobrinite se za sigurnost",
-              "procijenite stanje unesrećene osobe",
-              "pozovite pomoć",
-              "pružite potrebnu prvu pomoć"
-            ]
-          }
+            {
+                "type": "list",
+                "title": "Postoje četiri koraka koja na mjestu nesreće uvijek treba poduzeti",
+                "items": [
+                    "pobrinite se za sigurnost",
+                    "procijenite stanje unesrećene osobe",
+                    "pozovite pomoć",
+                    "pružite potrebnu prvu pomoć"
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Opišite postupak prve pomoći kod osobe bez svijesti koja diše.",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Osobu treba staviti u bočni položaj kako bi joj održali prohodnost dišnog puta, i omogućili joj nesmetano disanje i spriječili gušenje."
-          },
-          {
-            "type": "procedure",
-            "title": "Postupak stavljanja osobe u bočni položaj:",
-            "steps": [
-              "Kleknemo sa strane osobe bez svijesti, čije noge moraju biti ispružene. Ruka koja je uz vaše koljeno mora biti savijena pod pravim kutom u laktu u odnosu na tijelo žrtve, a dlan te ruke okrenut prema gore.",
-              "Ruku osobe bez svijesti koja je na suprotnoj strani povučemo na prsni koš, pri čemu je šaka s dlanom okrenuta prema dolje (na prsni koš).",
-              "Prihvatimo čvrsto donji dio bedra iznad koljena i drugom rukom čvrsto uhvatimo rame i povlačimo nogu prema sebi te onesviještenog okrenemo na bok.",
-              "Donja noga ostaje ispružena, a gornju nogu namještamo da bude pod pravim kutom u kuku i koljenu. Ruku stavljamo ispod obraza kako bi podržavala glavu koja je pomaknuta unazad."
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Osobu treba staviti u bočni položaj kako bi joj održali prohodnost dišnog puta, i omogućili joj nesmetano disanje i spriječili gušenje."
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak stavljanja osobe u bočni položaj",
+                "steps": [
+                    "Kleknemo sa strane osobe bez svijesti, čije noge moraju biti ispružene. Ruka koja je uz vaše koljeno mora biti savijena pod pravim kutom u laktu u odnosu na tijelo žrtve, a dlan te ruke okrenut prema gore.",
+                    "Ruku osobe bez svijesti koja je na suprotnoj strani povučemo na prsni koš, pri čemu je šaka s dlanom okrenuta prema dolje (na prsni koš).",
+                    "Prihvatimo čvrsto donji dio bedra iznad koljena i drugom rukom čvrsto uhvatimo rame i povlačimo nogu prema sebi te onesviještenog okrenemo na bok.",
+                    "Donja noga ostaje ispružena, a gornju nogu namještamo da bude pod pravim kutom u kuku i koljenu. Ruku stavljamo ispod obraza kako bi podržavala glavu koja je pomaknuta unazad."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi postupak vanjske masaže srca.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak vanjske masaže srca:",
-            "steps": [
-              "Kleknite pokraj prsnog koša unesrećene osobe.",
-              "Stavite korijen (meki jastučasti dio) dlana jedne ruke na sredinu prsne kosti unesrećene osobe. Mjesto pritiska možete odrediti i preko odjeće, ne gubite vrijeme skidanjem košulje, veste ili drugih odjevnih predmeta.",
-              "Na tu ruku stavite korijen dlana druge ruke. Isprepletite prste obje ruke. Pazite da vam prsi ne budu odignuti od površine prsnog koša.",
-              "Pazite da vam ramena budu postavljena okomito točno u ravnini iznad prsne kosti unesrećene osobe. S ispruženim rukama utisnite prsni koš 5 do 6 cm. Laktovi moraju biti ispruženi, a u trenutku utiskivanja ramena se moraju nalaziti iznad prsne kosti. U takvom položaju možete iskoristiti težinu vlastitog tijela za pritisak koji mora biti kratkotrajan i snažan. Snagu pritiska treba prilagoditi tjelesnoj građi i uzrastu unesrećene osobe.",
-              "Nakon svakog pritiska pustite da se prsa potpuno izravnaju. Tako će se krv ponovno vratiti u srce. Ne odvajajte ruke od prsne kosti.",
-              "Pritisak mora trajati jednako koliko i otpuštanje pritiska.",
-              "Izvršite 30 pritisaka brzinom od 100 do najviše 120 pritisaka u minuti."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak vanjske masaže srca",
+                "steps": [
+                    "Kleknite pokraj prsnog koša unesrećene osobe.",
+                    "Stavite korijen (meki jastučasti dio) dlana jedne ruke na sredinu prsne kosti unesrećene osobe. Mjesto pritiska možete odrediti i preko odjeće, ne gubite vrijeme skidanjem košulje, veste ili drugih odjevnih predmeta.",
+                    "Na tu ruku stavite korijen dlana druge ruke. Isprepletite prste obje ruke. Pazite da vam prsi ne budu odignuti od površine prsnog koša.",
+                    "Pazite da vam ramena budu postavljena okomito točno u ravnini iznad prsne kosti unesrećene osobe. S ispruženim rukama utisnite prsni koš 5 do 6 cm. Laktovi moraju biti ispruženi, a u trenutku utiskivanja ramena se moraju nalaziti iznad prsne kosti. U takvom položaju možete iskoristiti težinu vlastitog tijela za pritisak koji mora biti kratkotrajan i snažan. Snagu pritiska treba prilagoditi tjelesnoj građi i uzrastu unesrećene osobe.",
+                    "Nakon svakog pritiska pustite da se prsa potpuno izravnaju. Tako će se krv ponovno vratiti u srce. Ne odvajajte ruke od prsne kosti.",
+                    "Pritisak mora trajati jednako koliko i otpuštanje pritiska.",
+                    "Izvršite 30 pritisaka brzinom od 100 do najviše 120 pritisaka u minuti."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Kada će se pristupiti drugom (sekundarnom) pregledu unesrećene osobe i što se njime mora procijeniti?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Sekundarnom pregledu ćemo pristupiti tek nakon što smo primijenili neodgodive postupke prve pomoći ili nakon što smo zbrinuli najteže ozljede na unesrećenoj osobi."
-          },
-          {
-            "type": "paragraph",
-            "text": "Pregled obavite u slijedu od glave prema nogama. Pogledom i opipom potražite sve znakove ozljeda na unesrećenoj osobi. Pitajte osobu za subjektivne znakove kao što su: bol, mučnina, vrtoglavica, opći osjećaj slabosti, trnci, osjećaj žeđi, osjećaj hladnoće, itd. Prilikom pregleda prikupite što više podataka o unesrećenoj osobi: boluje li od koje bolesti, uzima li kakve lijekove, ima li alergija i kad je zadnji put jela i pila."
-          }
+            {
+                "type": "paragraph",
+                "text": "Sekundarnom pregledu ćemo pristupiti tek nakon što smo primijenili neodgodive postupke prve pomoći ili nakon što smo zbrinuli najteže ozljede na unesrećenoj osobi."
+            },
+            {
+                "type": "paragraph",
+                "text": "Pregled obavite u slijedu od glave prema nogama. Pogledom i opipom potražite sve znakove ozljeda na unesrećenoj osobi. Pitajte osobu za subjektivne znakove kao što su: bol, mučnina, vrtoglavica, opći osjećaj slabosti, trnci, osjećaj žeđi, osjećaj hladnoće, itd. Prilikom pregleda prikupite što više podataka o unesrećenoj osobi: boluje li od koje bolesti, uzima li kakve lijekove, ima li alergija i kad je zadnji put jela i pila."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Opišite postupak prve pomoći kod osobe bez svijesti koja ne diše (postupak oživljavanja).",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak oživljavanja:",
-            "steps": [
-              "Kad ustanovite da unesrećena osoba bez svijesti ne diše normalno, odmah pozovite hitnu medicinsku pomoć ili zamolite nekoga drugoga u blizini da to učini.",
-              "Započnite oživljavanje s vanjskom masažom srca. Izvršite 30 pritisaka brzinom od 100 do najviše 120 pritisaka u minuti.",
-              "Započnite s umjetnim disanjem, primijenite dva upuha zraka. Ne zaboravite koristiti zaštitnu foliju za davanje umjetnog disanja! Prekrijte usta unesrećene osobe zaštitnom folijom za davanje umjetnog disanja.",
-              "Nastavite s vanjskom masažom srca i umjetnim disanjem u omjeru 30:2. Nemojte prekidati oživljavanje radi provjere životnih funkcija.",
-              "Nastavite oživljavanje sve dok ne dođe kvalificirana osoba i preuzme oživljavanje ili dok se ne premorite.",
-              "Ako u bilo kojem trenutku unesrećena osoba započne disati, prekinite oživljavanje. Odmah ponovno provjerite svijest, a zatim disanje. Ako je unesrećena osoba i dalje bez svijesti, a diše, postavite je u bočni položaj."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak oživljavanja",
+                "steps": [
+                    "Kad ustanovite da unesrećena osoba bez svijesti ne diše normalno, odmah pozovite hitnu medicinsku pomoć ili zamolite nekoga drugoga u blizini da to učini.",
+                    "Započnite oživljavanje s vanjskom masažom srca. Izvršite 30 pritisaka brzinom od 100 do najviše 120 pritisaka u minuti.",
+                    "Započnite s umjetnim disanjem, primijenite dva upuha zraka. Ne zaboravite koristiti zaštitnu foliju za davanje umjetnog disanja! Prekrijte usta unesrećene osobe zaštitnom folijom za davanje umjetnog disanja.",
+                    "Nastavite s vanjskom masažom srca i umjetnim disanjem u omjeru 30:2. Nemojte prekidati oživljavanje radi provjere životnih funkcija.",
+                    "Nastavite oživljavanje sve dok ne dođe kvalificirana osoba i preuzme oživljavanje ili dok se ne premorite.",
+                    "Ako u bilo kojem trenutku unesrećena osoba započne disati, prekinite oživljavanje. Odmah ponovno provjerite svijest, a zatim disanje. Ako je unesrećena osoba i dalje bez svijesti, a diše, postavite je u bočni položaj."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite zaustavljanje krvarenja kompresivnim zavojem.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak zaustavljanja krvarenja kompresivnim zavojem:",
-            "steps": [
-              "Položiti sterilnu gazu, jastučić prvog zavoja ili čistu tkaninu na ranu.",
-              "Na sterilnu gazu postaviti kompresivni predmet preko kojeg će se vršiti kompresija na ozljeđenu krvnu žilu. U to svrhu koristiti smotani zavoj, ili neko priručno sredstvo npr. drvo.",
-              "Čvrsto omotati zavoj oko kompresivnog predmeta i na taj način preko njega izvršite pritisak na prekinutu krvnu žilu u rani.",
-              "Zavezati krajeve zavoja jedan za drugi. Čvor napravite iznad rane da biste pojačali pritisak."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak zaustavljanja krvarenja kompresivnim zavojem",
+                "steps": [
+                    "Položiti sterilnu gazu, jastučić prvog zavoja ili čistu tkaninu na ranu.",
+                    "Na sterilnu gazu postaviti kompresivni predmet preko kojeg će se vršiti kompresija na ozljeđenu krvnu žilu. U to svrhu koristiti smotani zavoj, ili neko priručno sredstvo npr. drvo.",
+                    "Čvrsto omotati zavoj oko kompresivnog predmeta i na taj način preko njega izvršite pritisak na prekinutu krvnu žilu u rani.",
+                    "Zavezati krajeve zavoja jedan za drugi. Čvor napravite iznad rane da biste pojačali pritisak."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Navedite priručna sredstva za pružanje prve pomoći.",
         "content": [
-          {
-            "type": "list",
-            "title": "Priručno sredstvo:",
-            "items": [
-              "osobne zaštite: čiste plastične vrećice ili bilo kakve plastične rukavice",
-              "imobilizacije: novine, daščice, prometni trokut, odjeća",
-              "previjanja i zaustavljanja krvarenja: bilo koja čista tkanina i odjevni predmeti, itd."
-            ]
-          }
+            {
+                "type": "list",
+                "title": "Priručno sredstvo",
+                "items": [
+                    "osobne zaštite: čiste plastične vrećice ili bilo kakve plastične rukavice",
+                    "imobilizacije: novine, daščice, prometni trokut, odjeća",
+                    "previjanja i zaustavljanja krvarenja: bilo koja čista tkanina i odjevni predmeti, itd."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Objasnite važnost prepoznavanja i pružanja prve pomoći kod sumnje na ozljedu kralježnice.",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Važnost je u tome da se spriječi daljnje ozljeđivanje kralježnice moždine."
-          }
+            {
+                "type": "paragraph",
+                "text": "Važnost je u tome da se spriječi daljnje ozljeđivanje kralježnice moždine."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi zavoj šake ili stopala trokutastom maramom.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak izvođenja zavoja šake ili stopala trokutastom maramom:",
-            "steps": [
-              "Postaviti trokut maramu s vrhom od tijela.",
-              "Šaku ili stopalo staviti na trokut maramu.",
-              "Zabaciti vrh trokut marame prema nama i rubove vrtjeti tj. zamotati oko šake ili stopala."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak izvođenja zavoja šake ili stopala trokutastom maramom",
+                "steps": [
+                    "Postaviti trokut maramu s vrhom od tijela.",
+                    "Šaku ili stopalo staviti na trokut maramu.",
+                    "Zabaciti vrh trokut marame prema nama i rubove vrtjeti tj. zamotati oko šake ili stopala."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pri određivanju prioriteta prilikom pružanja prve pomoći, koje ozljede i stanja se zbrinjavaju prve?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Prvo se zbrinjavaju ozljede i stanja koja ugrožavaju život (prestanak disanja, besvjesno stanje, jako krvarenje, ozljede koje mogu dovesti do šoka i šok)."
-          }
+            {
+                "type": "paragraph",
+                "text": "Prvo se zbrinjavaju ozljede i stanja koja ugrožavaju život (prestanak disanja, besvjesno stanje, jako krvarenje, ozljede koje mogu dovesti do šoka i šok)."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Navedite znakove na temelju kojih ćete posumnjati na ozljedu kralježnice.",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Na ozljedu kralježnice treba posumnjati ako je do ozljeđivanja došlo u prometnoj nesreći, pri padu s visine, u tučnjavi, kod skoka na glavu u vodu, pada teškog predmeta na leđa i slično, pogotovo kad je pritom došlo do teže ozljede glave praćene gubitkom svijesti. U pravilu, svaku osobu u besvjesnom stanju kod koje se ozljede nastale na opisani način zbrinjavamo kao da se radi o ozljedi kralježnice."
-          },
-          {
-            "type": "list",
-            "title": "Znakovi:",
-            "items": [
-              "bol u vratu i leđima",
-              "rane i nepravilnosti u području leđa",
-              "nemogućnost ili otežano pokretanje ruku ili nogu",
-              "poremećaj osjeta ili osjećanje trnaca i vrućine u ekstremitetima"
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Na ozljedu kralježnice treba posumnjati ako je do ozljeđivanja došlo u prometnoj nesreći, pri padu s visine, u tučnjavi, kod skoka na glavu u vodu, pada teškog predmeta na leđa i slično, pogotovo kad je pritom došlo do teže ozljede glave praćene gubitkom svijesti. U pravilu, svaku osobu u besvjesnom stanju kod koje se ozljede nastale na opisani način zbrinjavamo kao da se radi o ozljedi kralježnice."
+            },
+            {
+                "type": "list",
+                "title": "Znakovi",
+                "items": [
+                    "bol u vratu i leđima",
+                    "rane i nepravilnosti u području leđa",
+                    "nemogućnost ili otežano pokretanje ruku ili nogu",
+                    "poremećaj osjeta ili osjećanje trnaca i vrućine u ekstremitetima"
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi zavoj koljena trokutastom maramom.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak izvođenja zavoja koljena trokutastom maramom:",
-            "steps": [
-              "Postavimo trokut maramu s vrhom prema nama.",
-              "Rubove provučemo ispod noge i vežemo čvor iznad koljena.",
-              "Vrh marame presavijemo prema dolje te ga zalijepimo."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak izvođenja zavoja koljena trokutastom maramom",
+                "steps": [
+                    "Postavimo trokut maramu s vrhom prema nama.",
+                    "Rubove provučemo ispod noge i vežemo čvor iznad koljena.",
+                    "Vrh marame presavijemo prema dolje te ga zalijepimo."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Kako se na siguran način uklanja odjeća i obuća s unesrećene osobe?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Odjeću, obuću ili zaštitna sredstva ćete ukloniti s ozlijeđene osobe pažljivo i bez suvišnog pomicanja, samo kad sprečavaju primjenu postupaka prve pomoći. Najčešće je dovoljno ukloniti odjeću samo s ozlijeđenog dijela tijela. Kod unesrećene ili naglo oboljele osobe često je potrebno popustiti pritisak tijesno pripijene odjeće."
-          },
-          {
-            "type": "paragraph",
-            "text": "Ako odjeću i obuću nije moguće ukloniti bez pomicanja ili rizika od pogoršanja postojeće ozljede, tada ih uklanjamo pranjem ili rezanjem."
-          },
-          {
-            "type": "paragraph",
-            "text": "Kod ozljeda gornjih ekstremiteta, da biste pravilno skinuli kaput, jaknu, vestu, košulju ili pulover, najprije poduprite ozlijeđenu ruku. Uklanjanje započnite s ramenima i ruke koja nije ozlijeđena, a potom polako povlačeći i s ozlijeđene ruke."
-          },
-          {
-            "type": "paragraph",
-            "text": "Kod ozljeda donjih ekstremiteta, da biste pravilno skinili cipele, čarape i hlače, najprije poduprite ozlijeđenu nogu. Otpustite remen, uzice i slično te pažljivo povlačenjem svucite odjevne predmete."
-          }
+            {
+                "type": "paragraph",
+                "text": "Odjeću, obuću ili zaštitna sredstva ćete ukloniti s ozlijeđene osobe pažljivo i bez suvišnog pomicanja, samo kad sprečavaju primjenu postupaka prve pomoći. Najčešće je dovoljno ukloniti odjeću samo s ozlijeđenog dijela tijela. Kod unesrećene ili naglo oboljele osobe često je potrebno popustiti pritisak tijesno pripijene odjeće."
+            },
+            {
+                "type": "paragraph",
+                "text": "Ako odjeću i obuću nije moguće ukloniti bez pomicanja ili rizika od pogoršanja postojeće ozljede, tada ih uklanjamo pranjem ili rezanjem."
+            },
+            {
+                "type": "paragraph",
+                "text": "Kod ozljeda gornjih ekstremiteta, da biste pravilno skinuli kaput, jaknu, vestu, košulju ili pulover, najprije poduprite ozlijeđenu ruku. Uklanjanje započnite s ramenima i ruke koja nije ozlijeđena, a potom polako povlačeći i s ozlijeđene ruke."
+            },
+            {
+                "type": "paragraph",
+                "text": "Kod ozljeda donjih ekstremiteta, da biste pravilno skinili cipele, čarape i hlače, najprije poduprite ozlijeđenu nogu. Otpustite remen, uzice i slično te pažljivo povlačenjem svucite odjevne predmete."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Opišite postupak prve pomoći kod udara struje ili groma.",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Unesrećenoj osobi možemo prići odmah nakon udara jer je opasnost prošla."
-          },
-          {
-            "type": "list",
-            "title": "Postupak prve pomoći:",
-            "items": [
-              "Ostanite smireni",
-              "Pozovite hitnu medicinsku pomoć",
-              "Kod unesrećene osobe provjerite životne funkcije, a u slučaju potrebe primijenite odmah i uporno oživljavanje",
-              "Voditi brigu o vlastitoj sigurnosti. Isključiti strujni krug."
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Unesrećenoj osobi možemo prići odmah nakon udara jer je opasnost prošla."
+            },
+            {
+                "type": "list",
+                "title": "Postupak prve pomoći",
+                "items": [
+                    "Ostanite smireni",
+                    "Pozovite hitnu medicinsku pomoć",
+                    "Kod unesrećene osobe provjerite životne funkcije, a u slučaju potrebe primijenite odmah i uporno oživljavanje",
+                    "Voditi brigu o vlastitoj sigurnosti. Isključiti strujni krug."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi zavoj lakta trokutastom maramom.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak izvođenja zavoja lakta trokutastom maramom:",
-            "steps": [
-              "Postavimo trokut maramu s vrhom prema nama.",
-              "Rubove provučemo ispod ruke i vežemo čvor iznad lakta.",
-              "Vrh marame presavijemo prema dolje te ga zalijepimo."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak izvođenja zavoja lakta trokutastom maramom",
+                "steps": [
+                    "Postavimo trokut maramu s vrhom prema nama.",
+                    "Rubove provučemo ispod ruke i vežemo čvor iznad lakta.",
+                    "Vrh marame presavijemo prema dolje te ga zalijepimo."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Koji su razlozi za hitno pomicanje unesrećene osobe s mjesta nesreće?",
         "content": [
-          {
-            "type": "list",
-            "title": "Razlozi za hitno pomicanje:",
-            "items": [
-              "ako je osoba u opasnosti koju se ne može kontrolirati ili otkloniti",
-              "ako je upitno možete li primijeniti postupke prve pomoći bez ugrožavanja vlastite sigurnosti",
-              "ako joj prijeti opasnost zbog utjecaja hladnoće ili topline"
-            ]
-          }
+            {
+                "type": "list",
+                "title": "Razlozi za hitno pomicanje",
+                "items": [
+                    "ako je osoba u opasnosti koju se ne može kontrolirati ili otkloniti",
+                    "ako je upitno možete li primijeniti postupke prve pomoći bez ugrožavanja vlastite sigurnosti",
+                    "ako joj prijeti opasnost zbog utjecaja hladnoće ili topline"
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Opišite postupak prve pomoći kod utapanja.",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Voditi brigu o sebi, ne ulaziti u vodi, nego pokušati izvući osobu iz vode."
-          },
-          {
-            "type": "list",
-            "title": "Postupak prve pomoći kod utapanja:",
-            "items": [
-              "Kod unesrećene osobe provjerite životne funkcije, a u slučaju potrebe primijenite odmah i uporno oživljavanje.",
-              "Spriječite daljnji gubitak topline (uklonite mokru odjeću, umotajte unesrećenu osobu u pokrivače) nakon uspješno provedenog oživljavanja ili zamolite nekoga da Vam pri tome pomogne.",
-              "Pozovite hitnu medicinsku službu."
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Voditi brigu o sebi, ne ulaziti u vodi, nego pokušati izvući osobu iz vode."
+            },
+            {
+                "type": "list",
+                "title": "Postupak prve pomoći kod utapanja",
+                "items": [
+                    "Kod unesrećene osobe provjerite životne funkcije, a u slučaju potrebe primijenite odmah i uporno oživljavanje.",
+                    "Spriječite daljnji gubitak topline (uklonite mokru odjeću, umotajte unesrećenu osobu u pokrivače) nakon uspješno provedenog oživljavanja ili zamolite nekoga da Vam pri tome pomogne.",
+                    "Pozovite hitnu medicinsku službu."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi zavoj ramena trokutastom maramom.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak izvođenja zavoja ramena trokutastom maramom:",
-            "steps": [
-              "Prvu maramu postavimo s vrhom prema sebi.",
-              "Vezemo čvor ispod ramena.",
-              "Drugu maramu složimo u usku traku te postavimo na vrh prve i ispod ramena druge ruke te zavežemo čvor.",
-              "Vrh marame presavijemo prema dolje."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak izvođenja zavoja ramena trokutastom maramom",
+                "steps": [
+                    "Prvu maramu postavimo s vrhom prema sebi.",
+                    "Vezemo čvor ispod ramena.",
+                    "Drugu maramu složimo u usku traku te postavimo na vrh prve i ispod ramena druge ruke te zavežemo čvor.",
+                    "Vrh marame presavijemo prema dolje."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Opišite tehniku hitnog pomicanja unesrećene osobe.",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Ako je unesrećena osoba pri svijesti objasnite joj što ćete učiniti i zamolite je za suradnju. Ruke unesrećene osobe položite uz njezino tijelo."
-          },
-          {
-            "type": "procedure",
-            "title": "Tehnika hitnog pomicanja:",
-            "steps": [
-              "Kleknite iza glave unesrećene osobe. Jednu ruku stavite pod njezin vrat, a drugu između njezinih lopatica.",
-              "Pažljivo podignite glavu i ramena unesrećene osobe i približite joj se.",
-              "Podignite leđa unesrećene osobe i stavite je u sjedeći položaj. Pridržavajte joj ramena.",
-              "Stavite obje ruke pod pazuha unesrećene osobe i uhvatite jednu od njezinih podlaktica.",
-              "Jednom rukom uhvatite ručni zglob, a drugom podlakticu unesrećene osobe. Držeći ruku unesrećene osobe zauzmite položaj čučnja. Vaše noge trebaju biti razdvojene, a jedno stopalo izbačeno prema van.",
-              "Kod podizanja unesrećene osobe leđa vam moraju biti ravna, da se kralješnica ne može savijati u stranu. Unesrećenu osobu držite što bliže tijelu i podižite je s obje ruke.",
-              "Ruku unesrećene osobe čvrsto pritisnite na njezina prsa. Iz tog stava započnite podizanje.",
-              "Ustanite poravnatih leđa i podignite unesrećenu osobu. Hodajte natraške i vucite unesrećenu osobu za sobom. Pazite na prepreke koje se mogu nalaziti iza vas."
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Ako je unesrećena osoba pri svijesti objasnite joj što ćete učiniti i zamolite je za suradnju. Ruke unesrećene osobe položite uz njezino tijelo."
+            },
+            {
+                "type": "procedure",
+                "title": "Tehnika hitnog pomicanja",
+                "steps": [
+                    "Kleknite iza glave unesrećene osobe. Jednu ruku stavite pod njezin vrat, a drugu između njezinih lopatica.",
+                    "Pažljivo podignite glavu i ramena unesrećene osobe i približite joj se.",
+                    "Podignite leđa unesrećene osobe i stavite je u sjedeći položaj. Pridržavajte joj ramena.",
+                    "Stavite obje ruke pod pazuha unesrećene osobe i uhvatite jednu od njezinih podlaktica.",
+                    "Jednom rukom uhvatite ručni zglob, a drugom podlakticu unesrećene osobe. Držeći ruku unesrećene osobe zauzmite položaj čučnja. Vaše noge trebaju biti razdvojene, a jedno stopalo izbačeno prema van.",
+                    "Kod podizanja unesrećene osobe leđa vam moraju biti ravna, da se kralješnica ne može savijati u stranu. Unesrećenu osobu držite što bliže tijelu i podižite je s obje ruke.",
+                    "Ruku unesrećene osobe čvrsto pritisnite na njezina prsa. Iz tog stava započnite podizanje.",
+                    "Ustanite poravnatih leđa i podignite unesrećenu osobu. Hodajte natraške i vucite unesrećenu osobu za sobom. Pazite na prepreke koje se mogu nalaziti iza vas."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Koji je postupak prve pomoći kod sunčanice i toplinskog udara?",
         "content": [
-          {
-            "type": "heading",
-            "title": "Sunčanica:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Sklonite osobu sa sunca u hlad i rashlađujte je.",
-              "Stavite oboljeloj osobi hladni oblog (mokru iscijeđenu tkaninu) na glavu.",
-              "Dajte oboljeloj osobi manju količinu vode ili prirodnog voćnog soka.",
-              "Pratite i kad god je moguće bilježite životne funkcije, a u slučaju pogoršanja stanja pozovite hitnu medicinsku službu i primijenite potrebne postupke prve pomoći."
-            ]
-          },
-          {
-            "type": "heading",
-            "title": "Toplinski udar:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Odmah pozovite hitnu medicinsku službu jer je nužno liječenje ovog poremećaja u zdravstvenoj ustanovi.",
-              "Čim prije započnite rashlađivanje tijela unesrećene osobe prskajući je vodom uz istodobno stvaranje umjetnog propuha.",
-              "Pratite i kad god je moguće bilježite životne funkcije, a u slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
-            ]
-          }
+            {
+                "type": "list",
+                "title": "Sunčanica",
+                "items": [
+                    "Sklonite osobu sa sunca u hlad i rashlađujte je.",
+                    "Stavite oboljeloj osobi hladni oblog (mokru iscijeđenu tkaninu) na glavu.",
+                    "Dajte oboljeloj osobi manju količinu vode ili prirodnog voćnog soka.",
+                    "Pratite i kad god je moguće bilježite životne funkcije, a u slučaju pogoršanja stanja pozovite hitnu medicinsku službu i primijenite potrebne postupke prve pomoći."
+                ]
+            },
+            {
+                "type": "list",
+                "title": "Toplinski udar",
+                "items": [
+                    "Odmah pozovite hitnu medicinsku službu jer je nužno liječenje ovog poremećaja u zdravstvenoj ustanovi.",
+                    "Čim prije započnite rashlađivanje tijela unesrećene osobe prskajući je vodom uz istodobno stvaranje umjetnog propuha.",
+                    "Pratite i kad god je moguće bilježite životne funkcije, a u slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi zavoj kuka trokutastom maramom.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak izvođenja zavoja kuka trokutastom maramom:",
-            "steps": [
-              "Prvu maramu postavimo s vrhom prema sebi.",
-              "Vezemo čvor ispod kuka.",
-              "Drugu maramu složimo u usku traku te postavimo na vrh prve i ispod kuka druge noge te zavežemo čvor.",
-              "Vrh marame presavijemo prema dolje."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak izvođenja zavoja kuka trokutastom maramom",
+                "steps": [
+                    "Prvu maramu postavimo s vrhom prema sebi.",
+                    "Vezemo čvor ispod kuka.",
+                    "Drugu maramu složimo u usku traku te postavimo na vrh prve i ispod kuka druge noge te zavežemo čvor.",
+                    "Vrh marame presavijemo prema dolje."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Koji je postupak prve pomoći kod kratkotrajnog gubitka svijesti?",
         "content": [
-          {
-            "type": "list",
-            "items": [
-              "Kleknite kraj osobe i provjerite svijest tako da joj nježno protresete ramena i uputite glasno i razgovijetno pitanje, primjerice 'Čujete li me?', 'Što se dogodilo?'.",
-              "Ako je u trenutku provjere osoba već pri svijesti i reagira na Vaš poziv otvaranjem očiju i odgovaranjem na pitanja, ostavite je u zatečenom ležećem položaju.",
-              "Provjerite ima li ozljeda i zbrinite ih. Ako osoba nema drugih ozljeda, podignite joj noge do visine svojih ramena.",
-              "Ostanite uz osobu, promatrajte joj lice radi znakova oporavka, pratite i kad god je moguće bilježite životne funkcije (svijest, disanje).",
-              "Ako osoba počne povraćati, okrenite je na bok.",
-              "Otpustite sve tijesno pripijene odjevne predmete.",
-              "Pobrinite se da osoba ima dovoljno svježeg zraka; zamolite nekog od prisutnih da Vam pomogne, a ostale da se udalje.",
-              "Svakako pitajte osobu za moguće postojeće bolesti.",
-              "Ako se stanje popravlja, pomozite osobi da se postupno podigne.",
-              "Ako se stanje pogoršava, ako se kratkotrajni gubitak svijesti ponavlja, ako postoji sumnja na probleme sa srcem ili ako besvjesno stanje potraje dulje od dvije minute, pozovite hitnu medicinsku službu, a do njihovog dolaska pružite svu potrebnu prvu pomoć."
-            ]
-          }
+            {
+                "type": "list",
+                "items": [
+                    "Kleknite kraj osobe i provjerite svijest tako da joj nježno protresete ramena i uputite glasno i razgovijetno pitanje, primjerice 'Čujete li me?', 'Što se dogodilo?'.",
+                    "Ako je u trenutku provjere osoba već pri svijesti i reagira na Vaš poziv otvaranjem očiju i odgovaranjem na pitanja, ostavite je u zatečenom ležećem položaju.",
+                    "Provjerite ima li ozljeda i zbrinite ih. Ako osoba nema drugih ozljeda, podignite joj noge do visine svojih ramena.",
+                    "Ostanite uz osobu, promatrajte joj lice radi znakova oporavka, pratite i kad god je moguće bilježite životne funkcije (svijest, disanje).",
+                    "Ako osoba počne povraćati, okrenite je na bok.",
+                    "Otpustite sve tijesno pripijene odjevne predmete.",
+                    "Pobrinite se da osoba ima dovoljno svježeg zraka; zamolite nekog od prisutnih da Vam pomogne, a ostale da se udalje.",
+                    "Svakako pitajte osobu za moguće postojeće bolesti.",
+                    "Ako se stanje popravlja, pomozite osobi da se postupno podigne.",
+                    "Ako se stanje pogoršava, ako se kratkotrajni gubitak svijesti ponavlja, ako postoji sumnja na probleme sa srcem ili ako besvjesno stanje potraje dulje od dvije minute, pozovite hitnu medicinsku službu, a do njihovog dolaska pružite svu potrebnu prvu pomoć."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Kako se pravilno izvodi imobilizacija?",
         "content": [
-          {
-            "type": "list",
-            "items": [
-              "Odaberite sredstva za imobilizaciju (trokutaste marame i priručna sredstva: novine, daščice, deke, odjevne predmete i sl. Drugi neozlijeđeni dio tijela također može poslužiti za imobilizaciju).",
-              "Pridržavajte se pravila koja određuju koje dijelove tijela je potrebno imobilizirati kako bi se osiguralo potpuno mirovanje ozlijeđenog dijela tijela (Imobilizirajte slomljenu kost, susjedne zglobove uz slomljenu kost i dvije trećine kosti, uz svaki od susjednih zglobova. Da biste osigurali potpuno mirovanje ozlijeđenog zgloba imobilizirajte ozlijeđeni zglob i uz njega susjedne kosti).",
-              "Vodite računa o položaju u kojem će se imobilizirati ozlijeđeni dio tijela, ali nikad nemojte na silu ispravljati ozljedom izobličen dio tijela (Nastojte imobilizirati ozlijeđene ekstremitete u 'prirodnom položaju': ruku savijenu u laktu pod pravim kutom, nogu ispruženu, šaku u položaju kao da drži lopticu. Kad to nije moguće, imobilizirajte ozljedu u zatečenom položaju).",
-              "Uvijek provjerite perifernu cirkulaciju nakon učinjene imobilizacije."
-            ]
-          }
+            {
+                "type": "list",
+                "items": [
+                    "Odaberite sredstva za imobilizaciju (trokutaste marame i priručna sredstva: novine, daščice, deke, odjevne predmete i sl. Drugi neozlijeđeni dio tijela također može poslužiti za imobilizaciju).",
+                    "Pridržavajte se pravila koja određuju koje dijelove tijela je potrebno imobilizirati kako bi se osiguralo potpuno mirovanje ozlijeđenog dijela tijela (Imobilizirajte slomljenu kost, susjedne zglobove uz slomljenu kost i dvije trećine kosti, uz svaki od susjednih zglobova. Da biste osigurali potpuno mirovanje ozlijeđenog zgloba imobilizirajte ozlijeđeni zglob i uz njega susjedne kosti).",
+                    "Vodite računa o položaju u kojem će se imobilizirati ozlijeđeni dio tijela, ali nikad nemojte na silu ispravljati ozljedom izobličen dio tijela (Nastojte imobilizirati ozlijeđene ekstremitete u 'prirodnom položaju': ruku savijenu u laktu pod pravim kutom, nogu ispruženu, šaku u položaju kao da drži lopticu. Kad to nije moguće, imobilizirajte ozljedu u zatečenom položaju).",
+                    "Uvijek provjerite perifernu cirkulaciju nakon učinjene imobilizacije."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite postupak prve pomoći kod gušenja stranim tijelom u dišnom putu.",
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak kod djelomično začepljenog dišnog puta:",
+                "title": "Postupak kod djelomično začepljenog dišnog puta",
                 "steps": [
                     "Potičite osobu na kašljanje i ohrabrujte je.",
                     "Nemojte primjenjivati udarce u leđa ili pritiske na trbuh.",
@@ -435,7 +429,7 @@
             },
             {
                 "type": "procedure",
-                "title": "Postupak kod potpuno začepljenog dišnog puta:",
+                "title": "Postupak kod potpuno začepljenog dišnog puta",
                 "steps": [
                     "Udarite osobu 5 puta po leđima.",
                     "Nakon svakog udarca, provjerite je li problem nestao.",
@@ -452,7 +446,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći kod vanjskog krvarenja:",
+                "title": "Postupak prve pomoći kod vanjskog krvarenja",
                 "steps": [
                     "Smirujte i bodrite unesrećenu osobu.",
                     "Postavite unesrećenu osobu u ležeći položaj.",
@@ -468,7 +462,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći kod opeklina:",
+                "title": "Postupak prve pomoći kod opeklina",
                 "steps": [
                     "Kad je odjeća unesrećene osobe u plamenu, ugasite vatru (suhi postupak, pomoću vode, pomoću aparata za gašenje).",
                     "Smirujte i bodrite unesrećenu osobu.",
@@ -490,7 +484,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak imobilizacije noge:",
+                "title": "Postupak imobilizacije noge",
                 "steps": [
                     "Postavimo nešto meko između nogu.",
                     "Napravi osmicu na stopalima trokut maramom.",
@@ -505,7 +499,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak imobilizacije noge:",
+                "title": "Postupak imobilizacije noge",
                 "steps": [
                     "Postavimo nešto meko između nogu.",
                     "Napravi osmicu na stopalima trokut maramom.",
@@ -550,7 +544,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak imobilizacije nadlaktice:",
+                "title": "Postupak imobilizacije nadlaktice",
                 "steps": [
                     "Raširimo trokut maramu.",
                     "Ruka mora biti presavijena u laktu i priljubljena uz tijelo.",
@@ -570,7 +564,7 @@
             },
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći kod unutarnjeg krvarenja:",
+                "title": "Postupak prve pomoći kod unutarnjeg krvarenja",
                 "steps": [
                     "Čim prepoznate ili ako samo posumnjate na unutarnje krvarenje, pozovite hitnu medicinsku službu.",
                     "Ostanite uz unesrećenu osobu do dolaska hitne medicinske službe.",
@@ -588,7 +582,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći za ozljedu kralješnice:",
+                "title": "Postupak prve pomoći za ozljedu kralješnice",
                 "steps": [
                     "Ako unesrećena osoba kod koje sumnjamo na ozljedu kralješnice prestane disati, odmah započnite oživljavanje jer će u protivnom osoba kroz nekoliko minuta umrijeti.",
                     "Oživljavanje primijenite prema standardnom postupku za oživljavanje.",
@@ -618,7 +612,7 @@
             },
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći kod traumatskog šoka:",
+                "title": "Postupak prve pomoći kod traumatskog šoka",
                 "steps": [
                     "Bez odlaganja pozovite hitnu medicinsku službu.",
                     "Smirite i bodrite unesrećenu osobu, savjetujte joj da miruje.",
@@ -636,7 +630,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći kod otrovanja ugljičnim monoksidom:",
+                "title": "Postupak prve pomoći kod otrovanja ugljičnim monoksidom",
                 "steps": [
                     "Uz maksimalan oprez kod izvlačenja, uklonite unesrećenu osobu iz zagađenog prostora, odnosno atmosfere.",
                     "Pozovite hitnu medicinsku službu.",
@@ -650,7 +644,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak za osobu koja krvari iz nosa:",
+                "title": "Postupak za osobu koja krvari iz nosa",
                 "steps": [
                     "Ozlijeđenu osobu postavite u sjedeći položaj s glavom oslonjenom na ruke kojima se osoba oslanja na svoje noge - u 'pozu mislioca'.",
                     "Važno je gornji dio tijela i glavu ozlijeđene osobe nagnuti prema naprijed.",
@@ -677,7 +671,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći kod otrovanja antifrizom:",
+                "title": "Postupak prve pomoći kod otrovanja antifrizom",
                 "steps": [
                     "Pozovite hitnu medicinsku službu.",
                     "Protuotrov je etilni alkohol. Otrovanoj osobi dajte odmah 1/4 decilitra žestokog pića.",
@@ -692,7 +686,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak za zaustavljanje krvarenja kompresivnim zavojem:",
+                "title": "Postupak za zaustavljanje krvarenja kompresivnim zavojem",
                 "steps": [
                     "Položite sterilnu gazu, jastučić prvog zavoja ili najčišću tkaninu na ranu.",
                     "Na sterilnu gazu postavite 'kompresivni predmet' preko kojeg će se vršiti kompresija (pritisak) na ozlijeđenu krvnu žilu. U tu svrhu koristite smotani zavoj, smotak neke druge tkanine ili neko priručno sredstvo, kao na primjer obli kamen ili komadić drveta.",
@@ -735,7 +729,7 @@
             },
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći kod zatvorenog prijeloma:",
+                "title": "Postupak prve pomoći kod zatvorenog prijeloma",
                 "steps": [
                     "Smirite unesrećenu osobu.",
                     "Postavite unesrećenu osobu u ležeći ili sjedeći položaj ovisno o tome na kojem dijelu tijela se nalazi ozljeda.",
@@ -754,7 +748,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak za zaustavljanje krvarenja izravnim pritiskom:",
+                "title": "Postupak za zaustavljanje krvarenja izravnim pritiskom",
                 "steps": [
                     "Komadom sterilne gaze čvrsto pritisnite mjesto krvarenja.",
                     "Ako je rana na ruci ili nozi, podignite ozlijeđeni ud i zadržite ga u povišenom položaju."
@@ -771,7 +765,7 @@
             },
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći kod kemijskih ozljeda:",
+                "title": "Postupak prve pomoći kod kemijskih ozljeda",
                 "steps": [
                     "Smirite i bodrite unesrećenu osobu.",
                     "Uklonite svu odjeću koja je natopljena korozivnim sredstvom.",
@@ -793,7 +787,7 @@
         "content": [
             {
                 "type": "list",
-                "title": "Znakovi ozljede:",
+                "title": "Znakovi ozljede",
                 "items": [
                     "Bol koja se pojačava prilikom pokretanja unesrećene osobe i kod postraničnog pritiska na zdjelične kosti.",
                     "Nemogućnost pokretanja.",
@@ -802,7 +796,7 @@
             },
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći:",
+                "title": "Postupak prve pomoći",
                 "steps": [
                     "Smirite i bodrite unesrećenu osobu.",
                     "Pozovite hitnu medicinsku službu.",
@@ -818,7 +812,7 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak imobilizacije podlaktice:",
+                "title": "Postupak imobilizacije podlaktice",
                 "steps": [
                     "Raširimo trokut maramu. Ruka mora biti presavijena u laktu i priljubljena uz tijelo.",
                     "Najduža strana marame ide u dužini čovjeka. Vrh marame strši van.",
@@ -832,7 +826,7 @@
         "content": [
             {
                 "type": "list",
-                "title": "Rane su otvorene ozljede nastale djelovanjem mehaničke sile koja oštećuje kožu. Postupci prve pomoći uvijek su usmjereni na:",
+                "title": "Rane su otvorene ozljede nastale djelovanjem mehaničke sile koja oštećuje kožu. Postupci prve pomoći uvijek su usmjereni na",
                 "items": [
                     "Zaustavljanje krvarenja.",
                     "Sprečavanje nastanka i širenja infekcije.",
@@ -846,18 +840,18 @@
         "content": [
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći:",
+                "title": "Postupak prve pomoći",
                 "steps": [
                     "Smirite i bodrite unesrećenu osobu.",
                     "Pozovite hitnu medicinsku službu.",
-                    "Poduprite glavu i vrat rukama i održavajte ih u neutralnom položaju.",                   
+                    "Poduprite glavu i vrat rukama i održavajte ih u neutralnom položaju.",
                     "Ne pomičite unesrećenu osobu bez prijeke potrebe. Unesrećena osoba mora mirovati jer se na taj način sprečava nastanak novih ozljeda zbog mogućih pomaka koštanih ulomaka. Čekajte hitnu medicinsku službu uz unesrećenu osobu.",
                     "Zamolite pomagača da provjerava životne funkcije, da zaštiti unesrećenu osobu od štetnog utjecaja hladnoće ili topline i primjeni sve postupke prve pomoći koji su potrebni."
                 ]
             },
             {
                 "type": "procedure",
-                "title": "Tehnika održavanja glave i vrata u neutralnom položaju:",
+                "title": "Tehnika održavanja glave i vrata u neutralnom položaju",
                 "steps": [
                     "Smjestite unesrećenu osobu u ležeći položaj s glavom i nogama u ravnini, priljubljenima uz podlogu.",
                     "Kleknite ili lezite iza glave unesrećene osobe.",
@@ -872,477 +866,478 @@
     {
         "question": "Pokažite postupak imobilizacije ključne kosti.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak imobilizacije ključne kosti:",
-            "steps": [
-              "Uzmite maramu i stavite je oko vrata kao šal. Svaki kraj marame pada s jedne strane.",
-              "Provucite krajeve ispod svakog pazuha i iza na leđima. Stegnite i napravite čvor.",
-              "Ako vam je ostalo dovoljno visećeg ostatka od čvora, uzmite jedan kraj i provucite ispod marame na vratu, dobro stegnete i svezite za drugi ostatak.",
-              "Alternativno, uzmite drugu maramu, složite je duguljasto i povežite okomito kroz maramu na vratu i na leđima. Dobro stegnete kako bi se leđa ispravila i fiksirala."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak imobilizacije ključne kosti",
+                "steps": [
+                    "Uzmite maramu i stavite je oko vrata kao šal. Svaki kraj marame pada s jedne strane.",
+                    "Provucite krajeve ispod svakog pazuha i iza na leđima. Stegnite i napravite čvor.",
+                    "Ako vam je ostalo dovoljno visećeg ostatka od čvora, uzmite jedan kraj i provucite ispod marame na vratu, dobro stegnete i svezite za drugi ostatak.",
+                    "Alternativno, uzmite drugu maramu, složite je duguljasto i povežite okomito kroz maramu na vratu i na leđima. Dobro stegnete kako bi se leđa ispravila i fiksirala."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Što su gnječne ozljede i koje komplikacije mogu nastati?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Ozljede nastale zbog pritiska teških predmeta. Kada je unesrećena osoba dulje vrijeme nagnječena, to može uzrokovati opsežno oštećenje tjelesnih tkiva, posebice mišića."
-          },
-          {
-            "type": "paragraph",
-            "text": "Dvije ozbiljne komplikacije koje mogu nastati su:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "Razvoj šoka kad tekućina iz tkiva prodre u ozlijeđeno tkivo nakon uklanjanja dugotrajnog pritiska.",
-              "Zatajenje bubrega zbog tvari koje se nakupe u oštećenom mišićnom tkivu i uđu u krvotok, što može biti opasno i smrtonosno."
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Ozljede nastale zbog pritiska teških predmeta. Kada je unesrećena osoba dulje vrijeme nagnječena, to može uzrokovati opsežno oštećenje tjelesnih tkiva, posebice mišića."
+            },
+            {
+                "type": "list",
+                "title": "Dvije ozbiljne komplikacije koje mogu nastati su",
+                "items": [
+                    "Razvoj šoka kad tekućina iz tkiva prodre u ozlijeđeno tkivo nakon uklanjanja dugotrajnog pritiska.",
+                    "Zatajenje bubrega zbog tvari koje se nakupe u oštećenom mišićnom tkivu i uđu u krvotok, što može biti opasno i smrtonosno."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Što je kratkotrajni gubitak svijesti i koji je postupak prve pomoći?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Kratkotrajni gubitak svijesti nastaje zbog privremenog smanjenja dotoka krvi u mozak, često kao reakcija na bol, iscrpljenost, nedostatak hrane, emotivni stres, dugotrajno mirno stajanje ili naglo ustajanje."
-          },
-          {
-            "type": "procedure",
-            "title": "Postupak prve pomoći:",
-            "steps": [
-              "Kleknite kraj osobe i provjerite svijest nježno protresajući ramena i postavljajući glasno pitanje, primjerice: 'Čujete li me?' ili 'Što se dogodilo?'",
-              "Ako je osoba već pri svijesti i reagira na vaš poziv, ostavite je u zatečenom ležećem položaju.",
-              "Provjerite ima li ozljede i zbrinite ih. Ako nema drugih ozljeda, podignite noge osobe do visine svojih ramena.",
-              "Ostanite uz osobu i pratite znakove oporavka te bilježite životne funkcije (svijest, disanje).",
-              "Ako osoba počne povraćati, okrenite je na bok.",
-              "Otpustite sve tijesno pripijane odjevne predmete.",
-              "Pobrinite se da osoba ima dovoljno svježeg zraka; zamolite nekog od prisutnih da vam pomogne, a ostale da se udalje.",
-              "Pitajte osobu za moguće postojeće bolesti.",
-              "Ako se stanje popravlja, pomozite osobi da se postupno podigne.",
-              "Ako se stanje pogoršava, ako se kratkotrajni gubitak svijesti ponavlja, ako postoji sumnja na problem sa srcem ili ako besvjesno stanje potraje dulje od dvije minute, pozovite hitnu medicinsku službu i pružite svu potrebnu prvu pomoć do njihovog dolaska."
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Kratkotrajni gubitak svijesti nastaje zbog privremenog smanjenja dotoka krvi u mozak, često kao reakcija na bol, iscrpljenost, nedostatak hrane, emotivni stres, dugotrajno mirno stajanje ili naglo ustajanje."
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak prve pomoći",
+                "steps": [
+                    "Kleknite kraj osobe i provjerite svijest nježno protresajući ramena i postavljajući glasno pitanje, primjerice: 'Čujete li me?' ili 'Što se dogodilo?'",
+                    "Ako je osoba već pri svijesti i reagira na vaš poziv, ostavite je u zatečenom ležećem položaju.",
+                    "Provjerite ima li ozljede i zbrinite ih. Ako nema drugih ozljeda, podignite noge osobe do visine svojih ramena.",
+                    "Ostanite uz osobu i pratite znakove oporavka te bilježite životne funkcije (svijest, disanje).",
+                    "Ako osoba počne povraćati, okrenite je na bok.",
+                    "Otpustite sve tijesno pripijane odjevne predmete.",
+                    "Pobrinite se da osoba ima dovoljno svježeg zraka; zamolite nekog od prisutnih da vam pomogne, a ostale da se udalje.",
+                    "Pitajte osobu za moguće postojeće bolesti.",
+                    "Ako se stanje popravlja, pomozite osobi da se postupno podigne.",
+                    "Ako se stanje pogoršava, ako se kratkotrajni gubitak svijesti ponavlja, ako postoji sumnja na problem sa srcem ili ako besvjesno stanje potraje dulje od dvije minute, pozovite hitnu medicinsku službu i pružite svu potrebnu prvu pomoć do njihovog dolaska."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi zavoj ramena trokutastom maramom.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak izvođenja zavoja ramena trokutastom maramom:",
-            "steps": [
-              "Postavite prvu maramu s vrhom prema sebi i zavežite čvor ispod ramena.",
-              "Složite drugu maramu u usku traku, stavite je na vrh prve marame i ispod ramena druge ruke te zavežite čvor.",
-              "Presavijte vrh marame prema dolje."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak izvođenja zavoja ramena trokutastom maramom",
+                "steps": [
+                    "Postavite prvu maramu s vrhom prema sebi i zavežite čvor ispod ramena.",
+                    "Složite drugu maramu u usku traku, stavite je na vrh prve marame i ispod ramena druge ruke te zavežite čvor.",
+                    "Presavijte vrh marame prema dolje."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Opišite postupak prve pomoći kod amputacijskih ozljeda.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak prve pomoći kod amputacijskih ozljeda:",
-            "steps": [
-              "Smirite i bodrite unesrećenu osobu.",
-              "Postavite unesrećenu osobu u ležeći položaj.",
-              "Ranu na bataljku prekrijte sterilnom gazom i učvrstite je zavojem.",
-              "Krvarenje, koje u početku ne mora biti jako, zaustavite neposrednim pritiskom na ranu ili kompresivnim zavojem i podizanjem ozlijeđenog dijela tijela iznad ravnine srca. Ako na taj način ne možete zaustaviti krvarenje i ako se ne radi o amputaciji prstiju, primijenite podvezivanje.",
-              "Pozovite hitnu medicinsku službu.",
-              "Mirovanjem ili imobilizacijom ozlijeđenog dijela tijela smanjite bol i širenje infekcije.",
-              "Zaštitite unesrećenu osobu od štetnog utjecaja hladnoće ili topline.",
-              "Žeđ ublažavajte vlaženjem usnica unesrećene osobe.",
-              "Zbrinite odvojeni dio tijela.",
-              "Pratite i kad je god moguće bilježite životne funkcije dok čekate dolazak hitne medicinske službe, a u slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
-            ]
-        },
-        {
-            "type": "procedure",
-            "title": "Postupak zaustavljanja krvarenja podvezivanjem:",
-            "steps": [
-              "Koristite trokutastu maramu složenu u kravatu ili gumenu ili platnenu vrpcu širine oko 5 cm.",
-              "Što bliže iznad rane kružno postavite vrpcu i stežite je pomoću štapića uvučenog u čvor sve dok se ne zaustavi krvarenje. Učvrstite u tom položaju.",
-              "Zapišite vrijeme kad ste postavili vrpcu.",
-              "Vrpcu ne smijete skidati do dolaska hitne medicinske službe."
-            ]
-          },
-          {
-            "type": "procedure",
-            "title": "Postupak s potpuno odvojenim dijelom tijela – amputacijskom okrajinom:",
-            "steps": [
-              "Zamotajte potpuno odvojeni dio tijela u sterilni materijal.",
-              "Smjestite ga u plastičnu vrećicu i dobro je zatvorite.",
-              "Sve stavite u drugu vrećicu ispunjenu vodom i ledom pa i tu vrećicu zatvorite.",
-              "Sve omotajte tkaninom, novinama ili sličnim materijalom.",
-              "Amputacijsku okrajinu ne smijete ispirati ili dezinficirati i zamrzavati.",
-              "Zbrinutu amputacijsku nemojte zaboraviti predati djelatnicima hitne medicinske službe kad dođu po unesrećenu osobu."
-            ]
-          },
-          {
-            "type": "procedure",
-            "title": "Postupak kod djelomično odvojenog dijela tijela:",
-            "steps": [
-              "Ne smijete prerezati preostale „veze“.",
-              "Zaustavite krvarenje.",
-              "Ako je moguće, vratite djelomice odvojeni dio tijela u „normalni“ položaj.",
-              "Zamotajte sterilnom materijalom i učvrstite ga."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak prve pomoći kod amputacijskih ozljeda",
+                "steps": [
+                    "Smirite i bodrite unesrećenu osobu.",
+                    "Postavite unesrećenu osobu u ležeći položaj.",
+                    "Ranu na bataljku prekrijte sterilnom gazom i učvrstite je zavojem.",
+                    "Krvarenje, koje u početku ne mora biti jako, zaustavite neposrednim pritiskom na ranu ili kompresivnim zavojem i podizanjem ozlijeđenog dijela tijela iznad ravnine srca. Ako na taj način ne možete zaustaviti krvarenje i ako se ne radi o amputaciji prstiju, primijenite podvezivanje.",
+                    "Pozovite hitnu medicinsku službu.",
+                    "Mirovanjem ili imobilizacijom ozlijeđenog dijela tijela smanjite bol i širenje infekcije.",
+                    "Zaštitite unesrećenu osobu od štetnog utjecaja hladnoće ili topline.",
+                    "Žeđ ublažavajte vlaženjem usnica unesrećene osobe.",
+                    "Zbrinite odvojeni dio tijela.",
+                    "Pratite i kad je god moguće bilježite životne funkcije dok čekate dolazak hitne medicinske službe, a u slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
+                ]
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak zaustavljanja krvarenja podvezivanjem",
+                "steps": [
+                    "Koristite trokutastu maramu složenu u kravatu ili gumenu ili platnenu vrpcu širine oko 5 cm.",
+                    "Što bliže iznad rane kružno postavite vrpcu i stežite je pomoću štapića uvučenog u čvor sve dok se ne zaustavi krvarenje. Učvrstite u tom položaju.",
+                    "Zapišite vrijeme kad ste postavili vrpcu.",
+                    "Vrpcu ne smijete skidati do dolaska hitne medicinske službe."
+                ]
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak s potpuno odvojenim dijelom tijela – amputacijskom okrajinom",
+                "steps": [
+                    "Zamotajte potpuno odvojeni dio tijela u sterilni materijal.",
+                    "Smjestite ga u plastičnu vrećicu i dobro je zatvorite.",
+                    "Sve stavite u drugu vrećicu ispunjenu vodom i ledom pa i tu vrećicu zatvorite.",
+                    "Sve omotajte tkaninom, novinama ili sličnim materijalom.",
+                    "Amputacijsku okrajinu ne smijete ispirati ili dezinficirati i zamrzavati.",
+                    "Zbrinutu amputacijsku nemojte zaboraviti predati djelatnicima hitne medicinske službe kad dođu po unesrećenu osobu."
+                ]
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak kod djelomično odvojenog dijela tijela",
+                "steps": [
+                    "Ne smijete prerezati preostale „veze“.",
+                    "Zaustavite krvarenje.",
+                    "Ako je moguće, vratite djelomice odvojeni dio tijela u „normalni“ položaj.",
+                    "Zamotajte sterilnom materijalom i učvrstite ga."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Što je kinetoza (bolest putovanja) i kako se može spriječiti njen nastanak?",
         "content": [
             {
-              "type": "paragraph",
-              "text": "Bolest kretanja je kratkotrajni zdravstveni poremećaj koji nastaje tijekom vožnje u raznim prijevoznim sredstvima. Praćen je mučninom, povraćanjem, bljedilom i znojenjem."
+                "type": "paragraph",
+                "text": "Bolest kretanja je kratkotrajni zdravstveni poremećaj koji nastaje tijekom vožnje u raznim prijevoznim sredstvima. Praćen je mučninom, povraćanjem, bljedilom i znojenjem."
             },
-
-          {
-            "type": "guidlines",
-            "title": "Načini sprječavanja nastanka bolesti:",
-            "steps": [
-              "Uzmite, barem pola sata prije puta, lijek koji se može kupiti u ljekarni.",
-              "Primijenite opće mjere za sprečavanje bolesti"
-            ]
-        },
-        {
-            "type": "guidlines",
-            "title": "Opće mjere za sprečavanje bolesti:",
-            "steps": [
-              "smanjite izlaganje kretanju, glavu i tijelo čvrsto prislonite uz sjedalo",
-              "smanjite vidnu aktivnost: nemojte čitati, pogled usmjerite u daljinu, zatvorite oči",
-              "preusmjerite pozornost, pokušajte skrenuti misli na nešto drugo",
-              "redovito prozračujte vozilo",
-              "uzimajte hranu u manjim količinama, izbjegavajte pušenje i alkohol"
-            ]
-          }
+            {
+                "type": "list",
+                "title": "Načini sprječavanja nastanka bolesti",
+                "steps": [
+                    "Uzmite, barem pola sata prije puta, lijek koji se može kupiti u ljekarni.",
+                    "Primijenite opće mjere za sprečavanje bolesti"
+                ]
+            },
+            {
+                "type": "list",
+                "title": "Opće mjere za sprečavanje bolesti",
+                "steps": [
+                    "smanjite izlaganje kretanju, glavu i tijelo čvrsto prislonite uz sjedalo",
+                    "smanjite vidnu aktivnost: nemojte čitati, pogled usmjerite u daljinu, zatvorite oči",
+                    "preusmjerite pozornost, pokušajte skrenuti misli na nešto drugo",
+                    "redovito prozračujte vozilo",
+                    "uzimajte hranu u manjim količinama, izbjegavajte pušenje i alkohol"
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi zavoj glave trokutastom maramom.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak izvođenja zavoja glave trokutastom maramom:",
-            "steps": [
-              "Postavite maramu s vrhom od tijela.",
-              "S krajevima obavijemo glavu te vežemo čvor iza i zatim naprijed.",
-              "Zalijepite ostatak vrha na glavu."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak izvođenja zavoja glave trokutastom maramom",
+                "steps": [
+                    "Postavite maramu s vrhom od tijela.",
+                    "S krajevima obavijemo glavu te vežemo čvor iza i zatim naprijed.",
+                    "Zalijepite ostatak vrha na glavu."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Što su smrzotine (ozebline) i kako se pruža prva pomoć?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Smrzotine su otvorene ozljede nastale djelovanjem niskih temperatura na ograničeni dio tijela. Najčešće se javljaju na prstima ruku, stopalima, uškama i nosu."
-          },
-          {
-            "type": "procedure",
-            "title": "Postupak prve pomoći kod smrzotina:",
-            "steps": [
-              "Smirite i bodrite unesrećenu osobu.",
-              "Unesrećenu osobu smjestite na toplo.",
-              "Postavite unesrećenu osobu u udoban ležeći položaj.",
-              "Uklonite mokru odjeću, obuću i nakit s ozljeda.",
-              "Pokrijte smrzotinu sterilnim materijalom i rahlo zavijte bez zatezanja.",
-              "Mirovanjem ili imobilizacijom ozlijeđenog dijela tijela, smanjite bol i širenje infekcije.",
-              "Utoplite unesrećenu osobu i postupno zagrijavajte cijelo tijelo.",
-              "Pozovite hitnu medicinsku službu.",
-              "Ostanite uz unesrećenu osobu.",
-              "Pratite i kad god je moguće bilježite životne funkcije dok čekate dolazak hitne pomoći, a u slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
-            ]
-          },
-          {
-            "type": "guidelines",
-            "title": "Ne smijete:",
-            "items": [
-              "trljati smrzotinu",
-              "bušiti mjehure",
-              "stavljati na ranu razne pripravke",
-              "navlačiti odjeću",
-              "direktno zagrijavati ozljedu"
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Smrzotine su otvorene ozljede nastale djelovanjem niskih temperatura na ograničeni dio tijela. Najčešće se javljaju na prstima ruku, stopalima, uškama i nosu."
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak prve pomoći kod smrzotina",
+                "steps": [
+                    "Smirite i bodrite unesrećenu osobu.",
+                    "Unesrećenu osobu smjestite na toplo.",
+                    "Postavite unesrećenu osobu u udoban ležeći položaj.",
+                    "Uklonite mokru odjeću, obuću i nakit s ozljeda.",
+                    "Pokrijte smrzotinu sterilnim materijalom i rahlo zavijte bez zatezanja.",
+                    "Mirovanjem ili imobilizacijom ozlijeđenog dijela tijela, smanjite bol i širenje infekcije.",
+                    "Utoplite unesrećenu osobu i postupno zagrijavajte cijelo tijelo.",
+                    "Pozovite hitnu medicinsku službu.",
+                    "Ostanite uz unesrećenu osobu.",
+                    "Pratite i kad god je moguće bilježite životne funkcije dok čekate dolazak hitne pomoći, a u slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
+                ]
+            },
+            {
+                "type": "list",
+                "title": "Ne smijete",
+                "items": [
+                    "trljati smrzotinu",
+                    "bušiti mjehure",
+                    "stavljati na ranu razne pripravke",
+                    "navlačiti odjeću",
+                    "direktno zagrijavati ozljedu"
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Što je dugotrajni gubitak svijesti i koji je postupak prve pomoći?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Dugotrajni gubitak svijesti je česta i po život opasna pojava kod ozljeda, naglo nastupajućih bolesti, utapanja, udara električne struje, otrovanja, itd. Dubina gubitka svijesti može biti promjenjiva pa osoba u tom stanju može ponekad stenjati, mumljati, pokretati pojedine dijelove tijela, imati grčeve ili ne davati nikakve znakove života."
-          },
-          {
-            "type": "paragraph",
-            "text": "Bez obzira na uzrok koji je doveo do gubitka svijesti, život svake osobe u besvjesnom stanju ugrožen je gušenjem dok leži na leđima. Najčešće gušenje nastaje zbog spuštanja donje čeljusti i padanja jezika u ždrijelo, što dovodi do začepljenja dišnog puta. Osim toga osoba se može gušiti povraćenim sadržajem, krvlju, stranim predmetima i sl."
-          },
-          {
-            "type": "guidelines",
-            "title": "Nikada nemojte:",
-            "items": [
-              "osobi koja je izgubila svijest podizati glavu",
-              "osobi koja je izgubila svijest davati vodu na usta",
-              "osobu koja je izgubila svijest ostavljati samu bez nadzora"
-            ]
-          },
-          {
-            "type": "procedure",
-            "title": "Postupak prve pomoći:",
-            "steps": [
-              "Kleknite uz unesrećenu osobu u visini njezinih prsiju, bliže ramenima.",
-              "Provjerite stanje svijesti unesrećene osobe tako da joj nježno protresete ramena i uputite glasno i razgovijetno pitanje, npr. „Čujete li me?“, „Što se dogodilo?“. ",
-              "Glasno pozovite u pomoć nekog iz okoline.",
-              "Otvorite dišni put unesrećene osobe. Prilikom otvaranja dišnog puta ostavite unesrećenu osobu u položaju u kojem ste je zatekli, a ako to nije moguće, pažljivo je okrenite na leđa.",
-              "Provjerite diše li unesrećena osoba normalno dok joj dišni put držite otvorenim. Ako unesrećena osoba bez svijesti diše normalno, stavite je u bočni položaj. Ako unesrećena osoba bez svijesti NE diše normalno, primijenite oživljavanje."
-            ]
-          }
+            {
+                "type": "paragraph",
+                "text": "Dugotrajni gubitak svijesti je česta i po život opasna pojava kod ozljeda, naglo nastupajućih bolesti, utapanja, udara električne struje, otrovanja, itd. Dubina gubitka svijesti može biti promjenjiva pa osoba u tom stanju može ponekad stenjati, mumljati, pokretati pojedine dijelove tijela, imati grčeve ili ne davati nikakve znakove života."
+            },
+            {
+                "type": "paragraph",
+                "text": "Bez obzira na uzrok koji je doveo do gubitka svijesti, život svake osobe u besvjesnom stanju ugrožen je gušenjem dok leži na leđima. Najčešće gušenje nastaje zbog spuštanja donje čeljusti i padanja jezika u ždrijelo, što dovodi do začepljenja dišnog puta. Osim toga osoba se može gušiti povraćenim sadržajem, krvlju, stranim predmetima i sl."
+            },
+            {
+                "type": "list",
+                "title": "Nikada nemojte",
+                "items": [
+                    "osobi koja je izgubila svijest podizati glavu",
+                    "osobi koja je izgubila svijest davati vodu na usta",
+                    "osobu koja je izgubila svijest ostavljati samu bez nadzora"
+                ]
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak prve pomoći",
+                "steps": [
+                    "Kleknite uz unesrećenu osobu u visini njezinih prsiju, bliže ramenima.",
+                    "Provjerite stanje svijesti unesrećene osobe tako da joj nježno protresete ramena i uputite glasno i razgovijetno pitanje, npr. „Čujete li me?“, „Što se dogodilo?“. ",
+                    "Glasno pozovite u pomoć nekog iz okoline.",
+                    "Otvorite dišni put unesrećene osobe. Prilikom otvaranja dišnog puta ostavite unesrećenu osobu u položaju u kojem ste je zatekli, a ako to nije moguće, pažljivo je okrenite na leđa.",
+                    "Provjerite diše li unesrećena osoba normalno dok joj dišni put držite otvorenim. Ako unesrećena osoba bez svijesti diše normalno, stavite je u bočni položaj. Ako unesrećena osoba bez svijesti NE diše normalno, primijenite oživljavanje."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite zaustavljanje krvarenja izravnim pritiskom na ranu.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak zaustavljanja krvarenja izravnim pritiskom:",
-            "steps": [
-              "Komadom sterilne gaze čvrsto pritisnite mjesto krvarenja.",
-              "Ako je rana na ruci ili nozi, podignite ozlijeđeni ud i zadržite ga u povišenom položaju."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak zaustavljanja krvarenja izravnim pritiskom",
+                "steps": [
+                    "Komadom sterilne gaze čvrsto pritisnite mjesto krvarenja.",
+                    "Ako je rana na ruci ili nozi, podignite ozlijeđeni ud i zadržite ga u povišenom položaju."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Opišite postupak zbrinjavanja rane sa stranim tijelom zabodenim u ranu.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak zbrinjavanja rane sa stranim tijelom:",
-            "steps": [
-              "Ako je u rani prisutno strano tijelo, imobilizirajte ga (učvrstite) u zatečenom položaju, bez obzira na kojem se dijelu tijela nalazi rana.",
-              "Preko ili sa strane stranog predmeta stavite sterilnu gazu (ako nemate gazu, upotrijebite čistu, suhu tkaninu).",
-              "Gaza, zavojima ili dostupnom tkaninom izravnajte razliku u visini između rane i stranog predmeta.",
-              "Pažljivo oko toga omotajte zavoj - zavoj ne smije stezati strani predmet."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak zbrinjavanja rane sa stranim tijelom",
+                "steps": [
+                    "Ako je u rani prisutno strano tijelo, imobilizirajte ga (učvrstite) u zatečenom položaju, bez obzira na kojem se dijelu tijela nalazi rana.",
+                    "Preko ili sa strane stranog predmeta stavite sterilnu gazu (ako nemate gazu, upotrijebite čistu, suhu tkaninu).",
+                    "Gaza, zavojima ili dostupnom tkaninom izravnajte razliku u visini između rane i stranog predmeta.",
+                    "Pažljivo oko toga omotajte zavoj - zavoj ne smije stezati strani predmet."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Kako se pruža prva pomoć kod gnječnih ozljeda?",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak prve pomoći kod gnječnih ozljeda:",
-            "steps": [
-              "Smirite i bodrite unesrećenu osobu. Unesrećena osoba mora mirovati.",
-              "Postavite unesrećenu osobu u ležeći položaj.",
-              "Provjerite životne funkcije i primijenite neodgodive postupke ako su potrebni (zaustavite krvarenje, primijenite oživljavanje).",
-              "Pozovite hitnu medicinsku službu.",
-              "Zaštitite unesrećenu osobu od štetnog utjecaja hladnoće ili topline.",
-              "Napravite cjeloviti pregled i zbrinite prisutne ozljede (zbrinite lomove, potražite znakove unutarnjih ozljeda i šoka).",
-              "Ostanite uz unesrećenu osobu.",
-              "Pratite i kad god je moguće bilježite životne funkcije dok čekate dolazak hitne pomoći, a u slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak prve pomoći kod gnječnih ozljeda",
+                "steps": [
+                    "Smirite i bodrite unesrećenu osobu. Unesrećena osoba mora mirovati.",
+                    "Postavite unesrećenu osobu u ležeći položaj.",
+                    "Provjerite životne funkcije i primijenite neodgodive postupke ako su potrebni (zaustavite krvarenje, primijenite oživljavanje).",
+                    "Pozovite hitnu medicinsku službu.",
+                    "Zaštitite unesrećenu osobu od štetnog utjecaja hladnoće ili topline.",
+                    "Napravite cjeloviti pregled i zbrinite prisutne ozljede (zbrinite lomove, potražite znakove unutarnjih ozljeda i šoka).",
+                    "Ostanite uz unesrećenu osobu.",
+                    "Pratite i kad god je moguće bilježite životne funkcije dok čekate dolazak hitne pomoći, a u slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se zaustavlja krvarenje podvezivanjem.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak zaustavljanja krvarenja podvezivanjem:",
-            "steps": [
-              "Nekoliko centimetara iznad rane zaveže se trokutasta marama, kravata ili šal dovoljno labavo da omogući zatezanje pomoću komadića drveta.",
-              "Nakon dovoljno uvrtanja komadić drveta se fiksira da ne dozvoli odvrtanje.",
-              "Potrebno je zapisati točno vrijeme postavljanja poveza.",
-              "Premotajte, imobilizirajte i transportirajte u odgovarajućem položaju u bolnicu."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak zaustavljanja krvarenja podvezivanjem",
+                "steps": [
+                    "Nekoliko centimetara iznad rane zaveže se trokutasta marama, kravata ili šal dovoljno labavo da omogući zatezanje pomoću komadića drveta.",
+                    "Nakon dovoljno uvrtanja komadić drveta se fiksira da ne dozvoli odvrtanje.",
+                    "Potrebno je zapisati točno vrijeme postavljanja poveza.",
+                    "Premotajte, imobilizirajte i transportirajte u odgovarajućem položaju u bolnicu."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Kako se provjerava disanje?",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak provjere disanja:",
-            "steps": [
-              "Održavajući dišni put otvorenim, postavite svoj obraz i uho iznad usta i nosa unesrećene osobe, a pogled usmjerite prema njezinim prsima.",
-              "Promatrajte podiže li se i spušta prsni koš.",
-              "Poslušajte čuje li se disanje.",
-              "Provjerite osjećate li dah na svom obrazu.",
-              "Tim postupcima provjeravajte disanje najduže 10 sekundi."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak provjere disanja",
+                "steps": [
+                    "Održavajući dišni put otvorenim, postavite svoj obraz i uho iznad usta i nosa unesrećene osobe, a pogled usmjerite prema njezinim prsima.",
+                    "Promatrajte podiže li se i spušta prsni koš.",
+                    "Poslušajte čuje li se disanje.",
+                    "Provjerite osjećate li dah na svom obrazu.",
+                    "Tim postupcima provjeravajte disanje najduže 10 sekundi."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "U koji položaj se postavlja osoba s ozljedom trbuha?",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Položaj osobe s ozljedom trbuha:",
-            "steps": [
-              "Postavite unesrećenu osobu u ležeći položaj sa savijenim nogama u koljenu.",
-              "Ako povraća, postavite je u isti položaj na bok."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Položaj osobe s ozljedom trbuha",
+                "steps": [
+                    "Postavite unesrećenu osobu u ležeći položaj sa savijenim nogama u koljenu.",
+                    "Ako povraća, postavite je u isti položaj na bok."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi zavoj šake trokutastom maramom.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak izvođenja zavoja šake trokutastom maramom:",
-            "steps": [
-              "Postavite trokut maramu s vrhom od tijela.",
-              "Šaku ili stopalo stavite na trokut maramu.",
-              "Zabacite vrh trokuta prema sebi i rubove zavijete oko šake ili stopala."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak izvođenja zavoja šake trokutastom maramom",
+                "steps": [
+                    "Postavite trokut maramu s vrhom od tijela.",
+                    "Šaku ili stopalo stavite na trokut maramu.",
+                    "Zabacite vrh trokuta prema sebi i rubove zavijete oko šake ili stopala."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Opišite postupak prve pomoći kod osobe bez svijesti koja diše.",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Osobu treba staviti u bočni položaj kako bi joj održali prohodnost dišnog puta, omogućili nesmetano disanje i spriječili gušenje."
-          }
+            {
+                "type": "paragraph",
+                "text": "Osobu treba staviti u bočni položaj kako bi joj održali prohodnost dišnog puta, omogućili nesmetano disanje i spriječili gušenje."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "U koji položaj se postavlja osoba sa ozljedom kralježnice?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Ako je osoba bez svijesti, treba je postaviti na bok. Ako je osoba pri svijesti, postavite je na leđa s glavom i nogama u ravnini priljubljenoj uz podlogu. Poduprite glavu i vrat rukama i održavajte ih u neutralnom položaju."
-          }
+            {
+                "type": "paragraph",
+                "text": "Ako je osoba bez svijesti, treba je postaviti na bok. Ako je osoba pri svijesti, postavite je na leđa s glavom i nogama u ravnini priljubljenoj uz podlogu. Poduprite glavu i vrat rukama i održavajte ih u neutralnom položaju."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se postavlja kompresivni zavoj.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak postavljanja kompresivnog zavoja:",
-            "steps": [
-              "Položite sterilnu gazu, jastučić prvog zavoja ili čistu tkaninu na ranu.",
-              "Na sterilnu gazu postavite kompresivni predmet preko kojeg će se vršiti kompresija na ozljeđenu krvnu žilu. U tu svrhu možete koristiti smotani zavoj ili neko priručno sredstvo poput drveta.",
-              "Čvrsto omotajte zavoj oko kompresivnog predmeta i na taj način preko njega izvršite pritisak na prekinutu krvnu žilu u rani.",
-              "Zavezati krajeve zavoja jedan za drugi. Čvor postavite iznad rane kako biste pojačali pritisak."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak postavljanja kompresivnog zavoja",
+                "steps": [
+                    "Položite sterilnu gazu, jastučić prvog zavoja ili čistu tkaninu na ranu.",
+                    "Na sterilnu gazu postavite kompresivni predmet preko kojeg će se vršiti kompresija na ozljeđenu krvnu žilu. U tu svrhu možete koristiti smotani zavoj ili neko priručno sredstvo poput drveta.",
+                    "Čvrsto omotajte zavoj oko kompresivnog predmeta i na taj način preko njega izvršite pritisak na prekinutu krvnu žilu u rani.",
+                    "Zavezati krajeve zavoja jedan za drugi. Čvor postavite iznad rane kako biste pojačali pritisak."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Opišite postupak prve pomoći kod osobe bez svijesti koja ne diše.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak prve pomoći:",
-            "steps": [
-              "Čim ustanovite da unesrećena osoba bez svijesti ne diše normalno, odmah pozovite hitnu medicinsku službu ili zamolite nekoga u blizini da to učini.",
-              "Započnite oživljavanje sa vanjskom masažom srca",
-              "Započnite s umjetnim disanjem primjenom dva upuha zraka. Prekrijte usta unesrećene osobe zaštitnom folijom za davanje umjetnog disanja.",
-              "   Tehnika izvođenja umjetnog disanja:",
-              "   - Zabacite glavu unesrećene osobe. Jednu ruku stavite na čelo unesrećene osobe. S palcem i kažiprstom zatvorite nosnice unesrećene osobe. S drugom rukom bradu unesrećene osobe držite podignutu kako bi usta bila otvorena.",
-              "   - Normalno udišite, nagnite se prema naprijed i ustima potpuno obuhvatite usta unesrećene osobe.",
-              "   - Polako upuhujte zrak u usta unesrećene osobe i istovremeno provjeravajte podižu li se prsa. Svako upuhivanje zraka mora trajati jednu sekundu. Ne primjenjujte više od dva upuha zraka (umjetna udisaja) prije vanjske masaže srca. Umjetno disanje primjenom dva upuha zraka ne smije trajati dulje od 5 sekundi.",
-              "Nastavite sa vanjskom masažom srca i umjetnim disanjem u omjeru 30:2. Nemojte prekidati oživljavanje radi provjere životnih funkcija.",
-              "Nastavite oživljavanje sve dok ne dođe kvalificirana osoba i preuzme oživljavanje ili dok se ne premorite. Ako u bilo kojem trenutku unesrećena osoba počne disati, prekinite oživljavanje. Odmah provjerite prvo svijest, a zatim disanje. Ako je unesrećena osoba i dalje bez svijesti, a diše, postavite je u bočni položaj."
-            ]
-          },
-          {
-            "type": "procedure",
-            "title": "Postupak oživljavanja sa vanjskom masažom srca:",
-            "steps": [
-              "Kleknite pokraj prsnog koša unesrećene osobe.",
-              "Stavite korijen (meki jastučasti dio) dlana jedne ruke na sredinu prsne kosti unesrećene osobe. Mjesto pritiska možete odrediti i preko odjeće, ne gubite vrijeme skidanjem košulje, veste ili drugih odjevnih predmeta.",
-              "Na tu ruku stavite korijen dlana druge ruke. Isprepletite prste obje ruke. Pazite da vam prsi ne budu odignuti od površine prsnog koša.",
-              "Pazite da vam ramena budu postavljena okomito točno u ravnini iznad prsne kosti unesrećene osobe. S ispruženim rukama utisnite prsni koš 5 do 6 cm. Laktovi moraju biti ispruženi, a u trenutku utiskivanja ramena se moraju nalaziti iznad prsne kosti. U takvom položaju možete iskoristiti težinu vlastitog tijela za pritisak koji mora biti kratkotrajan i snažan. Snagu pritiska treba prilagoditi tjelesnoj građi i uzrastu unesrećene osobe.",
-              "Nakon svakog pritiska pustite da se prsa potpuno izravnaju. Tako će se krv ponovno vratiti u srce. Ne odvajajte ruke od prsne kosti.",
-              "Pritisak mora trajati jednako koliko i otpuštanje pritiska.",
-              "Izvršite 30 pritisaka brzinom od 100 do najviše 120 pritisaka u minuti (otprilike nešto manje od 2 pritiska po sekundi)."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak prve pomoći",
+                "steps": [
+                    "Čim ustanovite da unesrećena osoba bez svijesti ne diše normalno, odmah pozovite hitnu medicinsku službu ili zamolite nekoga u blizini da to učini.",
+                    "Započnite oživljavanje sa vanjskom masažom srca",
+                    "Započnite s umjetnim disanjem primjenom dva upuha zraka. Prekrijte usta unesrećene osobe zaštitnom folijom za davanje umjetnog disanja.",
+                    "Nastavite sa vanjskom masažom srca i umjetnim disanjem u omjeru 30:2. Nemojte prekidati oživljavanje radi provjere životnih funkcija.",
+                    "Nastavite oživljavanje sve dok ne dođe kvalificirana osoba i preuzme oživljavanje ili dok se ne premorite. Ako u bilo kojem trenutku unesrećena osoba počne disati, prekinite oživljavanje. Odmah provjerite prvo svijest, a zatim disanje. Ako je unesrećena osoba i dalje bez svijesti, a diše, postavite je u bočni položaj."
+                ]
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak oživljavanja sa vanjskom masažom srca",
+                "steps": [
+                    "Kleknite pokraj prsnog koša unesrećene osobe.",
+                    "Stavite korijen (meki jastučasti dio) dlana jedne ruke na sredinu prsne kosti unesrećene osobe. Mjesto pritiska možete odrediti i preko odjeće, ne gubite vrijeme skidanjem košulje, veste ili drugih odjevnih predmeta.",
+                    "Na tu ruku stavite korijen dlana druge ruke. Isprepletite prste obje ruke. Pazite da vam prsi ne budu odignuti od površine prsnog koša.",
+                    "Pazite da vam ramena budu postavljena okomito točno u ravnini iznad prsne kosti unesrećene osobe. S ispruženim rukama utisnite prsni koš 5 do 6 cm. Laktovi moraju biti ispruženi, a u trenutku utiskivanja ramena se moraju nalaziti iznad prsne kosti. U takvom položaju možete iskoristiti težinu vlastitog tijela za pritisak koji mora biti kratkotrajan i snažan. Snagu pritiska treba prilagoditi tjelesnoj građi i uzrastu unesrećene osobe.",
+                    "Nakon svakog pritiska pustite da se prsa potpuno izravnaju. Tako će se krv ponovno vratiti u srce. Ne odvajajte ruke od prsne kosti.",
+                    "Pritisak mora trajati jednako koliko i otpuštanje pritiska.",
+                    "Izvršite 30 pritisaka brzinom od 100 do najviše 120 pritisaka u minuti (otprilike nešto manje od 2 pritiska po sekundi)."
+                ]
+            },
+            {
+                "type": "procedure",
+                "title": "Tehnika izvođenja umjetnog disanja",
+                "steps": [
+                    "Zabacite glavu unesrećene osobe. Jednu ruku stavite na čelo unesrećene osobe. S palcem i kažiprstom zatvorite nosnice unesrećene osobe. S drugom rukom bradu unesrećene osobe držite podignutu kako bi usta bila otvorena.",
+                    "Normalno udišite, nagnite se prema naprijed i ustima potpuno obuhvatite usta unesrećene osobe.",
+                    "Polako upuhujte zrak u usta unesrećene osobe i istovremeno provjeravajte podižu li se prsa. Svako upuhivanje zraka mora trajati jednu sekundu. Ne primjenjujte više od dva upuha zraka (umjetna udisaja) prije vanjske masaže srca. Umjetno disanje primjenom dva upuha zraka ne smije trajati dulje od 5 sekundi."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "U koji položaj se postavlja osoba s ozljedomprsnog koša?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Polusjedeći položaj, nagnut premastrani ozljede."
-          }
+            {
+                "type": "paragraph",
+                "text": "Polusjedeći položaj, nagnut premastrani ozljede."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite kako se izvodi zavoj koljena trokutastom maramom.",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Postavimo trokut maramu s vrhom prema nama. Rubove provučemo ispod noge i vežemo čvoriznad koljena. Vrh marame presavijemo prema dolje te ga zalijepimo."
-          }
+            {
+                "type": "paragraph",
+                "text": "Postavimo trokut maramu s vrhom prema nama. Rubove provučemo ispod noge i vežemo čvoriznad koljena. Vrh marame presavijemo prema dolje te ga zalijepimo."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Koji je postupak prve pomoći kod opeklina?",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak prve pomoći kod opeklina:",
-            "steps": [
-              "Kad je odjeća unesrećene osobe u plamenu, ugasite vatru (suhi postupak, pomoću vode, pomoću aparata za gašenje).",
-              "Smirujte i bodrite unesrećenu osobu.",
-              "Unesrećenu osobu postavite u udoban ležeći položaj. Ako su opečeni dišni putevi, postavite je u sjedajući položaj.",
-              "Uklonite nakit (prstenje, narukvice, sat) što prije, dok opečeni dio ne otekne.",
-              "Što prije ohladite opeklinu odmah na mjestu nesreće.",
-              "Nakon hlađenja, opeklinu prekrijte sterilnim materijalom (gazom, čistom tkaninom ili 'zavojem za opekline'). Rahlo zavijte, nemojte stezati. Na opeklinu nemojte stavljati antibiotsku ili kakvu drugu kremu ili pripravke. Mjehure, ako ih ima, nemojte bušiti.",
-              "Mirovanjem ili imobilizacijom ozlijeđenog dijela tijela smanjite bol i širenje infekcije.",
-              "Pozovite hitnu medicinsku službu ili savjetujte unesrećenoj osobi da se obrati liječniku.",
-              "Zaštitite unesrećenu osobu od štetnog utjecaja hladnoće ili topline.",
-              "Žeđ ublažujte vlaženjem usnica unesrećene osobe.",
-              "Pratite i kad god je moguće bilježite životne funkcije dok čekate dolazak hitne medicinske službe. U slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak prve pomoći kod opeklina",
+                "steps": [
+                    "Kad je odjeća unesrećene osobe u plamenu, ugasite vatru (suhi postupak, pomoću vode, pomoću aparata za gašenje).",
+                    "Smirujte i bodrite unesrećenu osobu.",
+                    "Unesrećenu osobu postavite u udoban ležeći položaj. Ako su opečeni dišni putevi, postavite je u sjedajući položaj.",
+                    "Uklonite nakit (prstenje, narukvice, sat) što prije, dok opečeni dio ne otekne.",
+                    "Što prije ohladite opeklinu odmah na mjestu nesreće.",
+                    "Nakon hlađenja, opeklinu prekrijte sterilnim materijalom (gazom, čistom tkaninom ili 'zavojem za opekline'). Rahlo zavijte, nemojte stezati. Na opeklinu nemojte stavljati antibiotsku ili kakvu drugu kremu ili pripravke. Mjehure, ako ih ima, nemojte bušiti.",
+                    "Mirovanjem ili imobilizacijom ozlijeđenog dijela tijela smanjite bol i širenje infekcije.",
+                    "Pozovite hitnu medicinsku službu ili savjetujte unesrećenoj osobi da se obrati liječniku.",
+                    "Zaštitite unesrećenu osobu od štetnog utjecaja hladnoće ili topline.",
+                    "Žeđ ublažujte vlaženjem usnica unesrećene osobe.",
+                    "Pratite i kad god je moguće bilježite životne funkcije dok čekate dolazak hitne medicinske službe. U slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
+                ]
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "U koji položaj se postavlja osoba bez svijesti koja diše?",
         "content": [
-          {
-            "type": "paragraph",
-            "text": "Osoba bez svijesti koja diše postavlja se u bočni položaj."
-          }
+            {
+                "type": "paragraph",
+                "text": "Osoba bez svijesti koja diše postavlja se u bočni položaj."
+            }
         ]
-      },
-      {
+    },
+    {
         "question": "Pokažite postupak imobilizacije nadlaktice.",
         "content": [
-          {
-            "type": "procedure",
-            "title": "Postupak imobilizacije nadlaktice:",
-            "steps": [
-              "Raširite trokut maramu.",
-              "Ruka mora biti presavijena u laktu i priljubljena uz tijelo.",
-              "Najduža strana marame ide u dužini tijela. Vrh marame strši van.",
-              "Jedan kraj marame postavite iza glave, a drugim krajem obuhvatite ruku.",
-              "Krajeve vežite iza glave, na vratu.",
-              "Od druge marame složite usku traku, obavijte cijelu ruku i vežite ispod pazuha."
-            ]
-          }
+            {
+                "type": "procedure",
+                "title": "Postupak imobilizacije nadlaktice",
+                "steps": [
+                    "Raširite trokut maramu.",
+                    "Ruka mora biti presavijena u laktu i priljubljena uz tijelo.",
+                    "Najduža strana marame ide u dužini tijela. Vrh marame strši van.",
+                    "Jedan kraj marame postavite iza glave, a drugim krajem obuhvatite ruku.",
+                    "Krajeve vežite iza glave, na vratu.",
+                    "Od druge marame složite usku traku, obavijte cijelu ruku i vežite ispod pazuha."
+                ]
+            }
         ]
-      }
+    }
 ]
