@@ -1,9 +1,8 @@
 [x]  - change left border to red/green for finished exam view
-[]  - when viewing finish exam, back should return back to finished exam list
+[x]  - when viewing finish exam, back should return back to finished exam list
+
 []  - first aid
-
 []  - scrap final version of questions
-
 []  - generate X number of intersection questions
 []  - special component for answers manual input
 [] 
