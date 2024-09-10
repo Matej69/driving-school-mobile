@@ -38,10 +38,12 @@ export type NavigationRoutesKeys = keyof typeof NavigationRoutes
 export type ParamType = 'examDate'
 
 // First aid
-export type FirstAidAnswer = 
-{ type: "paragraph", text: string } |
-{ type: "list" | "procedure", title: string, items: string[] }
 
+export type FirstAidAnswerParagraphType = { type: "paragraph", text: string }
+export type FirstAidAnswerListType = { type: "list" | "procedure", title: string, items: string[] }
+export type FirstAidAnswerProcedureType = { type: "list" | "procedure", title: string, items: string[] }
+
+export type FirstAidAnswer = FirstAidAnswerParagraphType | FirstAidAnswerListType | FirstAidAnswerProcedureType
 export type FirstAidAnswerType = FirstAidAnswer['type']
 
 export type FirstAidQuestion = {

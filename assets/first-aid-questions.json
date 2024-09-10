@@ -495,7 +495,7 @@
         ]
     },
     {
-        "question": "Pokažite postupak imobilizacije noge.",
+        "question": "Pokažite postupak imobilizacije noge. ",
         "answers": [
             {
                 "type": "procedure",
@@ -1204,11 +1204,21 @@
         ]
     },
     {
-        "question": "Opišite postupak prve pomoći kod osobe bez svijesti koja diše.",
+        "question": "Opišite postupak prve pomoći kod osobe bez svijesti koja diše. ",
         "answers": [
             {
                 "type": "paragraph",
-                "text": "Osobu treba staviti u bočni položaj kako bi joj održali prohodnost dišnog puta, omogućili nesmetano disanje i spriječili gušenje."
+                "text": "Osobu treba staviti u bočni položaj kako bi joj održali prohodnost dišnog puta, i omogućili joj nesmetano disanje i spriječili gušenje."
+            },
+            {
+                "type": "procedure",
+                "title": "Postupak stavljanja osobe u bočni položaj",
+                "items": [
+                    "Kleknemo sa strane osobe bez svijesti, čije noge moraju biti ispružene. Ruka koja je uz vaše koljeno mora biti savijena pod pravim kutom u laktu u odnosu na tijelo žrtve, a dlan te ruke okrenut prema gore.",
+                    "Ruku osobe bez svijesti koja je na suprotnoj strani povučemo na prsni koš, pri čemu je šaka s dlanom okrenuta prema dolje (na prsni koš).",
+                    "Prihvatimo čvrsto donji dio bedra iznad koljena i drugom rukom čvrsto uhvatimo rame i povlačimo nogu prema sebi te onesviještenog okrenemo na bok.",
+                    "Donja noga ostaje ispružena, a gornju nogu namještamo da bude pod pravim kutom u kuku i koljenu. Ruku stavljamo ispod obraza kako bi podržavala glavu koja je pomaknuta unazad."
+                ]
             }
         ]
     },

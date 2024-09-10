@@ -23,6 +23,7 @@ const loadQuestions = async (): Promise<Question[] | undefined> => {
   return saved ? (await storage.loadQuestions()) : undefined
 }
 
+// First aid will not be ever updated so moving to storage might make no sense - its like this due to consistency
 const loadFirstAidQuestions = async (): Promise<FirstAidQuestion[] | undefined> => {
   const questionsExist = await storage.fileExist('first-aid-questions')
   if(questionsExist) {
