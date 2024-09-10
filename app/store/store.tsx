@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { NavigationRoutesKeys, Question } from '../types/types';
+import { FirstAidQuestion, NavigationRoutesKeys, Question } from '../types/types';
 
 interface StoreState {
     activeTab: NavigationRoutesKeys;
@@ -7,6 +7,8 @@ interface StoreState {
     prevActiveTab: NavigationRoutesKeys;
     setAllQuestions: (questions: Question[]) => void;
     allQuestions: Question[];
+    setFirstAidQuestions: (questions: FirstAidQuestion[]) => void;
+    firstAidQuestions: FirstAidQuestion[];
 }
 
 const useStore = create<StoreState>((set) => ({
@@ -26,6 +28,13 @@ const useStore = create<StoreState>((set) => ({
         }
       ),
       allQuestions: [],
+      setFirstAidQuestions: (questions: FirstAidQuestion[]) =>
+        set((state) => {
+            state.firstAidQuestions = questions
+            return {...state}
+          }
+        ),
+        firstAidQuestions: [],
   }))
 
 export default useStore;

@@ -27,7 +27,6 @@ export type FinishedExamStorage = {
     questions: FinishedExamQuestionStorage[]
 }
 
-
 export const NavigationRoutes = {
     'index': 0,
     'exam-simulation': 1,
@@ -37,3 +36,15 @@ export const NavigationRoutes = {
 export type NavigationRoutesKeys = keyof typeof NavigationRoutes
 
 export type ParamType = 'examDate'
+
+// First aid
+export type FirstAidAnswer = 
+{ type: "paragraph", text: string } |
+{ type: "list" | "procedure", title: string, items: string[] }
+
+export type FirstAidAnswerType = FirstAidAnswer['type']
+
+export type FirstAidQuestion = {
+    question: string,
+    answers: FirstAidAnswer[]
+}

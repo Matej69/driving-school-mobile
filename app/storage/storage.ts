@@ -1,8 +1,8 @@
-import { FinishedExamStorage, Question } from "../types/types"
+import { FinishedExamStorage, FirstAidAnswer, FirstAidQuestion, Question } from "../types/types"
 import * as FileSystem from 'expo-file-system';
 
 // Equivalent to stored file name
-export type StorageKey = 'questions'
+export type StorageKey = 'questions' | 'first-aid-questions'
 
 
   const load = async<ReturnType> (fileName: StorageKey): Promise<ReturnType | undefined> => {
@@ -55,8 +55,22 @@ const saveQuestions = async(objectToSave: Question[]): Promise<boolean> => {
     return save('questions', objectToSave)
 }
 
+/**
+ * First aid questions
+ */
+
+const loadFirstAidQuestions = async(): Promise<FirstAidQuestion[] | undefined> => {
+  return load('first-aid-questions')
+}
+const saveFirstAidQuestions = async(objectToSave: FirstAidQuestion[]): Promise<boolean> => {
+  return save('first-aid-questions', objectToSave)
+}
+
+
 export const storage = {
     fileExist,
     loadQuestions,
-    saveQuestions
+    saveQuestions,
+    loadFirstAidQuestions,
+    saveFirstAidQuestions
 }

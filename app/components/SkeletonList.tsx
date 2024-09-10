@@ -8,7 +8,7 @@ import {
   ViewStyle,
 } from 'react-native';
 import colors from '../colors';
-import { Skeleton } from './skeleton';
+import { Skeleton } from './Skeleton';
 
 type SkeletonListProps = {
   itemsNumber: number;

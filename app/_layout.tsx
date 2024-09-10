@@ -5,7 +5,7 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { createContext, useEffect, useState } from 'react';
 import 'react-native-reanimated';
-import { Question } from './types/types';
+import { FirstAidQuestion, Question } from './types/types';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import React from 'react';
 import { storage } from './storage/storage';
@@ -23,6 +23,16 @@ const loadQuestions = async (): Promise<Question[] | undefined> => {
   return saved ? (await storage.loadQuestions()) : undefined
 }
 
+const loadFirstAidQuestions = async (): Promise<FirstAidQuestion[] | undefined> => {
+  const questionsExist = await storage.fileExist('first-aid-questions')
+  if(questionsExist) {
+    return storage.loadFirstAidQuestions()
+  }
+  const questionsFromAssets: FirstAidQuestion[] = require('../assets/first-aid-questions.json');
+  const saved = await storage.saveFirstAidQuestions(questionsFromAssets)
+  return saved ? (await storage.loadFirstAidQuestions()) : undefined
+}
+
 
 export default function RootLayout() {
   const [fontsLoaded, error] = useFonts({
@@ -30,13 +40,20 @@ export default function RootLayout() {
     ...FontAwesome.font,
   });
 
-  const { allQuestions, setAllQuestions } = useStore()
+  const { 
+    allQuestions, setAllQuestions,
+    firstAidQuestions, setFirstAidQuestions
+  } = useStore()
 
   // On initial app load move questions from assets to storage or just load them if it was done before
   useEffect(() => {
     (async() => {
-      const loadedQuestions = await loadQuestions() || []
-      setAllQuestions(loadedQuestions)
+      const [loadedQuestions, loadedFirstAidQuestions] = await Promise.all([
+        loadQuestions(),
+        loadFirstAidQuestions()
+      ]);
+      setAllQuestions(loadedQuestions || [])
+      setFirstAidQuestions(loadedFirstAidQuestions || [])
     })()
   }, [])
 
@@ -51,11 +68,11 @@ export default function RootLayout() {
     }
   }, [fontsLoaded]);
 
-  return (fontsLoaded && allQuestions) ? <RootLayoutNav questions={allQuestions} /> : null;
+  return (fontsLoaded && allQuestions && firstAidQuestions) ? <RootLayoutNav /> : null;
 }
 
 
-function RootLayoutNav(p: {questions: Question[]}) {
+function RootLayoutNav() {
   return (
     <ThemeProvider value={DefaultTheme}>
       <GestureHandlerRootView style={{flex:1}}>
