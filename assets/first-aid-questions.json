@@ -108,23 +108,6 @@
         ]
     },
     {
-        "question": "Opišite postupak prve pomoći kod osobe bez svijesti koja ne diše (postupak oživljavanja).",
-        "answers": [
-            {
-                "type": "procedure",
-                "title": "Postupak oživljavanja",
-                "items": [
-                    "Kad ustanovite da unesrećena osoba bez svijesti ne diše normalno, odmah pozovite hitnu medicinsku pomoć ili zamolite nekoga drugoga u blizini da to učini.",
-                    "Započnite oživljavanje s vanjskom masažom srca. Izvršite 30 pritisaka brzinom od 100 do najviše 120 pritisaka u minuti.",
-                    "Započnite s umjetnim disanjem, primijenite dva upuha zraka. Ne zaboravite koristiti zaštitnu foliju za davanje umjetnog disanja! Prekrijte usta unesrećene osobe zaštitnom folijom za davanje umjetnog disanja.",
-                    "Nastavite s vanjskom masažom srca i umjetnim disanjem u omjeru 30:2. Nemojte prekidati oživljavanje radi provjere životnih funkcija.",
-                    "Nastavite oživljavanje sve dok ne dođe kvalificirana osoba i preuzme oživljavanje ili dok se ne premorite.",
-                    "Ako u bilo kojem trenutku unesrećena osoba započne disati, prekinite oživljavanje. Odmah ponovno provjerite svijest, a zatim disanje. Ako je unesrećena osoba i dalje bez svijesti, a diše, postavite je u bočni položaj."
-                ]
-            }
-        ]
-    },
-    {
         "question": "Pokažite zaustavljanje krvarenja kompresivnim zavojem.",
         "answers": [
             {
@@ -453,43 +436,6 @@
                     "Uklonite odjeću koja pokriva ranu koja krvari.",
                     "Zaustavite krvarenje izravnim pritiskom na ranu, a kad je to moguće primijenite i kompresivni zavoj kako biste se mogli posvetiti i drugim ozljedama i unesrećenim osobama. Uvijek prvo primijenite izravni pritisak na ranu.",
                     "Ako je rana koja krvari u području kuka, sjednog dijela, vrata i prepone, te je i jedini način zaustavljanja krvarenja u okviru prve pomoći."
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Koji je postupak prve pomoći kod opeklina?",
-        "answers": [
-            {
-                "type": "procedure",
-                "title": "Postupak prve pomoći kod opeklina",
-                "items": [
-                    "Kad je odjeća unesrećene osobe u plamenu, ugasite vatru (suhi postupak, pomoću vode, pomoću aparata za gašenje).",
-                    "Smirujte i bodrite unesrećenu osobu.",
-                    "Unesrećenu osobu postavite u udoban ležeći položaj, a ako su opečeni i dišni putevi u sjedeći položaj.",
-                    "Uklonite nakit (prstenje, narukvice, sat) što prije, dok opečeni dio ne otekne.",
-                    "Što prije ohladite opeklinu odmah na mjestu nesreće.",
-                    "Nakon hlađenja, opeklinu prekrijte sterilnim materijalom (gazom, čistom tkaninom ili 'zavojem za opekline'). Rahlo zavijte, nemojte stezati. Na opeklinu nemojte stavljati antibiotsku ili kakvu drugu kremu ili pripravke, a mjehure, ako ih ima, nemojte bušiti.",
-                    "Mirovanjem ili imobilizacijom ozlijeđenog dijela tijela smanjite bol i širenje infekcije.",
-                    "Pozovite hitnu medicinsku službu ili savjetujte unesrećenoj osobi da se obrati liječniku.",
-                    "Zaštitite unesrećenu osobu od štetnog utjecaja hladnoće ili topline.",
-                    "Žeđ ublažujte vlaženjem usnica unesrećene osobe.",
-                    "Pratite i kad god je moguće bilježite životne funkcije dok čekate dolazak hitne medicinske službe, a u slučaju pogoršanja stanja primijenite potrebne postupke prve pomoći."
-                ]
-            }
-        ]
-    },
-    {
-        "question": "Pokažite postupak imobilizacije noge.",
-        "answers": [
-            {
-                "type": "procedure",
-                "title": "Postupak imobilizacije noge",
-                "items": [
-                    "Postavimo nešto meko između nogu.",
-                    "Napravi osmicu na stopalima trokut maramom.",
-                    "Vežemo barem 3 marame: jednu ispod koljena, jednu na koljenu i jednu iznad koljena. Po potrebi i više.",
-                    "Cvorove vežemo uvijek na zdravoj nozi."
                 ]
             }
         ]
@@ -921,20 +867,6 @@
         ]
     },
     {
-        "question": "Pokažite kako se izvodi zavoj ramena trokutastom maramom.",
-        "answers": [
-            {
-                "type": "procedure",
-                "title": "Postupak izvođenja zavoja ramena trokutastom maramom",
-                "items": [
-                    "Postavite prvu maramu s vrhom prema sebi i zavežite čvor ispod ramena.",
-                    "Složite drugu maramu u usku traku, stavite je na vrh prve marame i ispod ramena druge ruke te zavežite čvor.",
-                    "Presavijte vrh marame prema dolje."
-                ]
-            }
-        ]
-    },
-    {
         "question": "Opišite postupak prve pomoći kod amputacijskih ozljeda.",
         "answers": [
             {
@@ -1204,25 +1136,6 @@
         ]
     },
     {
-        "question": "Opišite postupak prve pomoći kod osobe bez svijesti koja diše. ",
-        "answers": [
-            {
-                "type": "paragraph",
-                "text": "Osobu treba staviti u bočni položaj kako bi joj održali prohodnost dišnog puta, i omogućili joj nesmetano disanje i spriječili gušenje."
-            },
-            {
-                "type": "procedure",
-                "title": "Postupak stavljanja osobe u bočni položaj",
-                "items": [
-                    "Kleknemo sa strane osobe bez svijesti, čije noge moraju biti ispružene. Ruka koja je uz vaše koljeno mora biti savijena pod pravim kutom u laktu u odnosu na tijelo žrtve, a dlan te ruke okrenut prema gore.",
-                    "Ruku osobe bez svijesti koja je na suprotnoj strani povučemo na prsni koš, pri čemu je šaka s dlanom okrenuta prema dolje (na prsni koš).",
-                    "Prihvatimo čvrsto donji dio bedra iznad koljena i drugom rukom čvrsto uhvatimo rame i povlačimo nogu prema sebi te onesviještenog okrenemo na bok.",
-                    "Donja noga ostaje ispružena, a gornju nogu namještamo da bude pod pravim kutom u kuku i koljenu. Ruku stavljamo ispod obraza kako bi podržavala glavu koja je pomaknuta unazad."
-                ]
-            }
-        ]
-    },
-    {
         "question": "U koji položaj se postavlja osoba sa ozljedom kralježnice?",
         "answers": [
             {
@@ -1294,15 +1207,6 @@
         ]
     },
     {
-        "question": "Pokažite kako se izvodi zavoj koljena trokutastom maramom.",
-        "answers": [
-            {
-                "type": "paragraph",
-                "text": "Postavimo trokut maramu s vrhom prema nama. Rubove provučemo ispod noge i vežemo čvoriznad koljena. Vrh marame presavijemo prema dolje te ga zalijepimo."
-            }
-        ]
-    },
-    {
         "question": "Koji je postupak prve pomoći kod opeklina?",
         "answers": [
             {
@@ -1330,23 +1234,6 @@
             {
                 "type": "paragraph",
                 "text": "Osoba bez svijesti koja diše postavlja se u bočni položaj."
-            }
-        ]
-    },
-    {
-        "question": "Pokažite postupak imobilizacije nadlaktice.",
-        "answers": [
-            {
-                "type": "procedure",
-                "title": "Postupak imobilizacije nadlaktice",
-                "items": [
-                    "Raširite trokut maramu.",
-                    "Ruka mora biti presavijena u laktu i priljubljena uz tijelo.",
-                    "Najduža strana marame ide u dužini tijela. Vrh marame strši van.",
-                    "Jedan kraj marame postavite iza glave, a drugim krajem obuhvatite ruku.",
-                    "Krajeve vežite iza glave, na vratu.",
-                    "Od druge marame složite usku traku, obavijte cijelu ruku i vežite ispod pazuha."
-                ]
             }
         ]
     }

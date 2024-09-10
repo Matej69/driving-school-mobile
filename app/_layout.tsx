@@ -10,6 +10,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import React from 'react';
 import { storage } from './storage/storage';
 import useStore from './store/store';
+import * as FileSystem from 'expo-file-system';
 
 SplashScreen.preventAutoHideAsync();
 

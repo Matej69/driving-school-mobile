@@ -15,7 +15,9 @@ const FirstAidQuestionList = ({ answer }: { answer: FirstAidAnswerListType }) =>
         return <></>
     return <>
         <Text style={{ fontSize: 14, paddingBottom: 1, fontWeight: '500' }}>{`${answer.title}:`}</Text>
-        { answer.items.map(a => <Text style={{ paddingLeft: 4 }}>• { a }</Text>) }
+        { answer.items.map(item => 
+            <Text key={`first-aid-answer-content-section-${item}`} style={{ paddingLeft: 4 }}>• { item }</Text>
+        )}
     </>
 }
 
@@ -23,8 +25,12 @@ const FirstAidQuestionProcedure = ({ answer }: { answer: FirstAidAnswerProcedure
     if(!answer.title || answer?.items?.length === 0)
         return <></>
     return <>
-        <Text style={{ fontSize: 14, paddingBottom: 1, fontWeight: '500' }}>{`${answer.title}:`}</Text>
-        { answer.items.map((a, i) => <Text style={{ paddingLeft: 4 }}>{`${i+1}. ${a}`}</Text>) }
+        <Text style={{ fontSize: 14, paddingBottom: 1, fontWeight: '500' }}>
+            {`${answer.title}:`}
+        </Text>
+        { answer.items.map((item, i) => 
+            <Text key={`first-aid-answer-content-section-${item}`} style={{ paddingLeft: 4 }}>{`${i+1}. ${item}`}</Text>
+        )}
     </>
 }
 
@@ -45,8 +51,8 @@ export const FirstAidQuestionItem = ({ q }: { q: FirstAidQuestion }) => {
                 {q.question}
             </Text>
             { 
-                q.answers.map(q => 
-                    <View style={{ paddingVertical: 2 }}>
+                q.answers.map((q, i) => 
+                    <View key={`first-aid-answer-content-${i}`} style={{ paddingVertical: 2 }}>
                         { renderFirstAidAnswer(q) }
                     </View>
                 ) 

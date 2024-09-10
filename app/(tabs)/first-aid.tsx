@@ -12,18 +12,19 @@ export default function FirstAid() {
   const { firstAidQuestions } = useStore()
 
   return (
-    <SafeAreaView>
-        <FlatList<FirstAidQuestion> 
-          initialNumToRender={10}
-          style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
-          data={firstAidQuestions} 
-          renderItem={el =>
-            <View style={{ paddingVertical: 2 }}>
-              <FirstAidQuestionItem key={`first-aid-q-${el.item.question}`} q={el.item}/>
-            </View>
-          }
-          keyExtractor={q => q.question} 
-        />
+    <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
+      <FlatList<FirstAidQuestion> 
+        initialNumToRender={10}
+        style={{ backgroundColor: colors.rootBackground }}
+        contentContainerStyle={{ padding: 4, rowGap: 3}}
+        data={firstAidQuestions}
+        renderItem={el =>
+          <View key={`first-aid-q-${el.item.question}`}>
+            <FirstAidQuestionItem q={el.item}/>
+          </View>
+        }
+        keyExtractor={q => q.question} 
+      />
     </SafeAreaView>
   );
 }
