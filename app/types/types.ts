@@ -1,3 +1,5 @@
+import { ImgRequiresUrisKeys } from "../storage/image-require-uris"
+
 export type Answer = {
     id: number, 
     text: string, 
@@ -8,9 +10,9 @@ export type Answer = {
 export type Question =  { 
     id: number, 
     question: string, 
-    imagesUrls?: string[],
+    images?: ImgRequiresUrisKeys[],
     answers: Answer[],
-    incorrectlyAnswered: number
+    incorrectlyAnsweredCount: number
 }
 
 export type FinishedExam = {

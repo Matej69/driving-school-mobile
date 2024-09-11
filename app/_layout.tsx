@@ -11,8 +11,14 @@ import React from 'react';
 import { storage } from './storage/storage';
 import useStore from './store/store';
 import * as FileSystem from 'expo-file-system';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Button } from 'react-native';
 
 SplashScreen.preventAutoHideAsync();
+
+// Reseting storage and async storage when needed
+// storage.reset()
+// AsyncStorage.clear();
 
 const loadQuestions = async (): Promise<Question[] | undefined> => {
   const questionsExist = await storage.fileExist('questions')

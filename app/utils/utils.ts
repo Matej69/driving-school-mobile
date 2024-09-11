@@ -38,7 +38,7 @@ export const updateQuestionsWrongAnswers = (allQuestions: Question[], answeredQu
     allQuestions.forEach(q => {
         if(answersCorrectnessMap.has(q.id)) {
             const amountToAdd = !answersCorrectnessMap.get(q.id) ? 1 : 0
-            q.incorrectlyAnswered = (q.incorrectlyAnswered ?? 0) + amountToAdd
+            q.incorrectlyAnsweredCount = (q.incorrectlyAnsweredCount ?? 0) + amountToAdd
         }
     })
     return allQuestions

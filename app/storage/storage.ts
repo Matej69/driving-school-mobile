@@ -1,9 +1,19 @@
 import { FinishedExamStorage, FirstAidAnswer, FirstAidQuestion, Question } from "../types/types"
 import * as FileSystem from 'expo-file-system';
 
+const reset = async(): Promise<{ success: boolean, message: string }> => {
+  if(FileSystem.documentDirectory === null)
+    return { success: false, message: 'Main directory does not exist' }
+  const files = await FileSystem.readDirectoryAsync(FileSystem.documentDirectory);
+  for (const file of files) {
+    const filePath = FileSystem.documentDirectory + file;
+    await FileSystem.deleteAsync(filePath, { idempotent: true });
+  }
+  return { success: true, message: 'Storage files deleted' }
+}
+
 // Equivalent to stored file name
 export type StorageKey = 'questions' | 'first-aid-questions'
-
 
   const load = async<ReturnType> (fileName: StorageKey): Promise<ReturnType | undefined> => {
     const filePath = `${FileSystem.documentDirectory}${fileName}.json`;
@@ -68,6 +78,7 @@ const saveFirstAidQuestions = async(objectToSave: FirstAidQuestion[]): Promise<b
 
 
 export const storage = {
+    reset,
     fileExist,
     loadQuestions,
     saveQuestions,

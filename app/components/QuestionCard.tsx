@@ -1,10 +1,12 @@
 import { Image, Text, TouchableOpacity, View } from "react-native"
 
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { AnswerItem } from "./AnswerItem"
 import { Answer, AnswerInteractivityType, Question } from "../types/types"
 import { useQuestion } from "../hooks/useQuestion"
 import colors from "../colors"
+import * as FileSystem from 'expo-file-system';
+import { imgRequiresUris } from "../storage/image-require-uris"
 
 
 type QuestionCardProps = {
@@ -19,6 +21,7 @@ type QuestionCardProps = {
 export const QuestionCard = (p: QuestionCardProps) => {
 
     const { question, toogleQuestionCheck } = useQuestion({question: p.question});
+    const [ imagesLoaded, setImagesLoaded ] = useState(false)
 
     const answerItemDisabled = () => p.answerInteractivityType == 'CORRECT_ANSWERED_SHOWN'
     const canAnswer = () => p.answerInteractivityType == 'CAN_BE_ANSWERED'
@@ -47,6 +50,21 @@ export const QuestionCard = (p: QuestionCardProps) => {
         canAnswer() && toogleQuestionCheck(answer.id)
     }
 
+    const loadImage = async (imgName: string) => {
+    }
+
+    
+    //useEffect(() => {
+    //    console.log(FileSystem.documentDirectory!);
+    //    (async () => {
+    //        p.question.images?.forEach(img => {
+    //                            
+    //        });
+    //        const filePath = `${FileSystem.documentDirectory}images/${imgName}`;
+    //    })()
+    //}, [])
+
+    
     useEffect(() => {
         p.onAnswerChange?.(question)
     }, [question])
@@ -55,11 +73,10 @@ export const QuestionCard = (p: QuestionCardProps) => {
         <View>
             <Text className="text-gray-600 font-bold">{question.question}</Text>
             <View className="mt-1"/>
-            { /* question.imagesUrls && <Image style={{ resizeMode: 'contain', width: '70%', height: undefined, aspectRatio: 1 }} source={require('../../assets/images/questions/yolo.png')}/> */}
             {
-                !!p.question.imagesUrls?.length &&
-                p.question.imagesUrls.map(imgUrl => 
-                    <Image key={imgUrl} style={{ resizeMode: 'contain', width: '70%', height: undefined, aspectRatio: 1 }} source={{uri: `https://${imgUrl}`}}></Image>
+                !!p.question.images?.length &&
+                p.question.images.map((img) => 
+                    <Image key={img} style={{ resizeMode: 'contain', width: '70%', height: undefined, aspectRatio: 1 }} source={imgRequiresUris[img]}></Image>
                 )
             }
             <View className="mt-1"/>
@@ -72,8 +89,8 @@ export const QuestionCard = (p: QuestionCardProps) => {
                 ))
             }
             {
-                p.incorrectlyAnsweredShown && !!question.incorrectlyAnswered && 
-                <Text className="text-xs mt-3" style={{ color: colors.failure }}>{question.incorrectlyAnswered} puta pogrešno odgovoreno</Text>
+                p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount && 
+                <Text className="text-xs mt-3" style={{ color: colors.failure }}>{question.incorrectlyAnsweredCount} puta pogrešno odgovoreno</Text>
             }
         </View>
     )
