@@ -10,7 +10,7 @@ export type Answer = {
 export type Question =  { 
     id: number, 
     question: string, 
-    images?: ImgRequiresUrisKeys[],
+    images: ImgRequiresUrisKeys[],
     answers: Answer[],
     incorrectlyAnsweredCount: number
 }

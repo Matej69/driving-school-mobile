@@ -1,4 +1,4 @@
-import { Image, Text, TouchableOpacity, View } from "react-native"
+import { Dimensions, Image, Text, TouchableOpacity, View } from "react-native"
 
 import React, { useEffect, useState } from "react"
 import { AnswerItem } from "./AnswerItem"
@@ -6,7 +6,8 @@ import { Answer, AnswerInteractivityType, Question } from "../types/types"
 import { useQuestion } from "../hooks/useQuestion"
 import colors from "../colors"
 import * as FileSystem from 'expo-file-system';
-import { imgRequiresUris } from "../storage/image-require-uris"
+import { imgRequiresUris, ImgRequiresUrisKeys } from "../storage/image-require-uris"
+import { deepCopy } from "../utils/utils"
 
 
 type QuestionCardProps = {
@@ -21,7 +22,8 @@ type QuestionCardProps = {
 export const QuestionCard = (p: QuestionCardProps) => {
 
     const { question, toogleQuestionCheck } = useQuestion({question: p.question});
-    const [ imagesLoaded, setImagesLoaded ] = useState(false)
+    const [ imageSizeMap, setImageSizeMap ] = useState<Map<ImgRequiresUrisKeys, { w: number; h: number}> | null>(null)
+    const { width: screenWidth } = Dimensions.get('window');
 
     const answerItemDisabled = () => p.answerInteractivityType == 'CORRECT_ANSWERED_SHOWN'
     const canAnswer = () => p.answerInteractivityType == 'CAN_BE_ANSWERED'
@@ -54,29 +56,48 @@ export const QuestionCard = (p: QuestionCardProps) => {
     }
 
     
-    //useEffect(() => {
-    //    console.log(FileSystem.documentDirectory!);
-    //    (async () => {
-    //        p.question.images?.forEach(img => {
-    //                            
-    //        });
-    //        const filePath = `${FileSystem.documentDirectory}images/${imgName}`;
-    //    })()
-    //}, [])
+    useEffect(() => {
+        // Build map of images with their original width and height
+        (async() => {
+            const promises: Promise<any>[] = p.question.images?.map(img => {
+                return new Promise((res, rej) => {
+                    const requiredImg = imgRequiresUris[img]
+                    Image.getSize(Image.resolveAssetSource(requiredImg).uri, (w, h) => {
+                        res({key: img, w, h})
+                    });
+                })
+            }) ?? []
+            const result = await Promise.all(promises);
+            const newImageSizeMap: Map<ImgRequiresUrisKeys, { w: number; h: number}> = new Map()
+            result.forEach(r => newImageSizeMap.set(r.key, {w: r.w, h: r.h}))
+            //console.log(imageSizeMap)
+            setImageSizeMap(newImageSizeMap)
+          })()
+    }, [])
 
     
     useEffect(() => {
         p.onAnswerChange?.(question)
     }, [question])
 
+    const renderScaledImage = (img: ImgRequiresUrisKeys): JSX.Element => {
+        if(!imageSizeMap || !imageSizeMap.has(img))
+            return <></>
+        const imgSizeRatio = imageSizeMap.get(img)!.w / imageSizeMap.get(img)!.h
+        const imgSize = imgSizeRatio > 1 ? 
+            { w: screenWidth * 0.6, h: undefined} :
+            { w: undefined, h: screenWidth * 0.6}
+        return <Image style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio }} source={imgRequiresUris[img]}></Image>
+    }
+
 	return (
         <View>
             <Text className="text-gray-600 font-bold">{question.question}</Text>
             <View className="mt-1"/>
             {
-                !!p.question.images?.length &&
+                !!p.question.images?.length && imageSizeMap &&
                 p.question.images.map((img) => 
-                    <Image key={img} style={{ resizeMode: 'contain', width: '70%', height: undefined, aspectRatio: 1 }} source={imgRequiresUris[img]}></Image>
+                    renderScaledImage(img)
                 )
             }
             <View className="mt-1"/>

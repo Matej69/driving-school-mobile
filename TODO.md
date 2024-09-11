@@ -3,10 +3,11 @@
 [x]  - first aid
 [x]  - scrap final version of exam questions
 [x]  - download all imgs over urls
-
-[]  - move images from url to localy stored
+[x]  - move images from url to localy stored
+[x]  - repair image alignment
 
 []  - generate X number of intersection questions
-[]  - special component for answers manual input
 []  - make answering wrong on intersection question automatic exam failure + feedback that that is the reason in finish exam list and view
+
+[]  - special component for answers manual input
 []  - run images through AI
