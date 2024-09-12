@@ -21,7 +21,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 2,
@@ -45,7 +46,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 3,
@@ -69,7 +71,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 4,
@@ -82,7 +85,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 5,
@@ -95,7 +99,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 6,
@@ -119,7 +124,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 7,
@@ -143,7 +149,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 8,
@@ -167,7 +174,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 9,
@@ -191,7 +199,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 10,
@@ -215,7 +224,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 11,
@@ -239,7 +249,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 12,
@@ -263,7 +274,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 13,
@@ -287,7 +299,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 14,
@@ -311,7 +324,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 15,
@@ -337,7 +351,8 @@
       "4.432.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 16,
@@ -363,7 +378,8 @@
       "419.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 17,
@@ -389,7 +405,8 @@
       "4.515.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 18,
@@ -415,7 +432,8 @@
       "4.19.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 19,
@@ -441,7 +459,8 @@
       "4.116.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 20,
@@ -467,7 +486,8 @@
       "85.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 21,
@@ -493,7 +513,8 @@
       "10.120.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 22,
@@ -519,7 +540,8 @@
       "b5_36.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 23,
@@ -545,7 +567,8 @@
       "812.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 24,
@@ -571,7 +594,8 @@
       "3.1cesta-i-njena-obiljezja_57.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 25,
@@ -597,7 +621,8 @@
       "4.218.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 26,
@@ -623,7 +648,8 @@
       "3cesta-i-njena-obiljezja_1.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 27,
@@ -649,7 +675,8 @@
       "3.1cesta-i-njena-obiljezja_45.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 28,
@@ -675,7 +702,8 @@
       "1118.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 29,
@@ -701,7 +729,8 @@
       "1010.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 30,
@@ -727,7 +756,8 @@
       "7.234.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 31,
@@ -748,7 +778,8 @@
       "635.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 32,
@@ -774,7 +805,8 @@
       "526.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 33,
@@ -800,7 +832,8 @@
       "9.19.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 34,
@@ -826,7 +859,8 @@
       "946.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 35,
@@ -852,7 +886,8 @@
       "1234.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 36,
@@ -878,7 +913,8 @@
       "7.237.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 37,
@@ -904,7 +940,8 @@
       "7.29.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 38,
@@ -930,7 +967,8 @@
       "7.213.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 39,
@@ -954,7 +992,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 40,
@@ -978,7 +1017,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 41,
@@ -1002,7 +1042,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 42,
@@ -1026,7 +1067,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 43,
@@ -1050,7 +1092,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 44,
@@ -1074,7 +1117,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 45,
@@ -1098,7 +1142,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 46,
@@ -1122,7 +1167,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 47,
@@ -1146,7 +1192,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 48,
@@ -1170,7 +1217,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 49,
@@ -1189,7 +1237,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 50,
@@ -1210,7 +1259,8 @@
       "8.213.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 51,
@@ -1236,7 +1286,8 @@
       "4.117.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 52,
@@ -1262,7 +1313,8 @@
       "4.124.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 53,
@@ -1288,7 +1340,8 @@
       "4.328.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 54,
@@ -1314,7 +1367,8 @@
       "7.430.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 55,
@@ -1335,7 +1389,8 @@
       "raskrizje(1).jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 56,
@@ -1356,7 +1411,8 @@
       "4.510.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 57,
@@ -1382,7 +1438,8 @@
       "12.113.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 58,
@@ -1408,7 +1465,8 @@
       "428.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 59,
@@ -1434,7 +1492,8 @@
       "1propisi-u-cestovnom-prometu_23.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 60,
@@ -1460,7 +1519,8 @@
       "3cesta-i-njena-obiljezja_19.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 61,
@@ -1486,7 +1546,8 @@
       "627.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 62,
@@ -1512,7 +1573,8 @@
       "4.244.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 63,
@@ -1538,7 +1600,8 @@
       "104.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 64,
@@ -1553,7 +1616,8 @@
       "7.137.jpg"
     ],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 65,
@@ -1579,7 +1643,8 @@
       "9.18.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 66,
@@ -1600,7 +1665,8 @@
       "934.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 67,
@@ -1626,7 +1692,8 @@
       "7.245.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 68,
@@ -1652,7 +1719,8 @@
       "10.17.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 69,
@@ -1676,7 +1744,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 70,
@@ -1700,7 +1769,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 71,
@@ -1724,7 +1794,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 72,
@@ -1748,7 +1819,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 73,
@@ -1772,7 +1844,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 74,
@@ -1796,7 +1869,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 75,
@@ -1820,7 +1894,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 76,
@@ -1844,7 +1919,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 77,
@@ -1863,7 +1939,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 78,
@@ -1887,7 +1964,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 79,
@@ -1911,7 +1989,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 80,
@@ -1932,7 +2011,8 @@
       "163678.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 81,
@@ -1958,7 +2038,8 @@
       "426.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 82,
@@ -1984,7 +2065,8 @@
       "3cesta-i-njena-obiljezja_7.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 83,
@@ -2010,7 +2092,8 @@
       "1212.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 84,
@@ -2036,7 +2119,8 @@
       "4.58.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 85,
@@ -2051,7 +2135,8 @@
       "754.jpg"
     ],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 86,
@@ -2077,7 +2162,8 @@
       "1022.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 87,
@@ -2103,7 +2189,8 @@
       "7.221.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 88,
@@ -2129,7 +2216,8 @@
       "925.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 89,
@@ -2160,7 +2248,8 @@
       "114.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 90,
@@ -2186,7 +2275,8 @@
       "7.44.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 91,
@@ -2207,7 +2297,8 @@
       "b1_32.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 92,
@@ -2233,7 +2324,8 @@
       "4.113.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 93,
@@ -2259,7 +2351,8 @@
       "4.317.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 94,
@@ -2280,7 +2373,8 @@
       "9.11.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 95,
@@ -2306,7 +2400,8 @@
       "8.332.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 96,
@@ -2332,7 +2427,8 @@
       "7.215.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 97,
@@ -2353,7 +2449,8 @@
       "2ponasanje-sudionika-u-prometu_8.-9.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 98,
@@ -2379,7 +2476,8 @@
       "2.1ponasanje-sudionika-u-prometu_47.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 99,
@@ -2403,7 +2501,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 100,
@@ -2427,7 +2526,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 101,
@@ -2451,7 +2551,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 102,
@@ -2475,7 +2576,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 103,
@@ -2499,7 +2601,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 104,
@@ -2523,7 +2626,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 105,
@@ -2547,7 +2651,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 106,
@@ -2571,7 +2676,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 107,
@@ -2600,7 +2706,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 108,
@@ -2624,7 +2731,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 109,
@@ -2648,7 +2756,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 110,
@@ -2667,7 +2776,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 111,
@@ -2691,7 +2801,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 112,
@@ -2717,7 +2828,8 @@
       "810.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 113,
@@ -2733,7 +2845,8 @@
       "130405.jpg"
     ],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 114,
@@ -2759,7 +2872,8 @@
       "b7_27.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 115,
@@ -2785,7 +2899,8 @@
       "420.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 116,
@@ -2811,7 +2926,8 @@
       "123.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 117,
@@ -2837,7 +2953,8 @@
       "411.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 118,
@@ -2863,7 +2980,8 @@
       "4.110.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 119,
@@ -2889,7 +3007,8 @@
       "4.239.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 120,
@@ -2915,7 +3034,8 @@
       "3.1cesta-i-njena-obiljezja_38.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 121,
@@ -2941,7 +3061,8 @@
       "4.339.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 122,
@@ -2967,7 +3088,8 @@
       "3.1cesta-i-njena-obiljezja_53.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 123,
@@ -2993,7 +3115,8 @@
       "1043.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 124,
@@ -3019,7 +3142,8 @@
       "56.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 125,
@@ -3045,7 +3169,8 @@
       "9.14.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 126,
@@ -3071,7 +3196,8 @@
       "613.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 127,
@@ -3097,7 +3223,8 @@
       "725.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 128,
@@ -3123,7 +3250,8 @@
       "7.226.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 129,
@@ -3144,7 +3272,8 @@
       "7.26.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 130,
@@ -3170,7 +3299,8 @@
       "118.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 131,
@@ -3196,7 +3326,8 @@
       "926.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 132,
@@ -3220,7 +3351,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 133,
@@ -3244,7 +3376,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 134,
@@ -3268,7 +3401,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 135,
@@ -3292,7 +3426,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 136,
@@ -3316,7 +3451,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 137,
@@ -3335,7 +3471,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 138,
@@ -3354,7 +3491,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 139,
@@ -3373,7 +3511,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 140,
@@ -3397,7 +3536,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 141,
@@ -3421,7 +3561,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 142,
@@ -3440,7 +3581,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 143,
@@ -3464,7 +3606,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 144,
@@ -3485,7 +3628,8 @@
       "130683.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 145,
@@ -3511,7 +3655,8 @@
       "417.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 146,
@@ -3537,7 +3682,8 @@
       "927.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 147,
@@ -3563,7 +3709,8 @@
       "9.13.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 148,
@@ -3589,7 +3736,8 @@
       "7.433.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 149,
@@ -3615,7 +3763,8 @@
       "4.310.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 150,
@@ -3641,7 +3790,8 @@
       "12.142.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 151,
@@ -3667,7 +3817,8 @@
       "10.171.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 152,
@@ -3693,7 +3844,8 @@
       "632.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 153,
@@ -3719,7 +3871,8 @@
       "4.57.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 154,
@@ -3745,7 +3898,8 @@
       "737.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 155,
@@ -3771,7 +3925,8 @@
       "7.239.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 156,
@@ -3792,7 +3947,8 @@
       "4.129.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 157,
@@ -3816,7 +3972,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 158,
@@ -3840,7 +3997,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 159,
@@ -3864,7 +4022,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 160,
@@ -3888,7 +4047,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 161,
@@ -3912,7 +4072,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 162,
@@ -3936,7 +4097,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 163,
@@ -3955,7 +4117,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 164,
@@ -3979,7 +4142,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 165,
@@ -3998,7 +4162,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 166,
@@ -4027,7 +4192,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 167,
@@ -4046,7 +4212,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 168,
@@ -4065,7 +4232,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 169,
@@ -4089,7 +4257,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 170,
@@ -4115,7 +4284,8 @@
       "4.118.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 171,
@@ -4141,7 +4311,8 @@
       "4.127.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 172,
@@ -4167,7 +4338,8 @@
       "544.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 173,
@@ -4193,7 +4365,8 @@
       "7.240.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 174,
@@ -4219,7 +4392,8 @@
       "9.15.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 175,
@@ -4245,7 +4419,8 @@
       "92.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 176,
@@ -4271,7 +4446,8 @@
       "10.12.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 177,
@@ -4297,7 +4473,8 @@
       "7.338.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 178,
@@ -4323,7 +4500,8 @@
       "4.43.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 179,
@@ -4349,7 +4527,8 @@
       "3cesta-i-njena-obiljezja_2.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 180,
@@ -4375,7 +4554,8 @@
       "4.35.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 181,
@@ -4401,7 +4581,8 @@
       "4.25.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 182,
@@ -4427,7 +4608,8 @@
       "7.238.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 183,
@@ -4440,7 +4622,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 184,
@@ -4464,7 +4647,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 185,
@@ -4488,7 +4672,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 186,
@@ -4512,7 +4697,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 187,
@@ -4536,7 +4722,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 188,
@@ -4549,7 +4736,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 189,
@@ -4573,7 +4761,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 190,
@@ -4597,7 +4786,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 191,
@@ -4621,7 +4811,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 192,
@@ -4645,7 +4836,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 193,
@@ -4664,7 +4856,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 194,
@@ -4683,7 +4876,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 195,
@@ -4707,7 +4901,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 196,
@@ -4731,7 +4926,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 197,
@@ -4755,7 +4951,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 198,
@@ -4779,7 +4976,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 199,
@@ -4798,7 +4996,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 200,
@@ -4822,7 +5021,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 201,
@@ -4846,7 +5046,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 202,
@@ -4872,7 +5073,8 @@
       "1013.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 203,
@@ -4898,7 +5100,8 @@
       "10.13.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 204,
@@ -4924,7 +5127,8 @@
       "4.241.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 205,
@@ -4950,7 +5154,8 @@
       "7.23.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 206,
@@ -4976,7 +5181,8 @@
       "7.244.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 207,
@@ -5002,7 +5208,8 @@
       "12.138.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 208,
@@ -5028,7 +5235,8 @@
       "533.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 209,
@@ -5054,7 +5262,8 @@
       "4.53.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 210,
@@ -5080,7 +5289,8 @@
       "3cesta-i-njena-obiljezja_23.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 211,
@@ -5101,7 +5311,8 @@
       "7.4207.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 212,
@@ -5127,7 +5338,8 @@
       "1propisi-u-cestovnom-prometu_24.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 213,
@@ -5153,7 +5365,8 @@
       "4.321.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 214,
@@ -5177,7 +5390,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 215,
@@ -5201,7 +5415,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 216,
@@ -5214,7 +5429,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 217,
@@ -5238,7 +5454,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 218,
@@ -5262,7 +5479,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 219,
@@ -5286,7 +5504,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 220,
@@ -5310,7 +5529,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 221,
@@ -5334,7 +5554,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 222,
@@ -5358,7 +5579,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 223,
@@ -5382,7 +5604,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 224,
@@ -5401,7 +5624,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 225,
@@ -5420,7 +5644,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 226,
@@ -5446,7 +5671,8 @@
       "416.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 227,
@@ -5472,7 +5698,8 @@
       "4.51.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 228,
@@ -5498,7 +5725,8 @@
       "4.14.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 229,
@@ -5524,7 +5752,8 @@
       "10.126.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 230,
@@ -5550,7 +5779,8 @@
       "4.26.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 231,
@@ -5576,7 +5806,8 @@
       "7.339.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 232,
@@ -5602,7 +5833,8 @@
       "9.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 233,
@@ -5628,7 +5860,8 @@
       "914.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 234,
@@ -5654,7 +5887,8 @@
       "66.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 235,
@@ -5678,7 +5912,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 236,
@@ -5702,7 +5937,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 237,
@@ -5721,7 +5957,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 238,
@@ -5745,7 +5982,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 239,
@@ -5769,7 +6007,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 240,
@@ -5788,7 +6027,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 241,
@@ -5814,7 +6054,8 @@
       "4.428.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 242,
@@ -5840,7 +6081,8 @@
       "9.16.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 243,
@@ -5866,7 +6108,8 @@
       "3.1cesta-i-njena-obiljezja_61.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 244,
@@ -5892,7 +6135,8 @@
       "1020.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 245,
@@ -5918,7 +6162,8 @@
       "7.414.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 246,
@@ -5944,7 +6189,8 @@
       "10.114.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 247,
@@ -5970,7 +6216,8 @@
       "12.143.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 248,
@@ -5996,7 +6243,8 @@
       "7.243.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 249,
@@ -6022,7 +6270,8 @@
       "3.1cesta-i-njena-obiljezja_46.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 250,
@@ -6048,7 +6297,8 @@
       "2ponasanje-sudionika-u-prometu_21.-22.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 251,
@@ -6074,7 +6324,8 @@
       "4.210.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 252,
@@ -6098,7 +6349,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 253,
@@ -6122,7 +6374,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 254,
@@ -6135,7 +6388,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 255,
@@ -6154,7 +6408,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 256,
@@ -6178,7 +6433,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 257,
@@ -6202,7 +6458,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 258,
@@ -6226,7 +6483,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 259,
@@ -6250,7 +6508,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 260,
@@ -6269,7 +6528,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 261,
@@ -6290,7 +6550,8 @@
       "130185-(1).jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 262,
@@ -6316,7 +6577,8 @@
       "1023.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 263,
@@ -6342,7 +6604,8 @@
       "924.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 264,
@@ -6368,7 +6631,8 @@
       "421.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 265,
@@ -6394,7 +6658,8 @@
       "728.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 266,
@@ -6420,7 +6685,8 @@
       "7.423.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 267,
@@ -6446,7 +6712,8 @@
       "7.122.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 268,
@@ -6472,7 +6739,8 @@
       "543.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 269,
@@ -6498,7 +6766,8 @@
       "8.324.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 270,
@@ -6524,7 +6793,8 @@
       "4.221.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 271,
@@ -6550,7 +6820,8 @@
       "1propisi-u-cestovnom-prometu_29.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 272,
@@ -6574,7 +6845,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 273,
@@ -6598,7 +6870,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 274,
@@ -6622,7 +6895,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 275,
@@ -6641,7 +6915,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 276,
@@ -6665,7 +6940,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 277,
@@ -6689,7 +6965,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 278,
@@ -6713,7 +6990,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 279,
@@ -6739,7 +7017,8 @@
       "414.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 280,
@@ -6765,7 +7044,8 @@
       "4.13.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 281,
@@ -6791,7 +7071,8 @@
       "62.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 282,
@@ -6817,7 +7098,8 @@
       "1016.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 283,
@@ -6843,7 +7125,8 @@
       "519.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 284,
@@ -6869,7 +7152,8 @@
       "4.338.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 285,
@@ -6895,7 +7179,8 @@
       "1propisi-u-cestovnom-prometu_21.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 286,
@@ -6921,7 +7206,8 @@
       "9.120.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 287,
@@ -6947,7 +7233,8 @@
       "10.110.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 288,
@@ -6973,7 +7260,8 @@
       "733.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 289,
@@ -6999,7 +7287,8 @@
       "2ponasanje-sudionika-u-prometu_7.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 290,
@@ -7025,7 +7314,8 @@
       "1propisi-u-cestovnom-prometu_28.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 291,
@@ -7051,7 +7341,8 @@
       "99.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 292,
@@ -7075,7 +7366,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 293,
@@ -7099,7 +7391,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 294,
@@ -7112,7 +7405,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 295,
@@ -7136,7 +7430,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 296,
@@ -7155,7 +7450,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 297,
@@ -7181,7 +7477,8 @@
       "9.113.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 298,
@@ -7207,7 +7504,8 @@
       "1045.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 299,
@@ -7233,7 +7531,8 @@
       "1guna145-80.png"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 300,
@@ -7259,7 +7558,8 @@
       "529.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 301,
@@ -7285,7 +7585,8 @@
       "4.311.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 302,
@@ -7311,7 +7612,8 @@
       "7.124.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 303,
@@ -7337,7 +7639,8 @@
       "3cesta-i-njena-obiljezja_12.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 304,
@@ -7361,7 +7664,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 305,
@@ -7380,7 +7684,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 306,
@@ -7399,7 +7704,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 307,
@@ -7423,7 +7729,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 308,
@@ -7447,7 +7754,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 309,
@@ -7466,7 +7774,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 310,
@@ -7485,7 +7794,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 311,
@@ -7509,7 +7819,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 312,
@@ -7533,7 +7844,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 313,
@@ -7557,7 +7869,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 314,
@@ -7576,7 +7889,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 315,
@@ -7607,7 +7921,8 @@
       "636.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 316,
@@ -7633,7 +7948,8 @@
       "126.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 317,
@@ -7659,7 +7975,8 @@
       "12.130.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 318,
@@ -7685,7 +8002,8 @@
       "1031.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 319,
@@ -7706,7 +8024,8 @@
       "7.28.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 320,
@@ -7732,7 +8051,8 @@
       "10.18.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 321,
@@ -7758,7 +8078,8 @@
       "412.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 322,
@@ -7784,7 +8105,8 @@
       "525.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 323,
@@ -7810,7 +8132,8 @@
       "735.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 324,
@@ -7831,7 +8154,8 @@
       "4.516.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 325,
@@ -7860,7 +8184,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 326,
@@ -7884,7 +8209,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 327,
@@ -7908,7 +8234,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 328,
@@ -7932,7 +8259,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 329,
@@ -7956,7 +8284,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 330,
@@ -7980,7 +8309,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 331,
@@ -7999,7 +8329,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 332,
@@ -8020,7 +8351,8 @@
       "b2_37.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 333,
@@ -8046,7 +8378,8 @@
       "b5_30.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 334,
@@ -8072,7 +8405,8 @@
       "7.410.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 335,
@@ -8098,7 +8432,8 @@
       "4.410.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 336,
@@ -8124,7 +8459,8 @@
       "715.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 337,
@@ -8150,7 +8486,8 @@
       "4.114.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 338,
@@ -8174,7 +8511,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 339,
@@ -8198,7 +8536,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 340,
@@ -8222,7 +8561,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 341,
@@ -8241,7 +8581,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 342,
@@ -8254,7 +8595,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 343,
@@ -8278,7 +8620,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 344,
@@ -8302,7 +8645,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 345,
@@ -8321,7 +8665,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 346,
@@ -8347,7 +8692,8 @@
       "415.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 347,
@@ -8373,7 +8719,8 @@
       "1233.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 348,
@@ -8399,7 +8746,8 @@
       "4.59.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 349,
@@ -8425,7 +8773,8 @@
       "742.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 350,
@@ -8451,7 +8800,8 @@
       "1119.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 351,
@@ -8477,7 +8827,8 @@
       "913.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 352,
@@ -8503,7 +8854,8 @@
       "7.331.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 353,
@@ -8524,7 +8876,8 @@
       "4.130.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 354,
@@ -8550,7 +8903,8 @@
       "528.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 355,
@@ -8574,7 +8928,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 356,
@@ -8598,7 +8953,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 357,
@@ -8622,7 +8978,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 358,
@@ -8646,7 +9003,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 359,
@@ -8670,7 +9028,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 360,
@@ -8694,7 +9053,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 361,
@@ -8720,7 +9080,8 @@
       "8.211.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 362,
@@ -8746,7 +9107,8 @@
       "818.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 363,
@@ -8772,7 +9134,8 @@
       "b2_26.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 364,
@@ -8798,7 +9161,8 @@
       "4.34.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 365,
@@ -8824,7 +9188,8 @@
       "3.1cesta-i-njena-obiljezja_49.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 366,
@@ -8850,7 +9215,8 @@
       "2ponasanje-sudionika-u-prometu_25.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 367,
@@ -8876,7 +9242,8 @@
       "1propisi-u-cestovnom-prometu_19_20.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 368,
@@ -8900,7 +9267,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 369,
@@ -8924,7 +9292,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 370,
@@ -8937,7 +9306,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 371,
@@ -8961,7 +9331,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 372,
@@ -8985,7 +9356,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 373,
@@ -9016,7 +9388,8 @@
       "b7_18.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 374,
@@ -9042,7 +9415,8 @@
       "413.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 375,
@@ -9068,7 +9442,8 @@
       "912.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 376,
@@ -9094,7 +9469,8 @@
       "12.139.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 377,
@@ -9120,7 +9496,8 @@
       "9.12.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 378,
@@ -9146,7 +9523,8 @@
       "10.15.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 379,
@@ -9170,7 +9548,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 380,
@@ -9194,7 +9573,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 381,
@@ -9218,7 +9598,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 382,
@@ -9237,7 +9618,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 383,
@@ -9261,7 +9643,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 384,
@@ -9285,7 +9668,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 385,
@@ -9311,7 +9695,8 @@
       "b4_36.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 386,
@@ -9337,7 +9722,8 @@
       "4.15.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 387,
@@ -9363,7 +9749,8 @@
       "7.4198.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 388,
@@ -9389,7 +9776,8 @@
       "3.1cesta-i-njena-obiljezja_59.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 389,
@@ -9413,7 +9801,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 390,
@@ -9437,7 +9826,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 391,
@@ -9461,7 +9851,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 392,
@@ -9485,7 +9876,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 393,
@@ -9509,7 +9901,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 394,
@@ -9528,7 +9921,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 395,
@@ -9552,7 +9946,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 396,
@@ -9571,7 +9966,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 397,
@@ -9597,7 +9993,8 @@
       "7.431.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 398,
@@ -9623,7 +10020,8 @@
       "616.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 399,
@@ -9647,7 +10045,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 400,
@@ -9671,7 +10070,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 401,
@@ -9695,7 +10095,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 402,
@@ -9719,7 +10120,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 403,
@@ -9743,7 +10145,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 404,
@@ -9767,7 +10170,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 405,
@@ -9791,7 +10195,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 406,
@@ -9815,7 +10220,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 407,
@@ -9839,7 +10245,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 408,
@@ -9858,7 +10265,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 409,
@@ -9879,7 +10287,8 @@
       "162823.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 410,
@@ -9905,7 +10314,8 @@
       "4.126.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 411,
@@ -9931,7 +10341,8 @@
       "3.1cesta-i-njena-obiljezja_44.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 412,
@@ -9955,7 +10366,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 413,
@@ -9968,7 +10380,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 414,
@@ -9987,7 +10400,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 415,
@@ -10011,7 +10425,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 416,
@@ -10035,7 +10450,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 417,
@@ -10054,7 +10470,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 418,
@@ -10080,7 +10497,8 @@
       "12.129.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 419,
@@ -10106,7 +10524,8 @@
       "9.114.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 420,
@@ -10132,7 +10551,8 @@
       "713.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 421,
@@ -10156,7 +10576,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 422,
@@ -10180,7 +10601,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 423,
@@ -10204,7 +10626,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 424,
@@ -10228,7 +10651,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 425,
@@ -10252,7 +10676,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 426,
@@ -10281,7 +10706,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 427,
@@ -10300,7 +10726,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 428,
@@ -10324,7 +10751,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 429,
@@ -10350,7 +10778,8 @@
       "1propisi-u-cestovnom-prometu_19_20.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 430,
@@ -10376,7 +10805,8 @@
       "615.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 431,
@@ -10402,7 +10832,8 @@
       "95.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 432,
@@ -10428,7 +10859,8 @@
       "4.120.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 433,
@@ -10454,7 +10886,8 @@
       "10.118.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 434,
@@ -10478,7 +10911,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 435,
@@ -10502,7 +10936,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 436,
@@ -10526,7 +10961,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 437,
@@ -10550,7 +10986,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 438,
@@ -10569,7 +11006,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 439,
@@ -10593,7 +11031,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 440,
@@ -10617,7 +11056,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 441,
@@ -10643,7 +11083,8 @@
       "9.19.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 442,
@@ -10669,7 +11110,8 @@
       "1218.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 443,
@@ -10695,7 +11137,8 @@
       "7.242.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 444,
@@ -10721,7 +11164,8 @@
       "4.223.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 445,
@@ -10745,7 +11189,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 446,
@@ -10769,7 +11214,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 447,
@@ -10793,7 +11239,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 448,
@@ -10817,7 +11264,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 449,
@@ -10841,7 +11289,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 450,
@@ -10854,7 +11303,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 451,
@@ -10878,7 +11328,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 452,
@@ -10902,7 +11353,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 453,
@@ -10926,7 +11378,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 454,
@@ -10952,7 +11405,8 @@
       "4.18.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 455,
@@ -10978,7 +11432,8 @@
       "3cesta-i-njena-obiljezja_4.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 456,
@@ -11004,7 +11459,8 @@
       "4.226.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 457,
@@ -11028,7 +11484,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 458,
@@ -11057,7 +11514,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 459,
@@ -11081,7 +11539,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 460,
@@ -11107,7 +11566,8 @@
       "104.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 461,
@@ -11133,7 +11593,8 @@
       "b1_26.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 462,
@@ -11159,7 +11620,8 @@
       "8.330.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 463,
@@ -11190,7 +11652,8 @@
       "111.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 464,
@@ -11211,7 +11674,8 @@
       "4.37.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 465,
@@ -11237,7 +11701,8 @@
       "723.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 466,
@@ -11263,7 +11728,8 @@
       "4.213.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 467,
@@ -11287,7 +11753,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 468,
@@ -11311,7 +11778,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 469,
@@ -11335,7 +11803,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 470,
@@ -11354,7 +11823,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 471,
@@ -11380,7 +11850,8 @@
       "2ponasanje-sudionika-u-prometu_8.-9.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 472,
@@ -11401,7 +11872,8 @@
       "425.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 473,
@@ -11427,7 +11899,8 @@
       "7.426.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 474,
@@ -11448,7 +11921,8 @@
       "4.243.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 475,
@@ -11474,7 +11948,8 @@
       "527.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 476,
@@ -11489,7 +11964,8 @@
       "1svjetla-kratka-znak.png"
     ],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 477,
@@ -11513,7 +11989,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 478,
@@ -11526,7 +12003,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 479,
@@ -11547,7 +12025,8 @@
       "8.211.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 480,
@@ -11573,7 +12052,8 @@
       "1038.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 481,
@@ -11599,7 +12079,8 @@
       "919.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 482,
@@ -11625,7 +12106,8 @@
       "4.323.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 483,
@@ -11651,7 +12133,8 @@
       "7.32.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 484,
@@ -11677,7 +12160,8 @@
       "1propisi-u-cestovnom-prometu_17_18.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 485,
@@ -11703,7 +12187,8 @@
       "1propisi-u-cestovnom-prometu_25.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 486,
@@ -11727,7 +12212,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 487,
@@ -11751,7 +12237,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 488,
@@ -11777,7 +12264,8 @@
       "4.23.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 489,
@@ -11803,7 +12291,8 @@
       "7.422.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 490,
@@ -11829,7 +12318,8 @@
       "4.314.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 491,
@@ -11853,7 +12343,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 492,
@@ -11877,7 +12368,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 493,
@@ -11901,7 +12393,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 494,
@@ -11925,7 +12418,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 495,
@@ -11949,7 +12443,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 496,
@@ -11975,7 +12470,8 @@
       "7.224.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 497,
@@ -12001,7 +12497,8 @@
       "1211.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 498,
@@ -12027,7 +12524,8 @@
       "4.52.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 499,
@@ -12053,7 +12551,8 @@
       "551.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 500,
@@ -12079,7 +12578,8 @@
       "1039.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 501,
@@ -12103,7 +12603,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 502,
@@ -12122,7 +12623,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 503,
@@ -12146,7 +12648,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 504,
@@ -12165,7 +12668,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 505,
@@ -12189,7 +12693,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 506,
@@ -12215,7 +12720,8 @@
       "4.332.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 507,
@@ -12241,7 +12747,8 @@
       "726.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 508,
@@ -12267,7 +12774,8 @@
       "1046.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 509,
@@ -12293,7 +12801,8 @@
       "10.119.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 510,
@@ -12319,7 +12828,8 @@
       "2ponasanje-sudionika-u-prometu_26.-27.-28.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 511,
@@ -12340,7 +12850,8 @@
       "7.241.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": true
   },
   {
     "id": 512,
@@ -12366,7 +12877,8 @@
       "4.211.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 513,
@@ -12390,7 +12902,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 514,
@@ -12403,7 +12916,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 515,
@@ -12427,7 +12941,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 516,
@@ -12451,7 +12966,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 517,
@@ -12477,7 +12993,8 @@
       "4.245.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 518,
@@ -12503,7 +13020,8 @@
       "7.332.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 519,
@@ -12529,7 +13047,8 @@
       "921.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 520,
@@ -12555,7 +13074,8 @@
       "520.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 521,
@@ -12579,7 +13099,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 522,
@@ -12603,7 +13124,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 523,
@@ -12627,7 +13149,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 524,
@@ -12648,7 +13171,8 @@
       "7.435.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 525,
@@ -12674,7 +13198,8 @@
       "1propisi-u-cestovnom-prometu_26.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 526,
@@ -12698,7 +13223,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 527,
@@ -12724,7 +13250,8 @@
       "935.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 528,
@@ -12750,7 +13277,8 @@
       "12.114.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 529,
@@ -12776,7 +13304,8 @@
       "720.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 530,
@@ -12802,7 +13331,8 @@
       "524.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 531,
@@ -12826,7 +13356,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 532,
@@ -12850,7 +13381,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 533,
@@ -12869,7 +13401,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 534,
@@ -12893,7 +13426,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 535,
@@ -12917,7 +13451,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 536,
@@ -12943,7 +13478,8 @@
       "12.15.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 537,
@@ -12969,7 +13505,8 @@
       "2ponasanje-sudionika-u-prometu_24.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 538,
@@ -12995,7 +13532,8 @@
       "614.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 539,
@@ -13021,7 +13559,8 @@
       "538.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 540,
@@ -13047,7 +13586,8 @@
       "10.11.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 541,
@@ -13071,7 +13611,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 542,
@@ -13095,7 +13636,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 543,
@@ -13119,7 +13661,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 544,
@@ -13143,7 +13686,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 545,
@@ -13169,7 +13713,8 @@
       "4.512.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 546,
@@ -13195,7 +13740,8 @@
       "1017.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 547,
@@ -13221,7 +13767,8 @@
       "550.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 548,
@@ -13247,7 +13794,8 @@
       "3.1cesta-i-njena-obiljezja_55.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 549,
@@ -13271,7 +13819,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 550,
@@ -13290,7 +13839,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 551,
@@ -13309,7 +13859,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 552,
@@ -13335,7 +13886,8 @@
       "4.326.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 553,
@@ -13361,7 +13913,8 @@
       "12.144.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 554,
@@ -13387,7 +13940,8 @@
       "1026.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 555,
@@ -13411,7 +13965,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 556,
@@ -13440,7 +13995,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 557,
@@ -13464,7 +14020,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 558,
@@ -13485,7 +14042,8 @@
       "7.329.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 559,
@@ -13509,7 +14067,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 560,
@@ -13535,7 +14094,8 @@
       "4.313.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 561,
@@ -13559,7 +14119,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 562,
@@ -13585,7 +14146,8 @@
       "4.242.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 563,
@@ -13609,7 +14171,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 564,
@@ -13633,7 +14196,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 565,
@@ -13657,7 +14221,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 566,
@@ -13681,7 +14246,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 567,
@@ -13705,7 +14271,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 568,
@@ -13731,7 +14298,8 @@
       "10.121.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 569,
@@ -13757,7 +14325,8 @@
       "947.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 570,
@@ -13781,7 +14350,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 571,
@@ -13794,7 +14364,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 572,
@@ -13820,7 +14391,8 @@
       "1042.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 573,
@@ -13844,7 +14416,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 574,
@@ -13863,7 +14436,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 575,
@@ -13889,7 +14463,8 @@
       "1037.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 576,
@@ -13915,7 +14490,8 @@
       "4.42.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 577,
@@ -13941,7 +14517,8 @@
       "4.27.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 578,
@@ -13965,7 +14542,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 579,
@@ -13989,7 +14567,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 580,
@@ -14002,7 +14581,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 581,
@@ -14026,7 +14606,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 582,
@@ -14052,7 +14633,8 @@
       "534.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 583,
@@ -14076,7 +14658,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 584,
@@ -14100,7 +14683,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 585,
@@ -14126,7 +14710,8 @@
       "4.119.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 586,
@@ -14141,7 +14726,8 @@
       "7.412.jpg"
     ],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 587,
@@ -14165,7 +14751,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 588,
@@ -14186,7 +14773,8 @@
       "7.328.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 589,
@@ -14210,7 +14798,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 590,
@@ -14234,7 +14823,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 591,
@@ -14260,7 +14850,8 @@
       "1040.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 592,
@@ -14284,7 +14875,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 593,
@@ -14310,7 +14902,8 @@
       "7.432.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 594,
@@ -14334,7 +14927,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 595,
@@ -14358,7 +14952,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 596,
@@ -14384,7 +14979,8 @@
       "10.122.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 597,
@@ -14408,7 +15004,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 598,
@@ -14432,7 +15029,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 599,
@@ -14458,7 +15056,8 @@
       "531.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 600,
@@ -14484,7 +15083,8 @@
       "4.231.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 601,
@@ -14510,7 +15110,8 @@
       "910.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 602,
@@ -14536,7 +15137,8 @@
       "4.24.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 603,
@@ -14562,7 +15164,8 @@
       "641.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 604,
@@ -14588,7 +15191,8 @@
       "4.55.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 605,
@@ -14612,7 +15216,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 606,
@@ -14638,7 +15243,8 @@
       "4.331.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 607,
@@ -14664,7 +15270,8 @@
       "711.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 608,
@@ -14688,7 +15295,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 609,
@@ -14712,7 +15320,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 610,
@@ -14738,7 +15347,8 @@
       "4.228.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 611,
@@ -14762,7 +15372,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 612,
@@ -14788,7 +15399,8 @@
       "546.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 613,
@@ -14814,7 +15426,8 @@
       "1033.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 614,
@@ -14838,7 +15451,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 615,
@@ -14864,7 +15478,8 @@
       "126.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 616,
@@ -14890,7 +15505,8 @@
       "1034.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 617,
@@ -14916,7 +15532,8 @@
       "7.345.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 618,
@@ -14942,7 +15559,8 @@
       "2ponasanje-sudionika-u-prometu_23.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 619,
@@ -14966,7 +15584,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 620,
@@ -14992,7 +15611,8 @@
       "1230.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 621,
@@ -15016,7 +15636,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 622,
@@ -15042,7 +15663,8 @@
       "932.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 623,
@@ -15063,7 +15685,8 @@
       "7.317.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 624,
@@ -15089,7 +15712,8 @@
       "730.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 625,
@@ -15113,7 +15737,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 626,
@@ -15137,7 +15762,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 627,
@@ -15161,7 +15787,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 628,
@@ -15187,7 +15814,8 @@
       "7.428.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 629,
@@ -15213,7 +15841,8 @@
       "4.322.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 630,
@@ -15234,7 +15863,8 @@
       "4.227.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 631,
@@ -15258,7 +15888,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 632,
@@ -15282,7 +15913,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 633,
@@ -15308,7 +15940,8 @@
       "1219.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 634,
@@ -15332,7 +15965,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 635,
@@ -15358,7 +15992,8 @@
       "8.224.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 636,
@@ -15382,7 +16017,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 637,
@@ -15408,7 +16044,8 @@
       "930.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 638,
@@ -15421,7 +16058,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 639,
@@ -15447,7 +16085,8 @@
       "10.19.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 640,
@@ -15471,7 +16110,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 641,
@@ -15495,7 +16135,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 642,
@@ -15521,7 +16162,8 @@
       "98.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 643,
@@ -15547,7 +16189,8 @@
       "12.134.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 644,
@@ -15573,7 +16216,8 @@
       "1030.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 645,
@@ -15597,7 +16241,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 646,
@@ -15616,7 +16261,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 647,
@@ -15640,7 +16286,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 648,
@@ -15664,7 +16311,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 649,
@@ -15690,7 +16338,8 @@
       "1221.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 650,
@@ -15716,7 +16365,8 @@
       "933.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 651,
@@ -15740,7 +16390,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 652,
@@ -15766,7 +16417,8 @@
       "1propisi-u-cestovnom-prometu_30.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 653,
@@ -15792,7 +16444,8 @@
       "537.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 654,
@@ -15818,7 +16471,8 @@
       "105.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 655,
@@ -15849,7 +16503,8 @@
       "621.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 656,
@@ -15875,7 +16530,8 @@
       "12.14.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 657,
@@ -15894,7 +16550,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 658,
@@ -15920,7 +16577,8 @@
       "7.421.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 659,
@@ -15944,7 +16602,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 660,
@@ -15963,7 +16622,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 661,
@@ -15987,7 +16647,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 662,
@@ -16013,7 +16674,8 @@
       "7.139.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 663,
@@ -16039,7 +16701,8 @@
       "4.29.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 664,
@@ -16065,7 +16728,8 @@
       "640.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 665,
@@ -16078,7 +16742,8 @@
     ],
     "images": [],
     "type": "TYPED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 666,
@@ -16097,7 +16762,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 667,
@@ -16123,7 +16789,8 @@
       "10.111.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 668,
@@ -16147,7 +16814,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 669,
@@ -16168,7 +16836,8 @@
       "b2_36.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 670,
@@ -16192,7 +16861,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 671,
@@ -16216,7 +16886,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 672,
@@ -16242,7 +16913,8 @@
       "911.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 673,
@@ -16268,7 +16940,8 @@
       "10.16.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 674,
@@ -16294,7 +16967,8 @@
       "7.330.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 675,
@@ -16320,7 +16994,8 @@
       "4.336.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 676,
@@ -16346,7 +17021,8 @@
       "130185.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 677,
@@ -16370,7 +17046,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 678,
@@ -16394,7 +17071,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 679,
@@ -16418,7 +17096,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 680,
@@ -16442,7 +17121,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 681,
@@ -16468,7 +17148,8 @@
       "1032.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 682,
@@ -16492,7 +17173,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 683,
@@ -16518,7 +17200,8 @@
       "4.39.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 684,
@@ -16542,7 +17225,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 685,
@@ -16566,7 +17250,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 686,
@@ -16587,7 +17272,8 @@
       "7.318.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 687,
@@ -16606,7 +17292,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 688,
@@ -16632,7 +17319,8 @@
       "549.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 689,
@@ -16658,7 +17346,8 @@
       "12.132.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 690,
@@ -16684,7 +17373,8 @@
       "1019.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 691,
@@ -16708,7 +17398,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 692,
@@ -16732,7 +17423,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 693,
@@ -16753,7 +17445,8 @@
       "4.246.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 694,
@@ -16777,7 +17470,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 695,
@@ -16803,7 +17497,8 @@
       "1034.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 696,
@@ -16827,7 +17522,8 @@
     ],
     "images": [],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 697,
@@ -16853,7 +17549,8 @@
       "7.418.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 698,
@@ -16879,7 +17576,8 @@
       "103.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   },
   {
     "id": 699,
@@ -16905,6 +17603,7 @@
       "1027.jpg"
     ],
     "type": "SELECTED",
-    "incorrectlyAnsweredCount": 0
+    "incorrectlyAnsweredCount": 0,
+    "isIntersection": false
   }
 ]

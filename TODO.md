@@ -6,6 +6,7 @@
 [x]  - move images from url to localy stored
 [x]  - repair image alignment
 
+[]  - add if question is intersection or not
 []  - generate X number of intersection questions
 []  - make answering wrong on intersection question automatic exam failure + feedback that that is the reason in finish exam list and view
 

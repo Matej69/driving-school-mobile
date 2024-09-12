@@ -12,6 +12,7 @@ export type Question =  {
     question: string, 
     images: ImgRequiresUrisKeys[],
     answers: Answer[],
+    isIntersection: boolean,
     incorrectlyAnsweredCount: number
 }
 

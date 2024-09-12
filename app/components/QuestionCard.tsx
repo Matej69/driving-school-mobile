@@ -116,3 +116,5 @@ export const QuestionCard = (p: QuestionCardProps) => {
         </View>
     )
 } 
+
+const intersectionQIds = [30, 31, 36, 37,38,55,67,87,96,129,128,155,173,182,205,206,248,319,443,496,511]
