@@ -22,31 +22,46 @@ import { asyncStorage } from '../async-storage/async-storage';
 import { finishedExamToStorage } from '../mapper/mapper';
 import { storage } from '../storage/storage';
 
-const QUESTIONS_PER_EXAM = 38;
+const NON_INTERSECTION_QUESTIONS_PER_EXAM = 34;
+const INTERSECTION_QUESTIONS_PER_EXAM = 4;
+const QUESTIONS_PER_EXAM = NON_INTERSECTION_QUESTIONS_PER_EXAM + INTERSECTION_QUESTIONS_PER_EXAM;
 
-const generateExamQuestions = (questionPool: Question[], amountToGenerate: number): Question[]  => {
-  if(questionPool.length < amountToGenerate) {
-    alert(`Pool of ${questionPool.length} question can't geenrate ${amountToGenerate} unique questions`)
-    return []
-  }
-  const generatedQuestions: Question[] = []
-  while(generatedQuestions.length != amountToGenerate) {
-    const randIndex = Math.floor(Math.random() * (questionPool.length - 1) + 1)
-    const alreadyGenerated = generatedQuestions.some(el => el.id == questionPool[randIndex].id)
-    if(!alreadyGenerated) {
-      const generatedQuestion = {...questionPool[randIndex]}
-      generatedQuestion.answers.forEach(a => a.checked = false);
-      generatedQuestions.push(generatedQuestion)
+const generateExamQuestions = (questionPool: Question[]): Question[]  => {
+  // Helper generator function
+  const generateQuestions = (qAmountToGenerate: number, _questionPool: Question[]): Question[] => {
+    const questions: Question[] = []
+    if(_questionPool.length === qAmountToGenerate)
+      return _questionPool
+    else if(_questionPool.length < qAmountToGenerate) {
+      console.warn(`Question pool does not have enough element to generate ${qAmountToGenerate} questions. Returning all ${_questionPool.length}`)
+      return _questionPool
     }
+    for(let i = 0; i < qAmountToGenerate; i++) {
+      const randIndex = Math.floor(Math.random() * (_questionPool.length - 1) + 1)
+      const generatedQuestion = deepCopy(_questionPool[randIndex])
+      generatedQuestion.answers.forEach(a => a.checked = false);
+      questions.push(generatedQuestion)
+      _questionPool.splice(randIndex, 1)
+    }
+    return questions;
   }
+
+  // Question generation
+  const generatedQuestions: Question[] = []
+  const nonIntersectionQuestionsPool = questionPool.filter(q => !q.isIntersection)
+  generatedQuestions.push(...generateQuestions(NON_INTERSECTION_QUESTIONS_PER_EXAM, nonIntersectionQuestionsPool))
+  const intersectionQuestionsPool = questionPool.filter(q => q.isIntersection)
+  generatedQuestions.push(...generateQuestions(INTERSECTION_QUESTIONS_PER_EXAM, intersectionQuestionsPool))
+  
   return generatedQuestions
 }
+
 
 export default function ExamSimulationScreen() {
   const { activeTab, navigate } = useTabNavigation()
   
   const { allQuestions, setAllQuestions } = useStore()
-  const [examQuestions, setExamQuestions] = useState(generateExamQuestions(allQuestions, QUESTIONS_PER_EXAM))
+  const [examQuestions, setExamQuestions] = useState(generateExamQuestions(allQuestions))
   const { Component: PaginationComponent, firstItemIndexOnPage, lastItemIndexOnPage, setCurrentPage, setItemCount, currentPage } 
   = usePagination({ _currentPage: 1, _itemsCount: QUESTIONS_PER_EXAM, _pageSize: 1});
   
