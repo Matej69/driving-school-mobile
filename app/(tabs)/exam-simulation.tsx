@@ -21,10 +21,7 @@ import { useNavigation } from '@react-navigation/native';
 import { asyncStorage } from '../async-storage/async-storage';
 import { finishedExamToStorage } from '../mapper/mapper';
 import { storage } from '../storage/storage';
-
-const NON_INTERSECTION_QUESTIONS_PER_EXAM = 34;
-const INTERSECTION_QUESTIONS_PER_EXAM = 4;
-const QUESTIONS_PER_EXAM = NON_INTERSECTION_QUESTIONS_PER_EXAM + INTERSECTION_QUESTIONS_PER_EXAM;
+import { INTERSECTION_QUESTIONS_PER_EXAM, NON_INTERSECTION_QUESTIONS_PER_EXAM, QUESTIONS_PER_EXAM } from '../constants/Global';
 
 const generateExamQuestions = (questionPool: Question[]): Question[]  => {
   // Helper generator function

@@ -72,6 +72,20 @@ export default function FinishedExams() {
         <SkeletonList itemsNumber={10}/>
       }
       {
+        screenType === 'finished-exam-list' &&
+        <FlatList<FinishedExam> 
+          initialNumToRender={10}
+          style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
+          data={exams} 
+          renderItem={el =>
+            <TouchableOpacity onPress={() => onSelectExam(el.item.date)} style={{ paddingVertical: 4 }}>
+              <FinishedExamItem date={el.item.date} questions={el.item.questions}></FinishedExamItem>
+            </TouchableOpacity>
+          }
+          keyExtractor={el => el.date.toString()} 
+        />
+      }
+      {
         screenType === 'finished-exam-single' &&
         <FlatList<Question> 
           initialNumToRender={3}
@@ -85,20 +99,6 @@ export default function FinishedExams() {
             </View>
           }
           keyExtractor={el => `exam-question-card-${el.id}`} 
-        />
-      }
-      {
-        screenType === 'finished-exam-list' &&
-        <FlatList<FinishedExam> 
-          initialNumToRender={10}
-          style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
-          data={exams} 
-          renderItem={el =>
-            <TouchableOpacity onPress={() => onSelectExam(el.item.date)} style={{ paddingVertical: 4 }}>
-              <FinishedExamItem date={el.item.date} questions={el.item.questions}></FinishedExamItem>
-            </TouchableOpacity>
-          }
-          keyExtractor={el => el.date.toString()} 
         />
       }
     </SafeAreaView>

@@ -1,4 +1,4 @@
-import { Dimensions, Image, Text, TouchableOpacity, View } from "react-native"
+import { Dimensions, FlexAlignType, FlexStyle, Image, Text, TouchableOpacity, View } from "react-native"
 
 import React, { useEffect, useState } from "react"
 import { AnswerItem } from "./AnswerItem"
@@ -8,6 +8,7 @@ import colors from "../colors"
 import * as FileSystem from 'expo-file-system';
 import { imgRequiresUris, ImgRequiresUrisKeys } from "../storage/image-require-uris"
 import { deepCopy } from "../utils/utils"
+import { Ionicons } from "@expo/vector-icons"
 
 
 type QuestionCardProps = {
@@ -90,6 +91,8 @@ export const QuestionCard = (p: QuestionCardProps) => {
         return <Image style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio }} source={imgRequiresUris[img]}></Image>
     }
 
+    const bottomInfoRowJustify: 'space-between' | 'flex-end' = p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount ? 'space-between' : 'flex-end'
+
 	return (
         <View>
             <Text className="text-gray-600 font-bold">{question.question}</Text>
@@ -109,10 +112,19 @@ export const QuestionCard = (p: QuestionCardProps) => {
                     </TouchableOpacity>
                 ))
             }
-            {
-                p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount && 
-                <Text className="text-xs mt-3" style={{ color: colors.failure }}>{question.incorrectlyAnsweredCount} puta pogrešno odgovoreno</Text>
-            }
+            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: bottomInfoRowJustify, alignItems: 'flex-end', marginTop: 8}}>
+                {
+                    p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount && 
+                    <Text className="text-xs" style={{ color: colors.failure }}>{question.incorrectlyAnsweredCount} puta pogrešno odgovoreno</Text>
+                }
+                {
+                    p.question.isIntersection && 
+                    <View style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', borderWidth: 1, borderColor: 'orange', borderRadius: 10, paddingHorizontal: 6, paddingVertical: 2 }}>
+                        <Text style={{ color: 'orange', fontWeight: 'bold' }}>Raskrižje</Text>
+                        <Ionicons name="warning"  style={{ marginLeft: 2 }} color={'orange'} size={24}></Ionicons>
+                    </View>
+                }
+            </View>
         </View>
     )
 } 
