@@ -75,10 +75,11 @@ export default function FinishedExams() {
         screenType === 'finished-exam-list' &&
         <FlatList<FinishedExam> 
           initialNumToRender={10}
-          style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
+          style={{ backgroundColor: colors.rootBackground }}
+          contentContainerStyle={{ padding: 4, rowGap: 3 }}
           data={exams} 
           renderItem={el =>
-            <TouchableOpacity onPress={() => onSelectExam(el.item.date)} style={{ paddingVertical: 4 }}>
+            <TouchableOpacity onPress={() => onSelectExam(el.item.date)}>
               <FinishedExamItem date={el.item.date} questions={el.item.questions}></FinishedExamItem>
             </TouchableOpacity>
           }
@@ -89,10 +90,11 @@ export default function FinishedExams() {
         screenType === 'finished-exam-single' &&
         <FlatList<Question> 
           initialNumToRender={3}
-          style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
+          style={{ backgroundColor: colors.rootBackground }}
+          contentContainerStyle={{ padding: 4, rowGap: 3 }}
           data={selectedExam?.questions} 
           renderItem={el =>
-            <View key={`exam-question-card-${el.item.id}`} style={{ paddingVertical: 4 }}>
+            <View key={`exam-question-card-${el.item.id}`}>
               <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
                 <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
               </CardContainer>

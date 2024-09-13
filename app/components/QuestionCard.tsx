@@ -92,6 +92,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
     }
 
     const bottomInfoRowJustify: 'space-between' | 'flex-end' = p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount ? 'space-between' : 'flex-end'
+    const hasBottomInfoRow = (p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount) || p.question.isIntersection
 
 	return (
         <View>
@@ -112,7 +113,8 @@ export const QuestionCard = (p: QuestionCardProps) => {
                     </TouchableOpacity>
                 ))
             }
-            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: bottomInfoRowJustify, alignItems: 'flex-end', marginTop: 8}}>
+            { hasBottomInfoRow && <View className="mt-2"/> }
+            <View style={{ display: 'flex', flexDirection: 'row', justifyContent: bottomInfoRowJustify, alignItems: 'flex-end'}}>
                 {
                     p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount && 
                     <Text className="text-xs" style={{ color: colors.failure }}>{question.incorrectlyAnsweredCount} puta pogrešno odgovoreno</Text>

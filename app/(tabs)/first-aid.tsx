@@ -19,9 +19,7 @@ export default function FirstAid() {
         contentContainerStyle={{ padding: 4, rowGap: 3}}
         data={firstAidQuestions}
         renderItem={el =>
-          <View key={`first-aid-q-${el.item.question}`}>
-            <FirstAidQuestionItem q={el.item}/>
-          </View>
+            <FirstAidQuestionItem key={`first-aid-q-${el.item.question}`} q={el.item}/>
         }
         keyExtractor={q => q.question} 
       />

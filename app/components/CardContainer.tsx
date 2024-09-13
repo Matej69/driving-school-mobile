@@ -11,18 +11,19 @@ type CardContainerProps = {
     children: any
 }
 
-const colorClassMap: Record<Colors, string> = {
-    'base': 'bg-blue-600',
-    'success': 'bg-green-600',
-    'failure': 'bg-red-600'
+const colorMap: Record<Colors, string> = {
+    'base': colors.disabled,
+    'success': colors.success,
+    'failure': colors.failure
 }
 
 export const CardContainer = ({ color, children }: CardContainerProps) => {
+
+    const borderWeight = color == 'base' ? 1 : 1
+
     return (
-        <View className={`${colorClassMap[color]} rounded-lg pl-0.5`}>
-            <View className="bg-background p-2 rounded-lg">
-                { children }
-            </View>
+        <View style={{ padding: 6, backgroundColor: colors['section-item'], borderColor: colorMap['base'], borderWidth: borderWeight, borderRadius: 6 }} >
+            { children }
         </View>
     ) 
 }

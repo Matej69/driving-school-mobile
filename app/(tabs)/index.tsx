@@ -81,14 +81,14 @@ export default function Questions() {
         </View>
         <FlatList<Question> 
           initialNumToRender={3}
-          style={{ backgroundColor: colors.rootBackground, padding: 4, gap: 4 }}
+          style={{ backgroundColor: colors.rootBackground }}
+          contentContainerStyle={{ padding: 4, rowGap: 3 }}
           data={displayedQuestions} 
           renderItem={el =>
             <View key={`question-card-${el.item.id}`}>
               <CardContainer color='base'>
                 <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
               </CardContainer>
-              <View className='mt-2' />
             </View>   
           }
           keyExtractor={el => `question-card-${el.id}`} 
