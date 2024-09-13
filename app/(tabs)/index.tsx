@@ -2,7 +2,7 @@ import { FlatList, ScrollView, Text, TextInput, TextInputFocusEventData, Touchab
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { CardContainer } from '../components/CardContainer';
 import { View } from 'react-native-animatable';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { QuestionCard } from '../components/QuestionCard';
 import { Question } from '../types/types';
 import { usePagination } from '../hooks/usePagination';
@@ -17,13 +17,15 @@ import useStore from '../store/store';
 export default function Questions() {
 
   const { allQuestions } = useStore()
-  const { Component: PaginationComponent, firstItemIndexOnPage, lastItemIndexOnPage, setCurrentPage, setItemCount } = usePagination({ _currentPage: 1, _itemsCount: allQuestions.length, _pageSize: 10});
+  const { Component: PaginationComponent, firstItemIndexOnPage, lastItemIndexOnPage, setCurrentPage, setItemCount, currentPage } = usePagination({ _currentPage: 1, _itemsCount: allQuestions.length, _pageSize: 10});
 
   const [filteredQuestions, setFilteredQuestions] = useState(allQuestions)
   const [displayedQuestions, setDisplayedQuestions] = useState(filteredQuestions.slice(firstItemIndexOnPage, lastItemIndexOnPage + 1));
   
   const [unappliedSearchValue, setUnappliedSearchValue] = useState('');
   const [searchValue, setSearchValue] = useState('');
+
+  const qListRef = useRef<FlatList<Question>>(null); 
   
   const search = () => {
     const newFilteredQuestions = searchValue.length > 0 ? allQuestions.filter(q => q.question.toLowerCase().indexOf(searchValue.toLowerCase()) > -1) : allQuestions
@@ -44,6 +46,12 @@ export default function Questions() {
     ))
     setDisplayedQuestions(questionsForPage);
   }
+  
+  const onSearchClear = () => {
+    setUnappliedSearchValue('')
+    setSearchValue('')
+  }
+
 
   // Keep only needed questions and mark them as checked if they are correct so filled checkbox is redered
   useEffect(() => {
@@ -57,15 +65,15 @@ export default function Questions() {
       setDisplayedQuestions(questionsForPage);
   }, [firstItemIndexOnPage])
 
-  const onSearchClear = () => {
-    setUnappliedSearchValue('')
-    setSearchValue('')
-  }
-
   useEffect(() => {
     search()
   }, [searchValue])
- 
+
+  useEffect(() => {
+    qListRef?.current?.scrollToOffset({ offset: 0, animated: false }); // scrolls back to start of list when items change
+  }, [searchValue, currentPage]) 
+  
+
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
@@ -80,6 +88,7 @@ export default function Questions() {
           <PaginationComponent></PaginationComponent>
         </View>
         <FlatList<Question> 
+          ref={qListRef}
           initialNumToRender={3}
           style={{ backgroundColor: colors.rootBackground }}
           contentContainerStyle={{ padding: 4, rowGap: 3 }}

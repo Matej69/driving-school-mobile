@@ -12,7 +12,8 @@
 [x] - not a single intersection and no more then 4 non intersection questions can be incorrect to pass exam
 [x] - add more choices for questions that require text input as answer(input is to much hasle)
 [x]  - separate finished exam questions in correctly and incorrectly answered list 
+[x]  - reset view to top of the screen on page change
 
-[]  - reset view to top of the screen on page change
+[]  - currently if questions loads it takes some time for image to load so flickering happens, fix this and show question only when image if fuly loaded
 
 []  - run images through AI

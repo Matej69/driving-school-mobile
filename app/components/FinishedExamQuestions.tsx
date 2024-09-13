@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react"
+import React, { useEffect, useMemo, useRef, useState } from "react"
 import { TouchableOpacity, View, Text, FlatList } from "react-native"
 import { Question } from "../types/types"
 import colors from "../colors"
@@ -8,19 +8,13 @@ import { isQuestionAnsweredCorrectly } from "../utils/utils"
 
 type FinishedExamQuestionsTabKey = 'correctly-answered' | 'incorrectly-answered'
 
-// const getQuestionsByCorrectness = (tabKey: FinishedExamQuestionsTabKey, questions: Question[]) => {
-//     switch(tabKey) {
-//         case "incorrectly-answered": return questions.filter(q => !isQuestionAnsweredCorrectly(q))
-//         case "correctly-answered": return questions.filter(q => isQuestionAnsweredCorrectly(q))
-//     }
-// }
-
 type FinishedExamQuestionsProps = {
     questions: Question[]
 }
 
 export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
     const [selectedTabKey, setSelectedTabKey] = useState<FinishedExamQuestionsTabKey>('incorrectly-answered')
+    
 
     const questionsGroupedByCorrectness: Map<FinishedExamQuestionsTabKey, Question[]> = useMemo(() => {
       return new Map([
@@ -45,7 +39,8 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
               <View style={{ backgroundColor: tabItemColor('correctly-answered'), width: 6, height: 6, borderRadius: 9999 }}></View>
             </TouchableOpacity>
           </View>
-          <FlatList<Question> 
+          <FlatList<Question>             
+            initialScrollIndex={0}
             initialNumToRender={3}
             style={{ backgroundColor: colors.rootBackground }}
             contentContainerStyle={{ padding: 4, rowGap: 3 }}
@@ -58,6 +53,7 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
               </View>
             }
             keyExtractor={el => `exam-question-card-${el.id}`} 
+
           />
         </>
     )
