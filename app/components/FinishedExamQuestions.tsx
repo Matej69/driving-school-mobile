@@ -1,0 +1,62 @@
+import React, { useMemo, useState } from "react"
+import { TouchableOpacity, View, Text, FlatList } from "react-native"
+import { Question } from "../types/types"
+import colors from "../colors"
+import { CardContainer } from "./CardContainer"
+import { QuestionCard } from "./QuestionCard"
+import { isQuestionAnsweredCorrectly } from "../utils/utils"
+
+type FinishedExamQuestionsTabKey = 'correctly-answered' | 'incorrectly-answered'
+
+// const getQuestionsByCorrectness = (tabKey: FinishedExamQuestionsTabKey, questions: Question[]) => {
+//     switch(tabKey) {
+//         case "incorrectly-answered": return questions.filter(q => !isQuestionAnsweredCorrectly(q))
+//         case "correctly-answered": return questions.filter(q => isQuestionAnsweredCorrectly(q))
+//     }
+// }
+
+type FinishedExamQuestionsProps = {
+    questions: Question[]
+}
+
+export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
+
+    const [selectedTabKey, setSelectedTabKey] = useState<FinishedExamQuestionsTabKey>('incorrectly-answered')
+    const [questionsGroupedByCorrectness] = useState<Record<FinishedExamQuestionsTabKey, Question[]>>({
+        'incorrectly-answered': p.questions.filter(q => !isQuestionAnsweredCorrectly(q)),
+        'correctly-answered': p.questions.filter(q => isQuestionAnsweredCorrectly(q))
+    })
+
+    const tabItemColor = (tabKey: FinishedExamQuestionsTabKey) => {
+        return selectedTabKey == tabKey ? colors.disabled : colors['base-bg']
+    }
+
+    return(
+        <>
+          <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', padding: 4 }}>
+            <TouchableOpacity style={{ padding: 2, alignItems: 'center' }} onPress={() => setSelectedTabKey("incorrectly-answered")}>
+              <Text style={{ fontSize: 18, fontWeight: 'bold', color: tabItemColor('incorrectly-answered') }}>POGREŠNI</Text>
+              <View style={{ backgroundColor: tabItemColor('incorrectly-answered'), width: 6, height: 6, borderRadius: 9999 }}></View>
+            </TouchableOpacity>
+            <TouchableOpacity style={{ padding: 2, alignItems: 'center' }} onPress={() => setSelectedTabKey("correctly-answered")}>
+              <Text style={{ fontSize: 18, fontWeight: 'bold', color: tabItemColor('correctly-answered') }}>TOČNI</Text>
+              <View style={{ backgroundColor: tabItemColor('correctly-answered'), width: 6, height: 6, borderRadius: 9999 }}></View>
+            </TouchableOpacity>
+          </View>
+          <FlatList<Question> 
+            initialNumToRender={3}
+            style={{ backgroundColor: colors.rootBackground }}
+            contentContainerStyle={{ padding: 4, rowGap: 3 }}
+            data={questionsGroupedByCorrectness[selectedTabKey]} 
+            renderItem={el =>
+              <View key={`exam-question-card-${el.item.id}`}>
+                <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
+                  <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
+                </CardContainer>
+              </View>
+            }
+            keyExtractor={el => `exam-question-card-${el.id}`} 
+          />
+        </>
+    )
+}

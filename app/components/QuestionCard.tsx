@@ -53,9 +53,6 @@ export const QuestionCard = (p: QuestionCardProps) => {
         canAnswer() && toogleQuestionCheck(answer.id)
     }
 
-    const loadImage = async (imgName: string) => {
-    }
-
     
     useEffect(() => {
         // Build map of images with their original width and height
@@ -88,7 +85,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
         const imgSize = imgSizeRatio > 1 ? 
             { w: screenWidth * 0.6, h: undefined} :
             { w: undefined, h: screenWidth * 0.6}
-        return <Image style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio }} source={imgRequiresUris[img]}></Image>
+        return <Image key={img} style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio }} source={imgRequiresUris[img]}></Image>
     }
 
     const bottomInfoRowJustify: 'space-between' | 'flex-end' = p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount ? 'space-between' : 'flex-end'

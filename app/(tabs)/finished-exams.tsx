@@ -16,20 +16,21 @@ import useStore from '../store/store';
 import { SkeletonList } from '../components/SkeletonList';
 import { isQuestionAnsweredCorrectly } from '../utils/utils';
 import { useBackHandler } from '../hooks/useBackHandler';
+import { FinishedExamQuestions } from '../components/FinishedExamQuestions';
 
-type ScreenType = 'finished-exam-list' | 'finished-exam-single'
+type ExamScreenType = 'finished-exams' | 'finished-exam-questions'
 
 export default function FinishedExams() {
   const params = useLocalSearchParams<{examDate: string}>();
   const { resetParams } = useTabNavigation()
-  const [screenType, setScreenType] = useState<ScreenType | null>(null)
+  const [screenType, setScreenType] = useState<ExamScreenType | null>(null)
   const [exams, setExams] = useState<FinishedExam[]>()
   const [selectedExam, setSelectedExam] = useState<FinishedExam>()
   const { allQuestions } = useStore()
   // Override back button for when we are viewing single exam so it returns to list of exams
   useBackHandler(() => {
-    if(screenType == 'finished-exam-single') {
-      setScreenType('finished-exam-list')
+    if(screenType == 'finished-exam-questions') {
+      setScreenType('finished-exams')
       return true
     }
     return false
@@ -46,10 +47,10 @@ export default function FinishedExams() {
         const examDateAsDate = new Date(params.examDate)
         const targetExam = exams.find(e => e.date.getTime() === examDateAsDate.getTime())
         setSelectedExam(targetExam)
-        setScreenType('finished-exam-single')
+        setScreenType('finished-exam-questions')
       }
       else {
-        setScreenType('finished-exam-list')
+        setScreenType('finished-exams')
       }
       // Reset params required so exam list is always loaded whenever we move from another tab to finished exams(date in params doesn't reset automaticaly)
       resetParams()
@@ -60,7 +61,7 @@ export default function FinishedExams() {
     const exam = exams?.find(e => e.date === key)
     if(exam) {
       setSelectedExam(exam)
-      setScreenType('finished-exam-single')
+      setScreenType('finished-exam-questions')
     }
   }, [exams])
 
@@ -71,8 +72,9 @@ export default function FinishedExams() {
         !screenType &&
         <SkeletonList itemsNumber={10}/>
       }
+      { /* List of finished exams */ }
       {
-        screenType === 'finished-exam-list' &&
+        screenType === 'finished-exams' &&
         <FlatList<FinishedExam> 
           initialNumToRender={10}
           style={{ backgroundColor: colors.rootBackground }}
@@ -86,22 +88,10 @@ export default function FinishedExams() {
           keyExtractor={el => el.date.toString()} 
         />
       }
+      { /* List of questions of a finished exam */ }
       {
-        screenType === 'finished-exam-single' &&
-        <FlatList<Question> 
-          initialNumToRender={3}
-          style={{ backgroundColor: colors.rootBackground }}
-          contentContainerStyle={{ padding: 4, rowGap: 3 }}
-          data={selectedExam?.questions} 
-          renderItem={el =>
-            <View key={`exam-question-card-${el.item.id}`}>
-              <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
-                <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
-              </CardContainer>
-            </View>
-          }
-          keyExtractor={el => `exam-question-card-${el.id}`} 
-        />
+        screenType === 'finished-exam-questions' &&
+        <FinishedExamQuestions questions={selectedExam?.questions ?? []}/>
       }
     </SafeAreaView>
   );

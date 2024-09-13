@@ -147,12 +147,12 @@ export default function ExamSimulationScreen() {
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
-        <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: 10, padding: 6}}>
-          <PaginationComponent></PaginationComponent>
-          <TouchableOpacity onPress={openBottomDrawer}>
-            <Ionicons size={36} color='white' name='menu' />
-          </TouchableOpacity>
-        </View>
+      <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: 10, padding: 6}}>
+        <PaginationComponent></PaginationComponent>
+        <TouchableOpacity onPress={openBottomDrawer}>
+          <Ionicons size={36} color='white' name='menu' />
+        </TouchableOpacity>
+      </View>
       <ScrollView style={{ backgroundColor: colors.rootBackground, padding: 4 }}>
         <View key={`question-card-${displayedNonSavedQuestion.id}`}>
           <CardContainer color='base'>
@@ -167,7 +167,7 @@ export default function ExamSimulationScreen() {
           bottomActions={questionGridBottomActions}
         />
       </BottomDrawer>
-      { /* Exam finish condirmation modal */ }
+      { /* Exam finish confirmation modal */ }
       <DsModal 
         visible={finishExamModalActive} 
         title='Završi ispit' 
