@@ -11,8 +11,8 @@
 [x] - make answering wrong on intersection question automatic exam failure + feedback that that is the reason in finish exam list and view
 [x] - not a single intersection and no more then 4 non intersection questions can be incorrect to pass exam
 [x] - add more choices for questions that require text input as answer(input is to much hasle)
+[x]  - separate finished exam questions in correctly and incorrectly answered list 
 
-[]  - separate finished exam questions in correctly and incorrectly answered list 
 []  - reset view to top of the screen on page change
 
 []  - run images through AI

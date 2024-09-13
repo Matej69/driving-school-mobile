@@ -20,12 +20,14 @@ type FinishedExamQuestionsProps = {
 }
 
 export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
-
     const [selectedTabKey, setSelectedTabKey] = useState<FinishedExamQuestionsTabKey>('incorrectly-answered')
-    const [questionsGroupedByCorrectness] = useState<Record<FinishedExamQuestionsTabKey, Question[]>>({
-        'incorrectly-answered': p.questions.filter(q => !isQuestionAnsweredCorrectly(q)),
-        'correctly-answered': p.questions.filter(q => isQuestionAnsweredCorrectly(q))
-    })
+
+    const questionsGroupedByCorrectness: Map<FinishedExamQuestionsTabKey, Question[]> = useMemo(() => {
+      return new Map([
+        ['incorrectly-answered', p.questions.filter(q => !isQuestionAnsweredCorrectly(q))],
+        ['correctly-answered', p.questions.filter(q => isQuestionAnsweredCorrectly(q))]
+      ]);
+    }, [p.questions])
 
     const tabItemColor = (tabKey: FinishedExamQuestionsTabKey) => {
         return selectedTabKey == tabKey ? colors.disabled : colors['base-bg']
@@ -47,7 +49,7 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
             initialNumToRender={3}
             style={{ backgroundColor: colors.rootBackground }}
             contentContainerStyle={{ padding: 4, rowGap: 3 }}
-            data={questionsGroupedByCorrectness[selectedTabKey]} 
+            data={questionsGroupedByCorrectness.get(selectedTabKey)} 
             renderItem={el =>
               <View key={`exam-question-card-${el.item.id}`}>
                 <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
