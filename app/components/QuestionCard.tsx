@@ -46,6 +46,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
         }
         return { checkboxFillColor: colors['inactive'], checkboxBorderColor: colors['inactive'], itemBorderColor: colors['inactive'], icon: undefined }
     }
+
     const onAnswerPress = (answer: Answer) => {
         if(p.answerInteractivityType == 'ANSWERED_AND_DISABLED') {
             alert('U simulaciji, kao i na pravom ispitu, ne možete mijenjati odgovor nakon što ste ga ponudili i prešli na sljedeće pitanje')
@@ -114,7 +115,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
             <View style={{ display: 'flex', flexDirection: 'row', justifyContent: bottomInfoRowJustify, alignItems: 'flex-end'}}>
                 {
                     p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount && 
-                    <Text className="text-xs" style={{ color: colors.failure }}>{question.incorrectlyAnsweredCount} puta pogrešno odgovoreno</Text>
+                    <Text className="text-xs" style={{ color: colors.failure, fontStyle: 'italic' }}>{question.incorrectlyAnsweredCount} puta netočno odgovoreno</Text>
                 }
                 {
                     p.question.isIntersection && 
@@ -127,5 +128,3 @@ export const QuestionCard = (p: QuestionCardProps) => {
         </View>
     )
 } 
-
-const intersectionQIds = [30, 31, 36, 37,38,55,67,87,96,129,128,155,173,182,205,206,248,319,443,496,511]

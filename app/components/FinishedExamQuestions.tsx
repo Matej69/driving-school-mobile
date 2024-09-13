@@ -32,7 +32,7 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
         <>
           <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', padding: 4 }}>
             <TouchableOpacity style={{ padding: 2, alignItems: 'center' }} onPress={() => setSelectedTabKey("incorrectly-answered")}>
-              <Text style={{ fontSize: 18, fontWeight: 'bold', color: tabItemColor('incorrectly-answered') }}>POGREŠNI</Text>
+              <Text style={{ fontSize: 18, fontWeight: 'bold', color: tabItemColor('incorrectly-answered') }}>NETOČNI</Text>
               <View style={{ backgroundColor: tabItemColor('incorrectly-answered'), width: 6, height: 6, borderRadius: 9999 }}></View>
             </TouchableOpacity>
             <TouchableOpacity style={{ padding: 2, alignItems: 'center' }} onPress={() => setSelectedTabKey("correctly-answered")}>
@@ -47,7 +47,7 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
             contentContainerStyle={{ padding: 4, rowGap: 3 }}
             data={questionsGroupedByCorrectness.get(selectedTabKey)} 
             renderItem={el =>
-                <Animatable.View key={`exam-question-card-${el.item.id}`} animation={'fadeIn'} delay={100 * (el.index + 1)}>
+                <Animatable.View key={`exam-question-card-${el.item.id}`} animation={'fadeInDown'} delay={100 * (el.index + 1)}>
                   <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
                     <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
                   </CardContainer>

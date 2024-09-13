@@ -39,14 +39,14 @@ export const FinishedExamItem = (p: FinishedExamItemProps) => {
     const containerLeftBorderColor: Colors = isExamPassed(p.questions) ? 'success' : 'failure'
     const outcomeIcon = isExamPassed(p.questions) ? <GreenCheckboxIcon size={45}/> : <FailedIcon size={45}/>
 
-    const wrongAnsweredCountText = `${correctlyAnsweredCount}/${38} ${allIntersectionsCorrect(p.questions) ? '' : '(krivo križanje)'}`
+    const wrongAnsweredCountText = `${correctlyAnsweredCount}/${38} ${allIntersectionsCorrect(p.questions) ? '' : '(križanje)'}`
 
     return (
         <CardContainer color={containerLeftBorderColor}>
             <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', padding: 2 }}>
                 <View style={{ display: 'flex', flexDirection: 'column' }}>
                     <Text style={{ color: examOutcomeColor, fontSize: 18, fontWeight: 'bold' }}>{wrongAnsweredCountText}</Text>
-                    <Text style={{ fontSize: 14, color: colors["base-text"] }}>{formatDate(p.date, 'eu')}</Text>
+                    <Text style={{ fontSize: 12, color: colors["base-text"], fontStyle: 'italic' }}>{formatDate(p.date, 'eu')}</Text>
                 </View>
                 <View style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                     { outcomeIcon }
