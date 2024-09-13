@@ -22,6 +22,7 @@ import { asyncStorage } from '../async-storage/async-storage';
 import { finishedExamToStorage } from '../mapper/mapper';
 import { storage } from '../storage/storage';
 import { INTERSECTION_QUESTIONS_PER_EXAM, NON_INTERSECTION_QUESTIONS_PER_EXAM, QUESTIONS_PER_EXAM } from '../constants/Global';
+import * as Animatable from 'react-native-animatable'
 
 const generateExamQuestions = (questionPool: Question[]): Question[]  => {
   // Helper generator function
@@ -154,11 +155,11 @@ export default function ExamSimulationScreen() {
         </TouchableOpacity>
       </View>
       <ScrollView style={{ backgroundColor: colors.rootBackground, padding: 4 }}>
-        <View key={`question-card-${displayedNonSavedQuestion.id}`}>
-          <CardContainer color='base'>
-            <QuestionCard onAnswerChange={onAnswerChange} question={displayedNonSavedQuestion} answerInteractivityType={answerInteractivityType}/>
-          </CardContainer>
-        </View>
+      <Animatable.View key={`question-card-${displayedNonSavedQuestion.id}`} animation={'fadeIn'}>
+        <CardContainer color='base'>
+          <QuestionCard onAnswerChange={onAnswerChange} question={displayedNonSavedQuestion} answerInteractivityType={answerInteractivityType}/>
+        </CardContainer>
+      </Animatable.View>
       </ScrollView>
       <BottomDrawer ref={gridSelectionRef}>
         <QuestionsGridSelection 

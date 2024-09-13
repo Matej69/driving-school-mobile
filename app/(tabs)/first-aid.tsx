@@ -6,6 +6,7 @@ import React, { useMemo } from 'react';
 import { FirstAidQuestion } from '../types/types';
 import { FirstAidQuestionItem } from '../components/FirstAidQuestionItem';
 import colors from '../colors';
+import * as Animatable from 'react-native-animatable'
 
 export default function FirstAid() {
 
@@ -18,8 +19,10 @@ export default function FirstAid() {
         style={{ backgroundColor: colors.rootBackground }}
         contentContainerStyle={{ padding: 4, rowGap: 3}}
         data={firstAidQuestions}
-        renderItem={el =>
-            <FirstAidQuestionItem key={`first-aid-q-${el.item.question}`} q={el.item}/>
+        renderItem={(el) =>
+          <Animatable.View key={`first-aid-q-${el.item.question}`} animation={'fadeIn'} delay={100 * (el.index + 1)}>
+            <FirstAidQuestionItem q={el.item}/>
+          </Animatable.View>
         }
         keyExtractor={q => q.question} 
       />

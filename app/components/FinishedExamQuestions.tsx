@@ -5,6 +5,7 @@ import colors from "../colors"
 import { CardContainer } from "./CardContainer"
 import { QuestionCard } from "./QuestionCard"
 import { isQuestionAnsweredCorrectly } from "../utils/utils"
+import * as Animatable from 'react-native-animatable'
 
 type FinishedExamQuestionsTabKey = 'correctly-answered' | 'incorrectly-answered'
 
@@ -46,11 +47,11 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
             contentContainerStyle={{ padding: 4, rowGap: 3 }}
             data={questionsGroupedByCorrectness.get(selectedTabKey)} 
             renderItem={el =>
-              <View key={`exam-question-card-${el.item.id}`}>
-                <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
-                  <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
-                </CardContainer>
-              </View>
+                <Animatable.View key={`exam-question-card-${el.item.id}`} animation={'fadeIn'} delay={100 * (el.index + 1)}>
+                  <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
+                    <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
+                  </CardContainer>
+              </Animatable.View >
             }
             keyExtractor={el => `exam-question-card-${el.id}`} 
 

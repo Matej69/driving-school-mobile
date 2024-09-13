@@ -17,6 +17,7 @@ import { SkeletonList } from '../components/SkeletonList';
 import { isQuestionAnsweredCorrectly } from '../utils/utils';
 import { useBackHandler } from '../hooks/useBackHandler';
 import { FinishedExamQuestions } from '../components/FinishedExamQuestions';
+import * as Animatable from 'react-native-animatable'
 
 type ExamScreenType = 'finished-exams' | 'finished-exam-questions'
 
@@ -81,9 +82,11 @@ export default function FinishedExams() {
           contentContainerStyle={{ padding: 4, rowGap: 3 }}
           data={exams} 
           renderItem={el =>
-            <TouchableOpacity onPress={() => onSelectExam(el.item.date)}>
-              <FinishedExamItem date={el.item.date} questions={el.item.questions}></FinishedExamItem>
-            </TouchableOpacity>
+            <Animatable.View key={`exam-questions-list-${el.item.date}`} animation={'fadeIn'} duration={400} delay={50 * (el.index + 1)}>
+              <TouchableOpacity onPress={() => onSelectExam(el.item.date)}>
+                <FinishedExamItem date={el.item.date} questions={el.item.questions}></FinishedExamItem>
+              </TouchableOpacity>
+            </Animatable.View>
           }
           keyExtractor={el => el.date.toString()} 
         />

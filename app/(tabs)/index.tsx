@@ -10,6 +10,7 @@ import colors from '../colors';
 import { Ionicons } from '@expo/vector-icons';
 import { asyncStorage } from '../async-storage/async-storage';
 import useStore from '../store/store';
+import * as Animatable from 'react-native-animatable'
 
 
 // klindic.autoskola-testovi.com//ckeditor/kcfinder/upload_img/images/10/5.jpg
@@ -94,11 +95,11 @@ export default function Questions() {
           contentContainerStyle={{ padding: 4, rowGap: 3 }}
           data={displayedQuestions} 
           renderItem={el =>
-            <View key={`question-card-${el.item.id}`}>
+            <Animatable.View key={`question-card-${el.item.id}`} animation={'fadeIn'} delay={100 * (el.index + 1)}>
               <CardContainer color='base'>
                 <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
               </CardContainer>
-            </View>   
+            </Animatable.View>
           }
           keyExtractor={el => `question-card-${el.id}`} 
         />

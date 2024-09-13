@@ -83,8 +83,8 @@ export const QuestionCard = (p: QuestionCardProps) => {
             return <></>
         const imgSizeRatio = imageSizeMap.get(img)!.w / imageSizeMap.get(img)!.h
         const imgSize = imgSizeRatio > 1 ? 
-            { w: screenWidth * 0.6, h: undefined} :
-            { w: undefined, h: screenWidth * 0.6}
+            { w: screenWidth * 0.7, h: undefined} :
+            { w: undefined, h: screenWidth * 0.7}
         return <Image key={img} style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio }} source={imgRequiresUris[img]}></Image>
     }
 
