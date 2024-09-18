@@ -289,7 +289,6 @@ export const imgRequiresUris = {
 	"7.435.jpg": require('../../assets/images/questions/7.435.jpg'),
 	"7.44.jpg": require('../../assets/images/questions/7.44.jpg'),
 	"711.jpg": require('../../assets/images/questions/711.jpg'),
-	"713.jpg": require('../../assets/images/questions/713.jpg'),
 	"715.jpg": require('../../assets/images/questions/715.jpg'),
 	"720.jpg": require('../../assets/images/questions/720.jpg'),
 	"723.jpg": require('../../assets/images/questions/723.jpg'),
