@@ -51,7 +51,7 @@ export default function FirstAid() {
         contentContainerStyle={{ padding: 4, rowGap: 3}}
         data={filteredFirstAidQuestions}
         renderItem={(el) =>
-          <Animatable.View key={`first-aid-q-${el.item.question}`} animation={'fadeInDown'} duration={200} delay={50 * (el.index + 1)}>
+          <Animatable.View key={`first-aid-q-${el.item.question}`} animation={'fadeInDown'} duration={100} delay={20 * (el.index + 1)}>
             <FirstAidQuestionItem q={el.item}/>
           </Animatable.View>
         }

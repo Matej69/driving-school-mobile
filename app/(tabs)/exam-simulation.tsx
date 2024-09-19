@@ -155,7 +155,7 @@ export default function ExamSimulationScreen() {
         </TouchableOpacity>
       </View>
       <ScrollView style={{ backgroundColor: colors.rootBackground, padding: 4 }}>
-      <Animatable.View key={`question-card-${displayedNonSavedQuestion.id}`} animation={'fadeInDown'}>
+      <Animatable.View key={`question-card-${displayedNonSavedQuestion.id}`} animation={'fadeInDown'} duration={500}>
         <CardContainer color='base'>
           <QuestionCard onAnswerChange={onAnswerChange} question={displayedNonSavedQuestion} answerInteractivityType={answerInteractivityType}/>
         </CardContainer>
