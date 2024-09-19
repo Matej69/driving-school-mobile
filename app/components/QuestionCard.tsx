@@ -69,7 +69,6 @@ export const QuestionCard = (p: QuestionCardProps) => {
             const result = await Promise.all(promises);
             const newImageSizeMap: Map<ImgRequiresUrisKeys, { w: number; h: number}> = new Map()
             result.forEach(r => newImageSizeMap.set(r.key, {w: r.w, h: r.h}))
-            //console.log(imageSizeMap)
             setImageSizeMap(newImageSizeMap)
           })()
     }, [])

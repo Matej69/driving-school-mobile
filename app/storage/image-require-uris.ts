@@ -57,6 +57,7 @@ export const imgRequiresUris = {
 	"130683.jpg": require('../../assets/images/questions/130683.jpg'),
 	"162823.jpg": require('../../assets/images/questions/162823.jpg'),
 	"163678.jpg": require('../../assets/images/questions/163678.jpg'),
+	"1svjetla-kratka-znak.jpg": require('../../assets/images/questions/1svjetla-kratka-znak.jpg'),
 	"1propisi-u-cestovnom-prometu_17_18.jpg": require('../../assets/images/questions/1propisi-u-cestovnom-prometu_17_18.jpg'),
 	"1propisi-u-cestovnom-prometu_19_20.jpg": require('../../assets/images/questions/1propisi-u-cestovnom-prometu_19_20.jpg'),
 	"1propisi-u-cestovnom-prometu_23.jpg": require('../../assets/images/questions/1propisi-u-cestovnom-prometu_23.jpg'),
