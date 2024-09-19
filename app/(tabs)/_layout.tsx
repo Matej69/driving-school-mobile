@@ -12,8 +12,9 @@ const colors = require('../colors');
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>['name'];
   color: string;
+  size?: number
 }) {
-  return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
+  return <FontAwesome size={props.size ?? 28} style={{ marginBottom: -3 }} {...props} />;
 }
 
 
@@ -46,7 +47,7 @@ export default function TabLayout() {
           tabBarActiveTintColor: colors.base,
           title: 'Popis pitanja',
           tabBarIcon: ({ color }) => 
-            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['index']] = el } animation={'zoomIn'}>
+            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['index']] = el }>
               <TabBarIcon name="book" color={color} />
             </Animatable.View>
         }}
@@ -58,7 +59,7 @@ export default function TabLayout() {
           tabBarActiveTintColor: colors.base,
           title: 'Simulacija ispita',
           tabBarIcon: ({ color }) => 
-            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['exam-simulation']] = el } animation={'zoomIn'}>
+            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['exam-simulation']] = el }>
               <TabBarIcon name="clipboard" color={color} />
             </Animatable.View>
         }}
@@ -70,8 +71,8 @@ export default function TabLayout() {
           tabBarActiveTintColor: colors.base,
           title: 'Riješeni ispiti',
           tabBarIcon: ({ color }) => 
-            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['finished-exams']] = el } animation={'zoomIn'}>
-              <TabBarIcon name="check-square" color={color} />
+            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['finished-exams']] = el }>
+              <TabBarIcon name="check-square" color={color}/>
             </Animatable.View>
         }}
         listeners={{ tabPress: (e) => setActiveTab('finished-exams') }}
@@ -82,7 +83,7 @@ export default function TabLayout() {
           tabBarActiveTintColor: colors.base,
           title: 'Prva pomoć',
           tabBarIcon: ({ color }) => 
-            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['first-aid']] = el } animation={'zoomIn'}>
+            <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['first-aid']] = el }>
               <TabBarIcon name="ambulance" color={color} />
             </Animatable.View>
         }}

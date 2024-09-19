@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import useStore from "../store/store";
-import { NavigationRoutesKeys, ParamType } from "../types/types";
+import { NavigationRoutes, NavigationRoutesKeys, ParamType } from "../types/types";
 import { useNavigation, router } from "expo-router";
 
 export const useTabNavigation = () => {
@@ -8,21 +8,21 @@ export const useTabNavigation = () => {
     const { prevActiveTab, activeTab, setActiveTab } = useStore()
 
     const iconAnimation = useMemo(() => ({
-        scaleMin : 0.7,
-        scaleMax : 1,
+        scaleMin : 0.65,
+        scaleMax : 1
     }), [])
 
     const animations = useMemo(() => ({
         inactiveToActive: { 0: {scale: iconAnimation.scaleMin}, 1: {scale: iconAnimation.scaleMax} },
-        activeToInactive: { 0: {scale: iconAnimation.scaleMax, rotate: '90deg'}, 1: {scale: iconAnimation.scaleMin, rotate: '0deg'} },
+        activeToInactive: { 0: {scale: iconAnimation.scaleMax}, 1: {scale: iconAnimation.scaleMin} },
         default: { 0: {scale: iconAnimation.scaleMin}, 1: {scale: iconAnimation.scaleMin} }
     }),[])
       
     useEffect(() => {
-        navItemRefs.current.forEach(item => {
-            if(item === activeTab && prevActiveTab !== activeTab)
+        navItemRefs.current.forEach((item, i) => {
+            if(i == NavigationRoutes[activeTab] && prevActiveTab !== activeTab)
                 item.animate(animations.inactiveToActive)
-            else if(item === prevActiveTab && prevActiveTab !== activeTab)
+            else if(i == NavigationRoutes[prevActiveTab] && prevActiveTab !== activeTab)
                 item.animate(animations.activeToInactive)
             else
                 item.animate(animations.default)
