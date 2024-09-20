@@ -6,7 +6,7 @@ import { Answer, AnswerInteractivityType, Question } from "../types/types"
 import { useQuestion } from "../hooks/useQuestion"
 import colors from "../colors"
 import * as FileSystem from 'expo-file-system';
-import { imgRequiresUris, ImgRequiresUrisKeys } from "../storage/image-require-uris"
+import { imgNodeRequires, ImgRequiresUrisKeys } from "../storage/image-require-uris"
 import { deepCopy } from "../utils/utils"
 import { Ionicons } from "@expo/vector-icons"
 import useStore from "../store/store"
@@ -67,7 +67,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
         const imgSize: { w?: number, h?: number} = imgSizeRatio > 1 ? 
             { w: screenW * 0.7, h: undefined} :
             { w: undefined, h: screenW * 0.7}
-        return <Image key={img} style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio }} source={imgRequiresUris[img].nodeRequire}></Image>
+        return <Image key={img} style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio, borderRadius: 8 }} source={imgNodeRequires[img]}></Image>
     }
 
     const bottomInfoRowJustify: 'space-between' | 'flex-end' = p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount ? 'space-between' : 'flex-end'
