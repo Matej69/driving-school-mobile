@@ -5,7 +5,7 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { createContext, useEffect, useState } from 'react';
 import 'react-native-reanimated';
-import { FirstAidQuestion, Question } from './types/types';
+import { FirstAidQuestion, ImagesMetadata, Question } from './types/types';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import React from 'react';
 import { storage } from './storage/storage';
@@ -42,6 +42,12 @@ const loadFirstAidQuestions = async (): Promise<FirstAidQuestion[] | undefined> 
 }
 
 
+const loadImagesMetadata = async (): Promise<ImagesMetadata> => {
+  const objFromAssets = require('../assets/image-metadata.json');
+  return new Map(Object.entries(objFromAssets)) as ImagesMetadata
+}
+
+
 export default function RootLayout() {
   const [fontsLoaded, error] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
@@ -50,18 +56,22 @@ export default function RootLayout() {
 
   const { 
     allQuestions, setAllQuestions,
-    firstAidQuestions, setFirstAidQuestions
+    firstAidQuestions, setFirstAidQuestions,
+    imagesMetadata, setImagesMetadata
   } = useStore()
 
   // On initial app load move questions from assets to storage or just load them if it was done before
   useEffect(() => {
     (async() => {
-      const [loadedQuestions, loadedFirstAidQuestions] = await Promise.all([
+      // Questions loading
+      const [loadedQuestions, loadedFirstAidQuestions, loadedImagesMetadata] = await Promise.all([
         loadQuestions(),
-        loadFirstAidQuestions()
+        loadFirstAidQuestions(),
+        loadImagesMetadata()
       ]);
       setAllQuestions(loadedQuestions || [])
       setFirstAidQuestions(loadedFirstAidQuestions || [])
+      setImagesMetadata(loadedImagesMetadata)
     })()
   }, [])
 

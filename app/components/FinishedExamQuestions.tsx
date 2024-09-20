@@ -40,7 +40,8 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
               <View style={{ backgroundColor: tabItemColor('correctly-answered'), width: 6, height: 6, borderRadius: 9999 }}></View>
             </TouchableOpacity>
           </View>
-          <FlatList<Question>             
+          <FlatList<Question>
+                         
             initialScrollIndex={0}
             initialNumToRender={3}
             style={{ backgroundColor: colors.rootBackground }}

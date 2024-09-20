@@ -53,3 +53,5 @@ export type FirstAidQuestion = {
     question: string,
     answers: FirstAidAnswer[]
 }
+
+export type ImagesMetadata = Map<ImgRequiresUrisKeys, { width: number, height: number }>

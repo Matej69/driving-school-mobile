@@ -9,6 +9,7 @@ import * as FileSystem from 'expo-file-system';
 import { imgRequiresUris, ImgRequiresUrisKeys } from "../storage/image-require-uris"
 import { deepCopy } from "../utils/utils"
 import { Ionicons } from "@expo/vector-icons"
+import useStore from "../store/store"
 
 
 type QuestionCardProps = {
@@ -23,8 +24,8 @@ type QuestionCardProps = {
 export const QuestionCard = (p: QuestionCardProps) => {
 
     const { question, toogleQuestionCheck } = useQuestion({question: p.question});
-    const [ imageSizeMap, setImageSizeMap ] = useState<Map<ImgRequiresUrisKeys, { w: number; h: number}> | null>(null)
-    const { width: screenWidth } = Dimensions.get('window');
+
+    const { imagesMetadata, setImagesMetadata }= useStore()
 
     const answerItemDisabled = () => p.answerInteractivityType == 'CORRECT_ANSWERED_SHOWN'
     const canAnswer = () => p.answerInteractivityType == 'CAN_BE_ANSWERED'
@@ -56,36 +57,17 @@ export const QuestionCard = (p: QuestionCardProps) => {
 
     
     useEffect(() => {
-        // Build map of images with their original width and height
-        (async() => {
-            const promises: Promise<any>[] = p.question.images?.map(img => {
-                return new Promise((res, rej) => {
-                    const requiredImg = imgRequiresUris[img]
-                    Image.getSize(Image.resolveAssetSource(requiredImg).uri, (w, h) => {
-                        res({key: img, w, h})
-                    });
-                })
-            }) ?? []
-            const result = await Promise.all(promises);
-            const newImageSizeMap: Map<ImgRequiresUrisKeys, { w: number; h: number}> = new Map()
-            result.forEach(r => newImageSizeMap.set(r.key, {w: r.w, h: r.h}))
-            setImageSizeMap(newImageSizeMap)
-          })()
-    }, [])
-
-    
-    useEffect(() => {
         p.onAnswerChange?.(question)
     }, [question])
 
     const renderScaledImage = (img: ImgRequiresUrisKeys): JSX.Element => {
-        if(!imageSizeMap || !imageSizeMap.has(img))
-            return <></>
-        const imgSizeRatio = imageSizeMap.get(img)!.w / imageSizeMap.get(img)!.h
+        const imgMetadata = imagesMetadata.get(img)
+        const imgSizeRatio = imgMetadata?.width! / imgMetadata?.height!
+        const screenW = Dimensions.get('screen').width
         const imgSize: { w?: number, h?: number} = imgSizeRatio > 1 ? 
-            { w: screenWidth * 0.7, h: undefined} :
-            { w: undefined, h: screenWidth * 0.7}
-        return <Image key={img} style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio }} source={imgRequiresUris[img]}></Image>
+            { w: screenW * 0.7, h: undefined} :
+            { w: undefined, h: screenW * 0.7}
+        return <Image key={img} style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio }} source={imgRequiresUris[img].nodeRequire}></Image>
     }
 
     const bottomInfoRowJustify: 'space-between' | 'flex-end' = p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount ? 'space-between' : 'flex-end'
@@ -93,13 +75,11 @@ export const QuestionCard = (p: QuestionCardProps) => {
 
 	return (
         <View>
-            <Text className="text-gray-600 font-bold">{question.question}</Text>
+            <Text className="text-gray-600 font-bold">{question.question}</Text>            
             <View className="mt-1"/>
             {
-                !!p.question.images?.length && imageSizeMap &&
-                p.question.images.map((img) => 
-                    renderScaledImage(img)
-                )
+                // Render images
+                p.question.images.map((img) => renderScaledImage(img))
             }
             <View className="mt-1"/>
             {
