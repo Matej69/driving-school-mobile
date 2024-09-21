@@ -1,6 +1,6 @@
 import { Dimensions, FlexAlignType, FlexStyle, Image, Text, TouchableOpacity, View } from "react-native"
 
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useMemo, useState } from "react"
 import { AnswerItem } from "./AnswerItem"
 import { Answer, AnswerInteractivityType, Question } from "../types/types"
 import { useQuestion } from "../hooks/useQuestion"
@@ -10,6 +10,7 @@ import { imgNodeRequires, ImgRequiresUrisKeys } from "../storage/image-require-u
 import { deepCopy } from "../utils/utils"
 import { Ionicons } from "@expo/vector-icons"
 import useStore from "../store/store"
+import { DsModal } from "./Modal"
 
 
 type QuestionCardProps = {
@@ -64,10 +65,14 @@ export const QuestionCard = (p: QuestionCardProps) => {
         const imgMetadata = imagesMetadata.get(img)
         const imgSizeRatio = imgMetadata?.width! / imgMetadata?.height!
         const screenW = Dimensions.get('screen').width
+        // 0.94 is magic number for 100% so everything is aligned since nobody wants to fix image scaling issue: https://github.com/facebook/react-native/issues/29491
+        // We could calculate image of container and then scale image based on that but we'll keep magic number and pray that nobody changes margins/padding of container
+        const imgScale = imgNodeRequires[img].renderLarge ? 0.4 : 0.94
         const imgSize: { w?: number, h?: number} = imgSizeRatio > 1 ? 
-            { w: screenW * 0.7, h: undefined} :
-            { w: undefined, h: screenW * 0.7}
-        return <Image key={img} style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio, borderRadius: 8 }} source={imgNodeRequires[img]}></Image>
+        { w: screenW * imgScale, h: undefined } :
+        { w: undefined, h: screenW * imgScale }
+
+        return <Image key={img} style={{ resizeMode: 'contain', width: imgSize.w, height: imgSize.h, aspectRatio: imgSizeRatio, borderRadius: 8 }} source={imgNodeRequires[img].requireNode}></Image>
     }
 
     const bottomInfoRowJustify: 'space-between' | 'flex-end' = p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount ? 'space-between' : 'flex-end'
@@ -77,11 +82,14 @@ export const QuestionCard = (p: QuestionCardProps) => {
         <View>
             <Text className="text-gray-600 font-bold">{question.question}</Text>            
             <View className="mt-1"/>
+            
+            { /* Render images */ }
             {
-                // Render images
                 p.question.images.map((img) => renderScaledImage(img))
             }
             <View className="mt-1"/>
+
+            { /* Answers */ }
             {
                 question.answers.map((answer, i) => (
                     <TouchableOpacity key={`question-answer-${i}`} disabled={answerItemDisabled()} onPress={() => {onAnswerPress(answer)}}>
@@ -91,6 +99,8 @@ export const QuestionCard = (p: QuestionCardProps) => {
                 ))
             }
             { hasBottomInfoRow && <View className="mt-2"/> }
+            
+            { /* Bottom info */ }
             <View style={{ display: 'flex', flexDirection: 'row', justifyContent: bottomInfoRowJustify, alignItems: 'flex-end'}}>
                 {
                     p.incorrectlyAnsweredShown && !!question.incorrectlyAnsweredCount && 

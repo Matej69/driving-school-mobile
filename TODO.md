@@ -15,5 +15,4 @@
 [x] - reset view to top of the screen on page change
 [x] - currently if questions loads it takes some time for image to load so flickering happens, fix this by applying animations
 [x]  - Add search to first aid
-
-[]  - run images through AI
+[x]  - run images through AI
