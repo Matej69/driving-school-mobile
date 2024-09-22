@@ -1,5 +1,5 @@
 
-import { FlatList, Text, TextInput, View } from 'react-native';
+import { Button, FlatList, Linking, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import useStore from '../store/store';
 import React, { useEffect, useMemo, useState } from 'react';
@@ -36,6 +36,7 @@ export default function FirstAid() {
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
+      { /* Top Header */}
       <View style={{ display: 'flex', flexDirection: 'row', padding: 6}}>
           <View style={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
             <TextInput
@@ -43,8 +44,9 @@ export default function FirstAid() {
               style={{ flex: 1, backgroundColor: colors['base-bg'], borderRadius: 6, padding: 6, fontWeight: '500', color: colors.disabled }}>
             </TextInput>
             { searchValue && <Ionicons onPress={onSearchClear} style={{ position: 'absolute', right: 0, marginEnd: 2 }} size={32} color={colors.inactive} name={'close-circle'} /> }
-          </View>
+          </View>          
         </View>
+      { /* Questions list */ }
       <FlatList<FirstAidQuestion> 
         initialNumToRender={10}
         style={{ backgroundColor: colors.rootBackground }}

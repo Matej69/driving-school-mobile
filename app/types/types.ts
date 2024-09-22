@@ -45,8 +45,9 @@ export type ParamType = 'examDate'
 export type FirstAidAnswerParagraphType = { type: "paragraph", text: string }
 export type FirstAidAnswerListType = { type: "list", title: string, items: string[] }
 export type FirstAidAnswerProcedureType = { type: "procedure", title: string, items: string[] }
+export type FirstAidAnswerVideoLinkType = { type: "video", url: string }
 
-export type FirstAidAnswer = FirstAidAnswerParagraphType | FirstAidAnswerListType | FirstAidAnswerProcedureType
+export type FirstAidAnswer = FirstAidAnswerParagraphType | FirstAidAnswerListType | FirstAidAnswerProcedureType | FirstAidAnswerVideoLinkType
 export type FirstAidAnswerType = FirstAidAnswer['type']
 
 export type FirstAidQuestion = {

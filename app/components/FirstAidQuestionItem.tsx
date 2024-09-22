@@ -1,6 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
-import { FirstAidAnswer, FirstAidAnswerListType, FirstAidAnswerParagraphType, FirstAidAnswerProcedureType, FirstAidQuestion } from "../types/types";
+import { Button, Linking, Text, TouchableOpacity, View } from "react-native";
+import { FirstAidAnswer, FirstAidAnswerListType, FirstAidAnswerParagraphType, FirstAidAnswerProcedureType, FirstAidAnswerVideoLinkType, FirstAidQuestion } from "../types/types";
 import colors from "../colors";
 
 // "paragraph" | "list" | "procedure"
@@ -34,12 +34,22 @@ const FirstAidQuestionProcedure = ({ answer }: { answer: FirstAidAnswerProcedure
     </>
 }
 
+const FirstAidQuestionVideo = ({ answer }: { answer: FirstAidAnswerVideoLinkType }) => 
+    <View style={{display: 'flex', flexDirection: 'row'}}>
+        <TouchableOpacity 
+            onPress={() => { Linking.openURL(answer.url) }} 
+            style = {{ borderWidth: 1, borderColor: colors.base, paddingVertical: 8, paddingHorizontal: 42, borderRadius: 6, marginTop: 8, justifyContent: 'center', alignItems: 'center' }}
+        >
+            <Text style={{ fontSize: 14, color: colors.base, fontWeight: 'bold' }}>VIDEO</Text>
+        </TouchableOpacity>
+    </View>
 
 const renderFirstAidAnswer = (answer: FirstAidAnswer): JSX.Element => {
     switch(answer.type) {
         case 'paragraph': return <FirstAidQuestionParagraph answer={answer}/>
         case 'list': return <FirstAidQuestionList answer={answer}/>
         case 'procedure': return <FirstAidQuestionProcedure answer={answer}/>
+        case 'video': return <FirstAidQuestionVideo answer={answer}/>
     }
 }
 
@@ -50,12 +60,10 @@ export const FirstAidQuestionItem = ({ q }: { q: FirstAidQuestion }) => {
             <Text style={{ paddingBottom: 4, fontSize: 16, fontWeight: 'bold' }}>
                 {q.question}
             </Text>
-            { 
-                q.answers.map((q, i) => 
-                    <View key={`first-aid-answer-content-${i}`} style={{ paddingVertical: 2 }}>
-                        { renderFirstAidAnswer(q) }
-                    </View>
-                ) 
+            { q.answers.map((q, i) => 
+                <View key={`first-aid-answer-content-${i}`} style={{ paddingVertical: 2 }}>
+                    { renderFirstAidAnswer(q) }
+                </View>) 
             }
         </View>
     );
