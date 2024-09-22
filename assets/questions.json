@@ -76,7 +76,7 @@
   },
   {
     "id": 4,
-    "question": "Kolika je najveća dopuštena brzina kretanja vozila na cesti, osim na autocesti, brzoj cesti i cesti namijenjenoj isključivo za promet motornih vozila? Upišite u kvadratić.",
+    "question": "Kolika je najveća dopuštena brzina kretanja vozila na cesti, osim na autocesti, brzoj cesti i cesti namijenjenoj isključivo za promet motornih vozila?",
     "answers": [
       { 
         "id": 1,
@@ -101,7 +101,7 @@
   },
   {
     "id": 5,
-    "question": "Koliko je ograničenje brzine kretanja vozila na cesti u naselju u kojemu brzina kretanja nije određena  prometnim znakom? Upišite u kvadratić.",
+    "question": "Koliko je ograničenje brzine kretanja vozila na cesti u naselju u kojemu brzina kretanja nije određena  prometnim znakom?",
     "answers": [
       {
         "id": 1,
@@ -1394,7 +1394,7 @@
   },
   {
     "id": 55,
-    "question": "Kako čete postupiti u situaciji kao na slici ?",
+    "question": "Kako ćete postupiti u situaciji kao na slici ?",
     "answers": [
       {
         "id": 1,
@@ -2157,7 +2157,7 @@
   },
   {
     "id": 85,
-    "question": "Kojom najvećom dopuštenom brzinom smijete voziti brzom cestom u situaciji kao na slici? Upišite u kvadratić.",
+    "question": "Kojom najvećom dopuštenom brzinom smijete voziti brzom cestom u situaciji kao na slici?",
     "answers": [
       {
         "id": 1,
@@ -2324,7 +2324,7 @@
   },
   {
     "id": 91,
-    "question": "Na cesti kojom vozite izvode se radovi u situaciji  kao na slici. Kako čete postupiti ?",
+    "question": "Na cesti kojom vozite izvode se radovi u situaciji kao na slici. Kako ćete postupiti ?",
     "answers": [
       {
         "id": 1,
@@ -2877,7 +2877,7 @@
   },
   {
     "id": 113,
-    "question": "Koja ploča označava posebno opasan zavoj?            1                                         2",
+    "question": "Koja ploča označava posebno opasan zavoj?",
     "answers": [
       {
         "id": 1,
@@ -4663,7 +4663,7 @@
   },
   {
     "id": 183,
-    "question": "Kojom se najvećom dopuštenom brzinom smije voziti u naselju ako prometnim znakom nije drukčije određeno? Upišite odgovor u kvadratić.",
+    "question": "Kojom se najvećom dopuštenom brzinom smije voziti u naselju ako prometnim znakom nije drukčije određeno?",
     "answers": [
       {
         "id": 1,
@@ -5492,7 +5492,7 @@
   },
   {
     "id": 216,
-    "question": "Kolika je najmanja dopuštena dubina utora guma? Upišite u kvadratić.",
+    "question": "Kolika je najmanja dopuštena dubina utora guma?",
     "answers": [
       {
         "id": 1,
@@ -6462,7 +6462,7 @@
   },
   {
     "id": 254,
-    "question": "Kolika je najveća dopuštena brzina kretanja vozila koje vuče drugo neispravno vozilo? Upišite u kvadratić.",
+    "question": "Kolika je najveća dopuštena brzina kretanja vozila koje vuče drugo neispravno vozilo?",
     "answers": [
       {
         "id": 1,
@@ -8690,7 +8690,7 @@
   },
   {
     "id": 342,
-    "question": "Koliki mora biti najmanji razmak od raskrižja i zaustavljenog ili parkiranog vozila? Upišite u kvadratić.",
+    "question": "Koliki mora biti najmanji razmak od raskrižja i zaustavljenog ili parkiranog vozila?",
     "answers": [
       {
         "id": 1,
@@ -9412,7 +9412,7 @@
   },
   {
     "id": 370,
-    "question": "Na kojoj se udaljenosti iza zaustavljene kolone vozila postavljaju dva sigurnosna trokuta, jedan pokraj drugog? Upišite u kvadratić.",
+    "question": "Na kojoj se udaljenosti iza zaustavljene kolone vozila postavljaju dva sigurnosna trokuta, jedan pokraj drugog?",
     "answers": [
       {
         "id": 1,
@@ -11426,7 +11426,7 @@
   },
   {
     "id": 450,
-    "question": "Kolika mora biti najmanja širina slobodnog prolaza na dijelu ceste od zaustavljenog ili parkiranog vozila do pune uzdužne crte na kolniku? Upišite u kvadratić.",
+    "question": "Kolika mora biti najmanja širina slobodnog prolaza na dijelu ceste od zaustavljenog ili parkiranog vozila do pune uzdužne crte na kolniku?",
     "answers": [
       {
         "id": 1,
@@ -11589,7 +11589,7 @@
       },
       {
         "id": 2,
-        "text": "da se tunel nalazi na udaljenosti 500 metara od znaka (pogrešan broj u tekstu pitanja)",
+        "text": "da se tunel nalazi na udaljenosti 500 metara od znaka",
         "correct": true
       },
       {
@@ -11714,7 +11714,7 @@
   },
   {
     "id": 461,
-    "question": "Kako čete se ponašati u situaciji kao na slici ?",
+    "question": "Kako ćete se ponašati u situaciji kao na slici ?",
     "answers": [
       {
         "id": 1,
@@ -12148,7 +12148,7 @@
   },
   {
     "id": 478,
-    "question": "Koliki najmanji razmak mora biti od obilježenoga pješačkog prijelaza i parkiranog vozila? Upišite u kvadratić.",
+    "question": "Koliki najmanji razmak mora biti od obilježenoga pješačkog prijelaza i parkiranog vozila?",
     "answers": [
       {
         "id": 1,
@@ -13072,7 +13072,7 @@
   },
   {
     "id": 514,
-    "question": "Kolika je najveća dopuštena brzina kretanja vozila na brzoj cesti i cesti namijenjenoj isključivo za promet motornih vozila? Upišite u kvadratić.",
+    "question": "Kolika je najveća dopuštena brzina kretanja vozila na brzoj cesti i cesti namijenjenoj isključivo za promet motornih vozila?",
     "answers": [
       {
         "id": 1,
@@ -14759,7 +14759,7 @@
   },
   {
     "id": 580,
-    "question": "Koliko metara smije premašiti teret na vozilu najudaljeniju točku s prednje strane vozila? Upišite u kvadratić.",
+    "question": "Koliko metara smije premašiti teret na vozilu najudaljeniju točku s prednje strane vozila?",
     "answers": [
       {
         "id": 1,
@@ -14913,7 +14913,7 @@
   },
   {
     "id": 586,
-    "question": "Na kojoj udaljenosti vozač mora postaviti posebni znak za označivanje vozila zaustavljenog na kolniku (sigurnosni trokut) na cesti izvan naselja? Upišite u kvadratić.",
+    "question": "Na kojoj udaljenosti vozač mora postaviti posebni znak za označivanje vozila zaustavljenog na kolniku (sigurnosni trokut) na cesti izvan naselja?",
     "answers": [
       {
         "id": 1,
@@ -16258,7 +16258,7 @@
   },
   {
     "id": 638,
-    "question": "Kolika mora biti najmanja širina slobodnog prolaza na dijelu ceste od zaustavljenog ili parkiranog vozila do suprotnog ruba kolnika? Upišite u kvadratić.",
+    "question": "Kolika mora biti najmanja širina slobodnog prolaza na dijelu ceste od zaustavljenog ili parkiranog vozila do suprotnog ruba kolnika?",
     "answers": [
       {
         "id": 1,
@@ -17050,7 +17050,7 @@
   },
   {
     "id": 669,
-    "question": "Želite pretjecati crno vozilo u situaciji kao na slici. Kako čete postupiti ?",
+    "question": "Želite pretjecati crno vozilo u situaciji kao na slici. Kako ćete postupiti ?",
     "answers": [
       {
         "id": 1,
