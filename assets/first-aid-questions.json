@@ -24,7 +24,7 @@
                 "type": "list",
                 "title": "Zaštitna kaciga se u pravilu ne skida, a skida se samo",
                 "items": [
-                    "Ako je unesrećena osoba bez svijesti, a s kacigom na glavi ne može joj se osloboditi dišni put",
+                    "Ako je unesrećena osoba bez svijesti, a s kacigom na glavi joj se ne može osloboditi dišni put",
                     "Ako je unesrećena osoba bez svijesti i povraća",
                     "Ako unesrećena osoba ne diše pa treba započeti umjetno disanje",
                     "Ako su prisutne teške ozljede glave, osobito kad se pojavi krvarenje"
@@ -342,7 +342,7 @@
                     "Podignite leđa unesrećene osobe i stavite je u sjedeći položaj. Pridržavajte joj ramena.",
                     "Stavite obje ruke pod pazuha unesrećene osobe i uhvatite jednu od njezinih podlaktica.",
                     "Jednom rukom uhvatite ručni zglob, a drugom podlakticu unesrećene osobe. Držeći ruku unesrećene osobe zauzmite položaj čučnja. Vaše noge trebaju biti razdvojene, a jedno stopalo izbačeno prema van.",
-                    "Kod podizanja unesrećene osobe leđa vam moraju biti ravna, da se kralješnica ne može savijati u stranu. Unesrećenu osobu držite što bliže tijelu i podižite je s obje ruke.",
+                    "Kod podizanja unesrećene osobe leđa vam moraju biti ravna, da se kralježnica ne može savijati u stranu. Unesrećenu osobu držite što bliže tijelu i podižite je s obje ruke.",
                     "Ruku unesrećene osobe čvrsto pritisnite na njezina prsa. Iz tog stava započnite podizanje.",
                     "Ustanite poravnatih leđa i podignite unesrećenu osobu. Hodajte natraške i vucite unesrećenu osobu za sobom. Pazite na prepreke koje se mogu nalaziti iza vas."
                 ]
@@ -449,10 +449,6 @@
             {
                 "type": "video",
                 "url": "https://www.youtube.com/watch?v=zQ_Lh16kqMk&ab_channel=CroatianRedCrossHrvatskiCrvenikriz"
-            },
-            {
-                "type": "video",
-                "url": "https://www.youtube.com/watch?v=jVxigmjdREM&ab_channel=CroatianRedCrossHrvatskiCrvenikriz"
             }
         ]
     },
@@ -505,7 +501,7 @@
                     "Postavimo nešto meko između nogu.",
                     "Napravi osmicu na stopalima trokut maramom.",
                     "Vežemo barem 3 marame: jednu ispod koljena, jednu na koljenu i jednu iznad koljena. Po potrebi i više.",
-                    "Cvorove vežemo uvijek na zdravoj nozi."
+                    "Čvorove vežemo uvijek na zdravoj nozi."
                 ]
             },
             {
@@ -587,13 +583,13 @@
         ]
     },
     {
-        "question": "Opišite postupak prve pomoći ako je unesrećena osoba s ozlijeđenom kralješnicom bez svijesti.",
+        "question": "Opišite postupak prve pomoći ako je unesrećena osoba s ozlijeđenom kralježnicom bez svijesti.",
         "answers": [
             {
                 "type": "procedure",
-                "title": "Postupak prve pomoći za ozljedu kralješnice",
+                "title": "Postupak prve pomoći za ozljedu kralježnice",
                 "items": [
-                    "Ako unesrećena osoba kod koje sumnjamo na ozljedu kralješnice prestane disati, odmah započnite oživljavanje jer će u protivnom osoba kroz nekoliko minuta umrijeti.",
+                    "Ako unesrećena osoba kod koje sumnjamo na ozljedu kralježnice prestane disati, odmah započnite oživljavanje jer će u protivnom osoba kroz nekoliko minuta umrijeti.",
                     "Oživljavanje primijenite prema standardnom postupku za oživljavanje.",
                     "Otvorite dišni put podizanjem donje čeljusti.",
                     "Okrenite osobu na leđa, oslobođenje dišnog puta ima prednost pred mogućim ozljedama kralježnice.",
@@ -972,7 +968,7 @@
             },
             {
                 "type": "procedure",
-                "title": "Postupak s potpuno odvojenim dijelom tijela – amputacijskom okrajinom",
+                "title": "Postupak s potpuno odvojenim dijelom tijela - amputacijskom okrajinom",
                 "items": [
                     "Zamotajte potpuno odvojeni dio tijela u sterilni materijal.",
                     "Smjestite ga u plastičnu vrećicu i dobro je zatvorite.",
@@ -1110,19 +1106,6 @@
             {
                 "type": "video",
                 "url": "https://www.youtube.com/watch?v=hv6Qv8flEpg&ab_channel=CroatianRedCrossHrvatskiCrvenikriz"
-            }
-        ]
-    },
-    {
-        "question": "Pokažite zaustavljanje krvarenja izravnim pritiskom na ranu.",
-        "answers": [
-            {
-                "type": "procedure",
-                "title": "Postupak zaustavljanja krvarenja izravnim pritiskom",
-                "items": [
-                    "Komadom sterilne gaze čvrsto pritisnite mjesto krvarenja.",
-                    "Ako je rana na ruci ili nozi, podignite ozlijeđeni ud i zadržite ga u povišenom položaju."
-                ]
             }
         ]
     },
