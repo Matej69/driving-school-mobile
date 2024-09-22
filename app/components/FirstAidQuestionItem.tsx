@@ -3,18 +3,17 @@ import { Button, Linking, Text, TouchableOpacity, View } from "react-native";
 import { FirstAidAnswer, FirstAidAnswerListType, FirstAidAnswerParagraphType, FirstAidAnswerProcedureType, FirstAidAnswerVideoLinkType, FirstAidQuestion } from "../types/types";
 import colors from "../colors";
 
-// "paragraph" | "list" | "procedure"
-
 const FirstAidQuestionParagraph = ({ answer }: { answer: FirstAidAnswerParagraphType }) =>
     <Text style={{ fontSize: 14 }}>
-      {answer.text}
+      {answer.text ?? ''}
     </Text>
 
 const FirstAidQuestionList = ({ answer }: { answer: FirstAidAnswerListType }) => {
-    if(!answer.title || answer?.items?.length === 0)
+    if(answer?.items?.length === 0)
         return <></>
+    const title = answer?.title ? `${answer.title}:` : null
     return <>
-        <Text style={{ fontSize: 14, paddingBottom: 1, fontWeight: '500' }}>{`${answer.title}:`}</Text>
+        { title && <Text style={{ fontSize: 14, paddingBottom: 1, fontWeight: '500' }}> { title } </Text> }
         { answer.items.map(item => 
             <Text key={`first-aid-answer-content-section-${item}`} style={{ paddingLeft: 4 }}>• { item }</Text>
         )}
@@ -22,12 +21,11 @@ const FirstAidQuestionList = ({ answer }: { answer: FirstAidAnswerListType }) =>
 }
 
 const FirstAidQuestionProcedure = ({ answer }: { answer: FirstAidAnswerProcedureType }) => {
-    if(!answer.title || answer?.items?.length === 0)
+    if(answer?.items?.length === 0)
         return <></>
+    const title = answer?.title ? `${answer.title}:` : null
     return <>
-        <Text style={{ fontSize: 14, paddingBottom: 1, fontWeight: '500' }}>
-            {`${answer.title}:`}
-        </Text>
+        { title && <Text style={{ fontSize: 14, paddingBottom: 1, fontWeight: '500' }}> { title } </Text> }
         { answer.items.map((item, i) => 
             <Text key={`first-aid-answer-content-section-${item}`} style={{ paddingLeft: 4 }}>{`${i+1}. ${item}`}</Text>
         )}
@@ -60,9 +58,14 @@ export const FirstAidQuestionItem = ({ q }: { q: FirstAidQuestion }) => {
             <Text style={{ paddingBottom: 4, fontSize: 16, fontWeight: 'bold' }}>
                 {q.question}
             </Text>
-            { q.answers.map((q, i) => 
+            { q.answers.map((a, i) => 
                 <View key={`first-aid-answer-content-${i}`} style={{ paddingVertical: 2 }}>
-                    { renderFirstAidAnswer(q) }
+                    { renderFirstAidAnswer(a) }
+                    { 
+                        // if next exist and next isn't video - videos are always referring to previous section so we group them together
+                        (i + 1 < q.answers.length && q.answers[i+1].type != 'video') &&
+                        <View style={{ height: 1, backgroundColor: '#eee', marginTop: 6 }}/> 
+                    }
                 </View>) 
             }
         </View>
