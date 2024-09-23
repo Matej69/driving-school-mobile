@@ -34,19 +34,19 @@ export const QuestionCard = (p: QuestionCardProps) => {
     const styleProps = (correct: boolean, checked: boolean): {checkboxFillColor?: string, checkboxBorderColor?: string, itemBorderColor: string, icon?: 'checkmark' | 'close'} =>  {
         if(p.answerInteractivityType == 'CAN_BE_ANSWERED') {
             if(checked) return { checkboxFillColor: colors['base'], checkboxBorderColor: colors['base'], itemBorderColor: colors['base'], icon: 'checkmark' }
-            else return { checkboxFillColor: undefined, checkboxBorderColor: colors['inactive'], itemBorderColor: colors['inactive'], icon: undefined }
+            else return { checkboxFillColor: undefined, checkboxBorderColor: colors['disabled'], itemBorderColor: colors['disabled'], icon: undefined }
         }
         else if(p.answerInteractivityType == 'ANSWERED_AND_DISABLED') {
             if(checked) return { checkboxFillColor: colors['base'], checkboxBorderColor: colors['base'], itemBorderColor: colors['base'], icon: 'checkmark' }
-            else return { checkboxFillColor: undefined, checkboxBorderColor: colors['inactive'], itemBorderColor: colors['inactive'], icon: undefined }
+            else return { checkboxFillColor: undefined, checkboxBorderColor: colors['disabled'], itemBorderColor: colors['disabled'], icon: undefined }
         }
         else if(p.answerInteractivityType == 'CORRECT_ANSWERED_SHOWN') {
             if(correct && checked) return { checkboxFillColor: colors['success'], checkboxBorderColor: colors['success'], itemBorderColor: colors['success'], icon: 'checkmark' }
-            if(correct && !checked) return { checkboxFillColor: undefined, checkboxBorderColor: colors['inactive'], itemBorderColor: colors['success'], icon: undefined }
+            if(correct && !checked) return { checkboxFillColor: undefined, checkboxBorderColor: colors['disabled'], itemBorderColor: colors['success'], icon: undefined }
             if(!correct && checked) return { checkboxFillColor: colors['failure'], checkboxBorderColor: colors['failure'], itemBorderColor: colors['failure'], icon: 'close' }
-            if(!correct && !checked) return { checkboxFillColor: undefined, checkboxBorderColor: colors['inactive'], itemBorderColor: colors['inactive'], icon: undefined }
+            if(!correct && !checked) return { checkboxFillColor: undefined, checkboxBorderColor: colors['disabled'], itemBorderColor: colors['disabled'], icon: undefined }
         }
-        return { checkboxFillColor: colors['inactive'], checkboxBorderColor: colors['inactive'], itemBorderColor: colors['inactive'], icon: undefined }
+        return { checkboxFillColor: colors['inactive'], checkboxBorderColor: colors['disabled'], itemBorderColor: colors['disabled'], icon: undefined }
     }
 
     const onAnswerPress = (answer: Answer) => {
@@ -81,14 +81,12 @@ export const QuestionCard = (p: QuestionCardProps) => {
 	return (
         <View>
             <Text className="text-gray-600 font-bold">{question.question}</Text>            
-            <View className="mt-2"/>
-            
+            <View className="mt-2"/>            
             { /* Render images */ }
             {
                 p.question.images.map((img) => renderScaledImage(img))
             }
             <View className="mt-1"/>
-
             { /* Answers */ }
             {
                 question.answers.map((answer, i) => (
@@ -98,8 +96,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
                     </TouchableOpacity>
                 ))
             }
-            { hasBottomInfoRow && <View className="mt-2"/> }
-            
+            { hasBottomInfoRow && <View className="mt-2"/> }            
             { /* Bottom info */ }
             <View style={{ display: 'flex', flexDirection: 'row', justifyContent: bottomInfoRowJustify, alignItems: 'flex-end'}}>
                 {
