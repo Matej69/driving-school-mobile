@@ -40,15 +40,14 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
               <View style={{ backgroundColor: tabItemColor('correctly-answered'), width: 6, height: 6, borderRadius: 9999 }}></View>
             </TouchableOpacity>
           </View>
-          <FlatList<Question>
-                         
+          <FlatList<Question>                         
             initialScrollIndex={0}
             initialNumToRender={3}
             style={{ backgroundColor: colors.rootBackground }}
             contentContainerStyle={{ padding: 4, rowGap: 3 }}
             data={questionsGroupedByCorrectness.get(selectedTabKey)} 
             renderItem={el =>
-                <Animatable.View key={`exam-question-card-${el.item.id}`} animation={'fadeInDown'} delay={100 * (el.index + 1)}>
+                <Animatable.View key={`exam-question-card-${el.item.id}`} animation={'fadeInDown'} delay={10 * (el.index + 1)}>
                   <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
                     <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
                   </CardContainer>
