@@ -4,8 +4,18 @@ import { Question } from "../types/types"
 import colors from "../colors"
 import { CardContainer } from "./CardContainer"
 import { QuestionCard } from "./QuestionCard"
-import { isQuestionAnsweredCorrectly } from "../utils/utils"
+import { allIntersectionsCorrect, isExamPassed, isQuestionAnsweredCorrectly } from "../utils/utils"
 import * as Animatable from 'react-native-animatable'
+
+
+const ExamPassedMessage = ({ isExamPassed, allIntersectionsCorrect }: {isExamPassed: boolean, allIntersectionsCorrect: boolean} ) => (
+  <CardContainer color={isExamPassed? 'success' : 'failure' }>
+    { 
+      ( isExamPassed && <Text style={{ color: colors.success, fontWeight: 'bold', alignSelf: 'center' }}>Prošli ste ispit</Text> ) ||
+      ( !isExamPassed && <Text style={{ color: colors.failure, fontWeight: 'bold', alignSelf: 'center' }}>Niste prošli ispit {!allIntersectionsCorrect ? '(križanje)' : ''}</Text> )
+    }
+  </CardContainer>
+)
 
 type FinishedExamQuestionsTabKey = 'correctly-answered' | 'incorrectly-answered'
 
@@ -39,16 +49,17 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
               <Text style={{ fontSize: 18, fontWeight: 'bold', color: tabItemColor('correctly-answered') }}>TOČNI</Text>
               <View style={{ backgroundColor: tabItemColor('correctly-answered'), width: 6, height: 6, borderRadius: 9999 }}></View>
             </TouchableOpacity>
-          </View>
-          <FlatList<Question>                         
+          </View>                     
+          <FlatList<Question>
+            ListHeaderComponent={<ExamPassedMessage isExamPassed={isExamPassed(p.questions)} allIntersectionsCorrect={allIntersectionsCorrect(p.questions)}></ExamPassedMessage>}                       
             initialScrollIndex={0}
             initialNumToRender={3}
             style={{ backgroundColor: colors.rootBackground }}
             contentContainerStyle={{ padding: 4, rowGap: 3 }}
             data={questionsGroupedByCorrectness.get(selectedTabKey)} 
-            renderItem={el =>
+            renderItem={(el) =>                
                 <Animatable.View key={`exam-question-card-${el.item.id}`} animation={'fadeInDown'} delay={10 * (el.index + 1)}>
-                  <CardContainer color={isQuestionAnsweredCorrectly(el.item) ? 'success' : 'failure'}>
+                  <CardContainer color={'base'}>
                     <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
                   </CardContainer>
               </Animatable.View >

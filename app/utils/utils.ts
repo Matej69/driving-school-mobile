@@ -1,3 +1,4 @@
+import { MIN_CORRECT_NON_INTERSECTION_ANSWERS_FOR_PASS } from "../constants/Global";
 import { Question } from "../types/types";
 
 export const deepCopy = <T>(obj: T) => {
@@ -46,3 +47,17 @@ export const updateQuestionsWrongAnswers = (allQuestions: Question[], answeredQu
 
 export const isQuestionAnsweredCorrectly = (question: Question) => question.answers.every(a => a.checked === a.correct)
 export const isQuestionAnswered = (question: Question) => question.answers.some(a => a.checked)
+export const allIntersectionsCorrect = (questions: Question[]) => {
+    return questions
+        .filter(q => q.isIntersection)
+        .flatMap(q => q.answers)
+        .every(a => a.correct === a.checked)
+}
+export const isExamPassed = (questions: Question[]) => {
+    const _allIntersectionsCorrect = allIntersectionsCorrect(questions)
+    const correctNonIntersectionQCount = questions
+        .filter(q => !q.isIntersection)
+        .filter(q => q.answers.every((a) => a.correct === a.checked))
+        .length
+    return _allIntersectionsCorrect && correctNonIntersectionQCount >= MIN_CORRECT_NON_INTERSECTION_ANSWERS_FOR_PASS
+}

@@ -22,7 +22,7 @@ export const CardContainer = ({ color, children }: CardContainerProps) => {
     const borderWeight = color == 'base' ? 1 : 1
 
     return (
-        <View style={{ padding: 6, backgroundColor: colors['section-item'], borderColor: colorMap['base'], borderWidth: borderWeight, borderRadius: 6 }} >
+        <View style={{ padding: 6, backgroundColor: colors['section-item'], borderColor: colorMap[color], borderWidth: borderWeight, borderRadius: 6 }} >
             { children }
         </View>
     ) 
