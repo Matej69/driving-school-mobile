@@ -81,7 +81,7 @@ export default function Questions() {
         <View style={{ display: 'flex', flexDirection: 'row', padding: 6}}>
           <View style={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
             <TextInput
-              onBlur={(e) => setSearchValue(unappliedSearchValue)} onChangeText={(text) => setUnappliedSearchValue(text)} value={unappliedSearchValue} placeholder='Pretraga pitanja' placeholderTextColor={colors.base} 
+              onBlur={(e) => setSearchValue(unappliedSearchValue)} onChangeText={(text) => setUnappliedSearchValue(text)} value={unappliedSearchValue} placeholder='Pretraga pitanja...' placeholderTextColor={colors.base} 
               style={{ flex: 1, backgroundColor: colors['base-bg'], borderRadius: 6, padding: 6, fontWeight: '500', color: colors.disabled }}>
             </TextInput>
             { unappliedSearchValue && <Ionicons onPress={onSearchClear} style={{ position: 'absolute', right: 0, marginEnd: 2 }} size={32} color={colors.inactive} name={'close-circle'} /> }

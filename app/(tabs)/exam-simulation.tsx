@@ -116,7 +116,7 @@ export default function ExamSimulationScreen() {
     setFinishExamModalActive(true)
   }, [])
   
-  const questionGridBottomActions = useMemo(() => {
+  const finishExamButton = useMemo(() => {
     return(
       <TouchableOpacity onPress={onFinishExamClick} style={{ width: '100%', backgroundColor: colors.base, padding: 14, borderRadius: 6, marginTop: 8, justifyContent: 'center', alignItems: 'center'}}>
         <Text style={{ fontSize: 20, color: 'white', fontWeight: 'bold' }}>ZAVRŠI ISPIT</Text>
@@ -144,28 +144,33 @@ export default function ExamSimulationScreen() {
     setFinishExamModalActive(false)
   }, [])
   
+  const isOnLastQuestion = displayedNonSavedQuestion.id === examQuestions[QUESTIONS_PER_EXAM - 1].id
 
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
+      { /* Header */}
       <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: 10, padding: 6}}>
         <PaginationComponent></PaginationComponent>
         <TouchableOpacity onPress={openBottomDrawer}>
           <Ionicons size={36} color='white' name='menu' />
         </TouchableOpacity>
       </View>
+      { /* Question */}
       <ScrollView style={{ backgroundColor: colors.rootBackground, padding: 4 }}>
-      <Animatable.View key={`question-card-${displayedNonSavedQuestion.id}`} animation={'fadeInDown'} duration={500}>
-        <CardContainer color='base'>
-          <QuestionCard onAnswerChange={onAnswerChange} question={displayedNonSavedQuestion} answerInteractivityType={answerInteractivityType}/>
-        </CardContainer>
-      </Animatable.View>
-      </ScrollView>
+        <Animatable.View key={`question-card-${displayedNonSavedQuestion.id}`} animation={'fadeInDown'} duration={500}>
+          <CardContainer color='base'>
+            <QuestionCard onAnswerChange={onAnswerChange} question={displayedNonSavedQuestion} answerInteractivityType={answerInteractivityType}/>
+          </CardContainer>
+          { isOnLastQuestion && finishExamButton }
+        </Animatable.View>
+      </ScrollView> 
+      { /* Exam grid question selection */}
       <BottomDrawer ref={gridSelectionRef}>
         <QuestionsGridSelection 
           onItemClick={onGridItemClick}
           items={questionGridSelectionItems}
-          bottomActions={questionGridBottomActions}
+          bottomActions={finishExamButton}
         />
       </BottomDrawer>
       { /* Exam finish confirmation modal */ }
