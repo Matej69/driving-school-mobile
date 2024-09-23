@@ -81,7 +81,7 @@ export const QuestionCard = (p: QuestionCardProps) => {
 	return (
         <View>
             <Text className="text-gray-600 font-bold">{question.question}</Text>            
-            <View className="mt-1"/>
+            <View className="mt-2"/>
             
             { /* Render images */ }
             {
