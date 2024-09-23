@@ -101,7 +101,7 @@
   },
   {
     "id": 5,
-    "question": "Koliko je ograničenje brzine kretanja vozila na cesti u naselju u kojemu brzina kretanja nije određena  prometnim znakom?",
+    "question": "Koliko je ograničenje brzine kretanja vozila na cesti u naselju u kojemu brzina kretanja nije određena prometnim znakom?",
     "answers": [
       {
         "id": 1,
@@ -531,9 +531,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "543.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -558,9 +556,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "b5_36.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -1537,9 +1533,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "3cesta-i-njena-obiljezja_19.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -1618,9 +1612,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "104.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -1672,9 +1664,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "9.18.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -2288,9 +2278,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "114.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -3161,9 +3149,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "1042.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -3345,9 +3331,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "118.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -3863,9 +3847,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "10.171.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -4152,7 +4134,7 @@
   },
   {
     "id": 163,
-    "question": "Što mora učiniti vozač prije započinjanja neke radnje vozilom  u prometu?",
+    "question": "Što mora učiniti vozač prije započinjanja neke radnje vozilom u prometu?",
     "answers": [
       {
         "id": 1,
@@ -4384,9 +4366,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "544.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -4465,9 +4445,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "92.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -5141,9 +5119,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "1013.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -5831,9 +5807,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "10.126.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -6214,9 +6188,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "1020.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -6241,9 +6213,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "7.224.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -6268,9 +6238,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "10.12.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -6775,9 +6743,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "7.423.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -7605,9 +7571,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "1045.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -8102,9 +8066,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "1031.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -8232,9 +8194,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "733.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -8478,9 +8438,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "b5_30.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -9866,9 +9824,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "7.4198.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -10960,9 +10916,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "95.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -11211,9 +11165,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "9.19.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -11705,9 +11657,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "104.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -11791,9 +11741,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "111.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -12213,9 +12161,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "1038.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -12694,7 +12640,7 @@
   },
   {
     "id": 499,
-    "question": "Koje su moguće opasnosti zbog otežanog  uočavanja prometne situacije tijekom vožnje u situaciji kao na slici?",
+    "question": "Koje su moguće opasnosti zbog otežanog uočavanja prometne situacije tijekom vožnje u situaciji kao na slici?",
     "answers": [
       {
         "id": 1,
@@ -12739,9 +12685,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "1039.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -12935,9 +12879,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "1045.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -12962,9 +12904,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "10.12.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -13379,7 +13319,7 @@
   },
   {
     "id": 526,
-    "question": "Kakav je odnos snage i brzine  u prvoj brzini?",
+    "question": "Kakav je odnos snage i brzine u prvoj brzini?",
     "answers": [
       {
         "id": 1,
@@ -13939,9 +13879,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "551.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -14112,9 +14050,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "742.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -14214,9 +14150,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "7.329.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -14470,9 +14404,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "10.121.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -14931,9 +14863,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "7.412.jpg"
-    ],
+    "images": [],
     "type": "TYPED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -15055,9 +14985,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "1040.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -15184,9 +15112,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "10.122.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -15288,9 +15214,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "4.231.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -15631,9 +15555,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "1033.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -15868,9 +15790,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "932.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -16197,9 +16117,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "8.224.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -16581,9 +16499,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "933.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -16642,7 +16558,7 @@
   },
   {
     "id": 653,
-    "question": "Što bi vozač mogao očekivati  tijekom vožnje u situaciji kao na slici?",
+    "question": "Što bi vozač mogao očekivati tijekom vožnje u situaciji kao na slici?",
     "answers": [
       {
         "id": 1,
@@ -16687,9 +16603,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "543.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -16793,9 +16707,7 @@
         "correct": true
       }
     ],
-    "images": [
-      "7.423.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -17600,9 +17512,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "1020.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
@@ -17830,9 +17740,7 @@
         "correct": false
       }
     ],
-    "images": [
-      "1027.jpg"
-    ],
+    "images": [],
     "type": "SELECTED",
     "incorrectlyAnsweredCount": 0,
     "isIntersection": false
