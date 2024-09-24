@@ -95,7 +95,7 @@ export default function Questions() {
           contentContainerStyle={{ padding: 4, rowGap: 3 }}
           data={displayedQuestions} 
           renderItem={el =>
-            <Animatable.View key={`question-card-${el.item.id}`} animation={'fadeInDown'} delay={100 * (el.index + 1)}>
+            <Animatable.View key={`question-card-${el.item.id}`} animation={'fadeInDown'} duration={200} delay={100 * (el.index + 1)}>
               <CardContainer color='base'>
                 <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
               </CardContainer>

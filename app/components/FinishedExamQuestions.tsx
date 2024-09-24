@@ -58,7 +58,7 @@ export const FinishedExamQuestions = (p: FinishedExamQuestionsProps) => {
             contentContainerStyle={{ padding: 4, rowGap: 3 }}
             data={questionsGroupedByCorrectness.get(selectedTabKey)} 
             renderItem={(el) =>                
-                <Animatable.View key={`exam-question-card-${el.item.id}`} animation={'fadeInDown'} delay={10 * (el.index + 1)}>
+                <Animatable.View key={`exam-question-card-${el.item.id}`} animation={'fadeInDown'} duration={100} delay={50 * (el.index + 1)}>
                   <CardContainer color={'base'}>
                     <QuestionCard question={el.item} answerInteractivityType={'CORRECT_ANSWERED_SHOWN'} incorrectlyAnsweredShown/>
                   </CardContainer>

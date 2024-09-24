@@ -16,7 +16,7 @@ const getItemsStyles = (questions: Question[], currentlySelectedQuestionId: numb
         else if(!isQuestionAnswered(q))
             styles.push({ id: q.id, style: {backgroundColor: colors.inactive} })
         else
-            styles.push({ id: q.id, style: {backgroundColor: '#535156'} })
+            styles.push({ id: q.id, style: {backgroundColor: colors.disabled} })
     });
     return styles
 }

@@ -82,7 +82,7 @@ export default function FinishedExams() {
           contentContainerStyle={{ padding: 4, rowGap: 3 }}
           data={exams} 
           renderItem={el =>
-            <Animatable.View key={`exam-questions-list-${el.item.date}`} animation={'fadeInDown'} duration={200} delay={50 * (el.index + 1)}>
+            <Animatable.View key={`exam-questions-list-${el.item.date}`} animation={'fadeInDown'} duration={100} delay={50 * (el.index + 1)}>
               <TouchableOpacity onPress={() => onSelectExam(el.item.date)}>
                 <FinishedExamItem date={el.item.date} questions={el.item.questions}></FinishedExamItem>
               </TouchableOpacity>
