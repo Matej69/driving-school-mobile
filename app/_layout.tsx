@@ -3,16 +3,12 @@ import { DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
-import { createContext, useEffect, useState } from 'react';
-import 'react-native-reanimated';
-import { FirstAidQuestion, ImagesMetadata, Question } from './types/types';
+import React, { useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import React from 'react';
+import 'react-native-reanimated';
 import { storage } from './storage/storage';
 import useStore from './store/store';
-import * as FileSystem from 'expo-file-system';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Button } from 'react-native';
+import { FirstAidQuestion, ImagesMetadata, Question } from './types/types';
 
 SplashScreen.preventAutoHideAsync();
 

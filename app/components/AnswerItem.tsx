@@ -1,8 +1,8 @@
-import { Text, TouchableOpacity, View } from "react-native"
+import { Text, View } from "react-native"
 
-import React from "react"
 import { Ionicons } from "@expo/vector-icons"
-import colors, { background } from "../colors"
+import React from "react"
+import colors from "../colors"
 
 
 type AnswerItemProps = {

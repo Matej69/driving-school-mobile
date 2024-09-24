@@ -1,5 +1,5 @@
-import { FinishedExamStorage, FirstAidAnswer, FirstAidQuestion, ImagesMetadata, Question } from "../types/types"
 import * as FileSystem from 'expo-file-system';
+import { FirstAidQuestion, Question } from "../types/types";
 
 const reset = async(): Promise<{ success: boolean, message: string }> => {
   if(FileSystem.documentDirectory === null)

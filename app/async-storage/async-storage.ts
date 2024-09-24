@@ -1,5 +1,5 @@
-import { FinishedExamStorage } from "../types/types"
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { FinishedExamStorage } from "../types/types";
 
 export type StorageKey = 'questions' | 'finished-exams'
 

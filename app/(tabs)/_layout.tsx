@@ -1,10 +1,10 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Link, Tabs } from 'expo-router';
+import { Tabs } from 'expo-router';
+import React from 'react';
 
-import * as Animatable from 'react-native-animatable'
+import * as Animatable from 'react-native-animatable';
 import { useTabNavigation } from '../hooks/useTabNavigation';
-import { NavigationRoutes, NavigationRoutesKeys } from '../types/types';
+import { NavigationRoutes } from '../types/types';
 
 const colors = require('../colors');
 

@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { router } from "expo-router";
+import { useEffect, useMemo, useRef } from "react";
 import useStore from "../store/store";
 import { NavigationRoutes, NavigationRoutesKeys, ParamType } from "../types/types";
-import { useNavigation, router } from "expo-router";
 
 export const useTabNavigation = () => {
     const navItemRefs: { current: any[] } = useRef([]);

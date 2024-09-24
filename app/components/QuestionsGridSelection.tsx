@@ -1,8 +1,6 @@
-import { Button, StyleProp, Text, TouchableOpacity, View } from "react-native"
+import { StyleProp, Text, TouchableOpacity, View } from "react-native"
 
 import React from "react"
-import { Ionicons } from "@expo/vector-icons"
-import colors, { background } from "../colors"
 
 
 type QuestionsGridSelectionProps = {

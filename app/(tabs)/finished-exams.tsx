@@ -1,24 +1,21 @@
 
-import React, { useCallback, useContext, useEffect, useState } from 'react';
-import { FlatList, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import colors from '../colors';
-import { asyncStorage } from '../async-storage/async-storage';
-import { FinishedExam, FinishedExamStorage, Question } from '../types/types';
-import { FinishedExamItem } from '../components/FinishedExamItem';
-import { storageToFinishedExams } from '../mapper/mapper';
-import { CardContainer } from '../components/CardContainer';
-import { QuestionCard } from '../components/QuestionCard';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import { useLocalSearchParams } from "expo-router";
-import { useTabNavigation } from '../hooks/useTabNavigation';
-import useStore from '../store/store';
-import { SkeletonList } from '../components/SkeletonList';
-import { isQuestionAnsweredCorrectly } from '../utils/utils';
-import { useBackHandler } from '../hooks/useBackHandler';
+import React, { useCallback, useEffect, useState } from 'react';
+import { FlatList } from 'react-native';
+import * as Animatable from 'react-native-animatable';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { asyncStorage } from '../async-storage/async-storage';
+import colors from '../colors';
+import { FinishedExamItem } from '../components/FinishedExamItem';
 import { FinishedExamQuestions } from '../components/FinishedExamQuestions';
-import * as Animatable from 'react-native-animatable'
 import { NoResultItem } from '../components/NoResultItem';
+import { SkeletonList } from '../components/SkeletonList';
+import { useBackHandler } from '../hooks/useBackHandler';
+import { useTabNavigation } from '../hooks/useTabNavigation';
+import { storageToFinishedExams } from '../mapper/mapper';
+import useStore from '../store/store';
+import { FinishedExam } from '../types/types';
 
 type ExamScreenType = 'finished-exams' | 'finished-exam-questions'
 

@@ -1,7 +1,6 @@
 import React, { ReactElement } from "react"
-import { Modal, View, Text, TouchableOpacity } from "react-native"
+import { Modal, Text, TouchableOpacity, View } from "react-native"
 import colors, { disabled } from "../colors"
-import { title } from "process"
 
 type DsModalProps = {
     visible: boolean,

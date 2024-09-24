@@ -1,28 +1,26 @@
 
-import React, { Fragment, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
-import { Button, Modal, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import colors from '../colors';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { usePagination } from '../hooks/usePagination';
 import { Ionicons } from '@expo/vector-icons';
-import { AnswerInteractivityType, Question } from '../types/types';
-import { CardContainer } from '../components/CardContainer';
-import { QuestionCard } from '../components/QuestionCard';
 import BottomSheet from '@gorhom/bottom-sheet';
-import { BottomDrawer } from '../components/BottomDrawer';
-import { QuestionsGridSelection } from '../components/QuestionsGridSelection';
-import { useExamSimulationQuestionSelection } from '../hooks/useExamSimulationQuestionSelection';
-import { util } from 'prettier';
-import { deepCopy, isQuestionAnswered, updateQuestionsWrongAnswers } from '../utils/utils';
-import { DsModal } from '../components/Modal';
-import { useTabNavigation } from '../hooks/useTabNavigation';
-import useStore from '../store/store';
-import { useNavigation } from '@react-navigation/native';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
+import * as Animatable from 'react-native-animatable';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { asyncStorage } from '../async-storage/async-storage';
+import colors from '../colors';
+import { BottomDrawer } from '../components/BottomDrawer';
+import { CardContainer } from '../components/CardContainer';
+import { DsModal } from '../components/Modal';
+import { QuestionCard } from '../components/QuestionCard';
+import { QuestionsGridSelection } from '../components/QuestionsGridSelection';
+import { INTERSECTION_QUESTIONS_PER_EXAM, NON_INTERSECTION_QUESTIONS_PER_EXAM, QUESTIONS_PER_EXAM } from '../constants/Global';
+import { useExamSimulationQuestionSelection } from '../hooks/useExamSimulationQuestionSelection';
+import { usePagination } from '../hooks/usePagination';
+import { useTabNavigation } from '../hooks/useTabNavigation';
 import { finishedExamToStorage } from '../mapper/mapper';
 import { storage } from '../storage/storage';
-import { INTERSECTION_QUESTIONS_PER_EXAM, NON_INTERSECTION_QUESTIONS_PER_EXAM, QUESTIONS_PER_EXAM } from '../constants/Global';
-import * as Animatable from 'react-native-animatable'
+import useStore from '../store/store';
+import { AnswerInteractivityType, Question } from '../types/types';
+import { deepCopy, isQuestionAnswered, updateQuestionsWrongAnswers } from '../utils/utils';
 
 const generateExamQuestions = (questionPool: Question[]): Question[]  => {
   // Helper generator function

@@ -1,11 +1,11 @@
-import React, { useEffect, useMemo, useRef, useState } from "react"
-import { TouchableOpacity, View, Text, FlatList } from "react-native"
-import { Question } from "../types/types"
+import React, { useMemo, useState } from "react"
+import { FlatList, Text, TouchableOpacity, View } from "react-native"
+import * as Animatable from 'react-native-animatable'
 import colors from "../colors"
+import { Question } from "../types/types"
+import { allIntersectionsCorrect, isExamPassed, isQuestionAnsweredCorrectly } from "../utils/utils"
 import { CardContainer } from "./CardContainer"
 import { QuestionCard } from "./QuestionCard"
-import { allIntersectionsCorrect, isExamPassed, isQuestionAnsweredCorrectly } from "../utils/utils"
-import * as Animatable from 'react-native-animatable'
 
 
 const ExamPassedMessage = ({ isExamPassed, allIntersectionsCorrect }: {isExamPassed: boolean, allIntersectionsCorrect: boolean} ) => (

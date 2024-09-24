@@ -1,13 +1,11 @@
-import React, { useCallback } from "react"
-import { View, Text } from "react-native"
+import React from "react"
+import { Text, View } from "react-native"
+import colors from "../colors"
 import { Question } from "../types/types"
-import colors, { background } from "../colors"
-import { CardContainer, Colors } from "./CardContainer"
-import { Ionicons } from "@expo/vector-icons"
-import GreenCheckboxIcon from "./svg/SuccessCheckboxIcon"
-import FailedIcon from "./svg/FailedIcon"
 import { allIntersectionsCorrect, formatDate, isExamPassed } from "../utils/utils"
-import { MIN_CORRECT_NON_INTERSECTION_ANSWERS_FOR_PASS } from "../constants/Global"
+import { CardContainer } from "./CardContainer"
+import FailedIcon from "./svg/FailedIcon"
+import GreenCheckboxIcon from "./svg/SuccessCheckboxIcon"
 
 
 type FinishedExamItemProps = {

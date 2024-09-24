@@ -1,5 +1,4 @@
-import { Children } from "react"
-import { Text, View } from "react-native"
+import { View } from "react-native"
 
 import React from "react"
 import colors from "../colors"

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Svg, Circle, Path } from 'react-native-svg';
 import { View } from 'react-native';
-import colors from '@/app/colors';
+import { Circle, Path, Svg } from 'react-native-svg';
 
 
 type FailedIconType = {

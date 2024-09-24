@@ -1,7 +1,7 @@
 import React from "react";
-import { Button, Linking, Text, TouchableOpacity, View } from "react-native";
-import { FirstAidAnswer, FirstAidAnswerListType, FirstAidAnswerParagraphType, FirstAidAnswerProcedureType, FirstAidAnswerVideoLinkType, FirstAidQuestion } from "../types/types";
+import { Linking, Text, TouchableOpacity, View } from "react-native";
 import colors from "../colors";
+import { FirstAidAnswer, FirstAidAnswerListType, FirstAidAnswerParagraphType, FirstAidAnswerProcedureType, FirstAidAnswerVideoLinkType, FirstAidQuestion } from "../types/types";
 
 const FirstAidQuestionParagraph = ({ answer }: { answer: FirstAidAnswerParagraphType }) =>
     <Text style={{ fontSize: 14 }}>

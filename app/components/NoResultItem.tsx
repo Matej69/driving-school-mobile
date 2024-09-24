@@ -1,6 +1,6 @@
-import { View, Text } from "react-native"
-import colors from "../colors"
 import React from "react"
+import { Text, View } from "react-native"
+import colors from "../colors"
 
 export const NoResultItem = () => {
     return (

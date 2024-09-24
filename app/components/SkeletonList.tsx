@@ -1,11 +1,7 @@
-import React, { useCallback, useEffect, useRef } from 'react';
+import React from 'react';
 
 import {
-  Animated,
-  DimensionValue,
-  StyleProp,
-  View,
-  ViewStyle,
+  View
 } from 'react-native';
 import colors from '../colors';
 import { Skeleton } from './Skeleton';

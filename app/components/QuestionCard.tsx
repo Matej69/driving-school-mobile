@@ -1,16 +1,13 @@
-import { Alert, Dimensions, FlexAlignType, FlexStyle, Image, Text, TouchableOpacity, View } from "react-native"
+import { Alert, Dimensions, Image, Text, TouchableOpacity, View } from "react-native"
 
-import React, { useEffect, useMemo, useState } from "react"
-import { AnswerItem } from "./AnswerItem"
-import { Answer, AnswerInteractivityType, Question } from "../types/types"
-import { useQuestion } from "../hooks/useQuestion"
-import colors from "../colors"
-import * as FileSystem from 'expo-file-system';
-import { imgNodeRequires, ImgRequiresUrisKeys } from "../storage/image-require-uris"
-import { deepCopy } from "../utils/utils"
 import { Ionicons } from "@expo/vector-icons"
+import React, { useEffect } from "react"
+import colors from "../colors"
+import { useQuestion } from "../hooks/useQuestion"
+import { imgNodeRequires, ImgRequiresUrisKeys } from "../storage/image-require-uris"
 import useStore from "../store/store"
-import { DsModal } from "./Modal"
+import { Answer, AnswerInteractivityType, Question } from "../types/types"
+import { AnswerItem } from "./AnswerItem"
 
 
 type QuestionCardProps = {

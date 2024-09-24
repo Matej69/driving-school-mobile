@@ -1,17 +1,16 @@
-import { FlatList, ScrollView, Text, TextInput, TextInputFocusEventData, Touchable, TouchableOpacity } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { CardContainer } from '../components/CardContainer';
-import { View } from 'react-native-animatable';
-import React, { useContext, useEffect, useRef, useState } from 'react';
-import { QuestionCard } from '../components/QuestionCard';
-import { Question } from '../types/types';
-import { usePagination } from '../hooks/usePagination';
-import colors from '../colors';
 import { Ionicons } from '@expo/vector-icons';
-import { asyncStorage } from '../async-storage/async-storage';
-import useStore from '../store/store';
-import * as Animatable from 'react-native-animatable'
+import React, { useEffect, useRef, useState } from 'react';
+import { FlatList, TextInput } from 'react-native';
+import * as Animatable from 'react-native-animatable';
+import { View } from 'react-native-animatable';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import colors from '../colors';
+import { CardContainer } from '../components/CardContainer';
 import { NoResultItem } from '../components/NoResultItem';
+import { QuestionCard } from '../components/QuestionCard';
+import { usePagination } from '../hooks/usePagination';
+import useStore from '../store/store';
+import { Question } from '../types/types';
 
 
 // klindic.autoskola-testovi.com//ckeditor/kcfinder/upload_img/images/10/5.jpg

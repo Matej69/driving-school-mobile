@@ -1,8 +1,6 @@
-import BottomSheet, { BottomSheetView } from "@gorhom/bottom-sheet"
+import BottomSheet from "@gorhom/bottom-sheet";
 import React, { Ref } from "react";
-import { useRef } from "react";
-import colors, { background } from "../colors";
-import { BottomSheetMethods } from "@gorhom/bottom-sheet/lib/typescript/types";
+import colors from "../colors";
 
 const snapPoints = ['25%', '50%', '75%'];
 
