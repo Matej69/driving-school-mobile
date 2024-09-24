@@ -18,6 +18,7 @@ import { isQuestionAnsweredCorrectly } from '../utils/utils';
 import { useBackHandler } from '../hooks/useBackHandler';
 import { FinishedExamQuestions } from '../components/FinishedExamQuestions';
 import * as Animatable from 'react-native-animatable'
+import { NoResultItem } from '../components/NoResultItem';
 
 type ExamScreenType = 'finished-exams' | 'finished-exam-questions'
 
@@ -73,26 +74,31 @@ export default function FinishedExams() {
         !screenType &&
         <SkeletonList itemsNumber={10}/>
       }
-      { /* List of finished exams */ }
-      {
+      { /* Exam list */
         screenType === 'finished-exams' &&
-        <FlatList<FinishedExam> 
-          initialNumToRender={10}
-          style={{ backgroundColor: colors.rootBackground }}
-          contentContainerStyle={{ padding: 4, rowGap: 3 }}
-          data={exams} 
-          renderItem={el =>
-            <Animatable.View key={`exam-questions-list-${el.item.date}`} animation={'fadeInDown'} duration={100} delay={50 * (el.index + 1)}>
-              <TouchableOpacity onPress={() => onSelectExam(el.item.date)}>
-                <FinishedExamItem date={el.item.date} questions={el.item.questions}></FinishedExamItem>
-              </TouchableOpacity>
-            </Animatable.View>
-          }
-          keyExtractor={el => el.date.toString()} 
-        />
+        <>
+          { /* No results */
+            !exams?.length &&
+            <NoResultItem/>
+          }    
+          { /* Exam list */}    
+          <FlatList<FinishedExam> 
+            initialNumToRender={10}
+            style={{ backgroundColor: colors.rootBackground }}
+            contentContainerStyle={{ padding: 4, rowGap: 3 }}
+            data={exams} 
+            renderItem={el =>
+              <Animatable.View key={`exam-questions-list-${el.item.date}`} animation={'fadeInDown'} duration={100} delay={50 * (el.index + 1)}>
+                <TouchableOpacity onPress={() => onSelectExam(el.item.date)}>
+                  <FinishedExamItem date={el.item.date} questions={el.item.questions}></FinishedExamItem>
+                </TouchableOpacity>
+              </Animatable.View>
+            }
+            keyExtractor={el => el.date.toString()} 
+          />
+        </>
       }
-      { /* List of questions of a finished exam */ }
-      {
+      { /* List of questions of a exams */
         screenType === 'finished-exam-questions' &&
         <FinishedExamQuestions questions={selectedExam?.questions ?? []}/>
       }

@@ -1,4 +1,4 @@
-import { Dimensions, FlexAlignType, FlexStyle, Image, Text, TouchableOpacity, View } from "react-native"
+import { Alert, Dimensions, FlexAlignType, FlexStyle, Image, Text, TouchableOpacity, View } from "react-native"
 
 import React, { useEffect, useMemo, useState } from "react"
 import { AnswerItem } from "./AnswerItem"
@@ -51,7 +51,11 @@ export const QuestionCard = (p: QuestionCardProps) => {
 
     const onAnswerPress = (answer: Answer) => {
         if(p.answerInteractivityType == 'ANSWERED_AND_DISABLED') {
-            alert('U simulaciji, kao i na pravom ispitu, ne možete mijenjati odgovor nakon što ste ga ponudili i prešli na sljedeće pitanje')
+            Alert.alert(
+                "Nije moguće promijeniti odgovor", 
+                "U simulaciji, kao i na pravom ispitu, ne možete mijenjati odgovor nakon što ste ga ponudili i prešli na sljedeće pitanje", 
+                [{ text: 'nastavi' }]
+            )
         }
         canAnswer() && toogleQuestionCheck(answer.id)
     }

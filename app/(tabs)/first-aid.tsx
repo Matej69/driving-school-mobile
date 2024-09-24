@@ -8,6 +8,7 @@ import { FirstAidQuestionItem } from '../components/FirstAidQuestionItem';
 import colors from '../colors';
 import * as Animatable from 'react-native-animatable'
 import { Ionicons } from '@expo/vector-icons';
+import { NoResultItem } from '../components/NoResultItem';
 
 export default function FirstAid() {
 
@@ -18,10 +19,6 @@ export default function FirstAid() {
 
   const search = () => {
     const newFilteredQuestions = searchValue.length > 0 ? firstAidQuestions.filter(q => q.question.toLowerCase().indexOf(searchValue.toLowerCase()) > -1) : firstAidQuestions
-    if(newFilteredQuestions.length == 0) {
-      alert(`0 rezultata za '${searchValue}'`)
-      return
-    }
     setFilteredFirstAidQuestions(newFilteredQuestions)   
   }
 
@@ -38,14 +35,18 @@ export default function FirstAid() {
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
       { /* Top Header */}
       <View style={{ display: 'flex', flexDirection: 'row', padding: 6}}>
-          <View style={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-            <TextInput
-              onChangeText={(text) => setSearchValue(text)} value={searchValue} placeholder='Pretraga pitanja...' placeholderTextColor={colors.base} 
-              style={{ flex: 1, backgroundColor: colors['base-bg'], borderRadius: 6, padding: 6, fontWeight: '500', color: colors.disabled }}>
-            </TextInput>
-            { searchValue && <Ionicons onPress={onSearchClear} style={{ position: 'absolute', right: 0, marginEnd: 2 }} size={32} color={colors.inactive} name={'close-circle'} /> }
-          </View>          
-        </View>
+        <View style={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+          <TextInput
+            onChangeText={(text) => setSearchValue(text)} value={searchValue} placeholder='Pretraga pitanja...' placeholderTextColor={colors.base} 
+            style={{ flex: 1, backgroundColor: colors['base-bg'], borderRadius: 6, padding: 6, fontWeight: '500', color: colors.disabled }}>
+          </TextInput>
+          { searchValue && <Ionicons onPress={onSearchClear} style={{ position: 'absolute', right: 0, marginEnd: 2 }} size={32} color={colors.inactive} name={'close-circle'} /> }
+        </View>          
+      </View>
+      {
+        !filteredFirstAidQuestions?.length &&
+        <NoResultItem/>
+      }
       { /* Questions list */ }
       <FlatList<FirstAidQuestion> 
         initialNumToRender={10}

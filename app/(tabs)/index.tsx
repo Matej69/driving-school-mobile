@@ -11,6 +11,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { asyncStorage } from '../async-storage/async-storage';
 import useStore from '../store/store';
 import * as Animatable from 'react-native-animatable'
+import { NoResultItem } from '../components/NoResultItem';
 
 
 // klindic.autoskola-testovi.com//ckeditor/kcfinder/upload_img/images/10/5.jpg
@@ -30,10 +31,6 @@ export default function Questions() {
   
   const search = () => {
     const newFilteredQuestions = searchValue.length > 0 ? allQuestions.filter(q => q.question.toLowerCase().indexOf(searchValue.toLowerCase()) > -1) : allQuestions
-    if(newFilteredQuestions.length == 0) {
-      alert(`0 rezultata za '${searchValue}'`)
-      return
-    }
     setFilteredQuestions(newFilteredQuestions)
     setCurrentPage(1)
     setItemCount(newFilteredQuestions.length)
@@ -78,6 +75,7 @@ export default function Questions() {
 
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
+        { /* Header */}
         <View style={{ display: 'flex', flexDirection: 'row', padding: 6}}>
           <View style={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
             <TextInput
@@ -88,6 +86,12 @@ export default function Questions() {
           </View>
           <PaginationComponent></PaginationComponent>
         </View>
+        { /* No results */}
+        {
+          !displayedQuestions?.length &&
+          <NoResultItem/>
+        }
+        { /* Questions */}
         <FlatList<Question> 
           ref={qListRef}
           initialNumToRender={3}
