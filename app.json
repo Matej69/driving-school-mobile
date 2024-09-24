@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "driving-school-mobile",
+    "name": "Autoškola - propisi i prva pomoć",
     "slug": "driving-school-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,6 +16,11 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.drunkbearzz.autoskola",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundImage": "./assets/images/logo.png"
+      }
     },
     "web": {
       "bundler": "metro",
@@ -27,6 +32,11 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "014cb018-e7ab-42ae-b7fa-222942780564"
+      }
     }
   }
 }

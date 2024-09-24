@@ -74,19 +74,18 @@ export default function RootLayout() {
       setImagesMetadata(loadedImagesMetadata)
     })()
   }, [])
-
+  
   // Expo Router uses Error Boundaries to catch errors in the navigation tree.
   useEffect(() => {
     if (error) throw error;
   }, [error]);
-
-  useEffect(() => {
-    if (fontsLoaded && allQuestions) {
-      SplashScreen.hideAsync();
-    }
-  }, [fontsLoaded]);
-
-  return (fontsLoaded && allQuestions && firstAidQuestions) ? <RootLayoutNav /> : null;
+  
+  const assetsLoaded = fontsLoaded && imagesMetadata && allQuestions.length > 0 && firstAidQuestions.length > 0
+  
+  if(assetsLoaded)
+    SplashScreen.hideAsync();
+  
+  return assetsLoaded ? <RootLayoutNav /> : null;
 }
 
 
