@@ -153,7 +153,6 @@ export const imgNodeRequires = {
 	"534.jpg":                                             { renderLarge: false, requireNode:          require('../../assets/images/questions/534.jpg')},
 	"537.jpg":                                             { renderLarge: false, requireNode:          require('../../assets/images/questions/537.jpg')},
 	"543.jpg":                                             { renderLarge: false, requireNode:          require('../../assets/images/questions/543.jpg')},
-	"546.jpg":                                             { renderLarge: false, requireNode:          require('../../assets/images/questions/546.jpg')},
 	"549.jpg":                                             { renderLarge: false, requireNode:          require('../../assets/images/questions/549.jpg')},
 	"551.jpg":                                             { renderLarge: false, requireNode:          require('../../assets/images/questions/551.jpg')},
 	"56.jpg":                                              { renderLarge: false, requireNode:         require('../../assets/images/questions/56.jpg')},
