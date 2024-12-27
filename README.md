@@ -7,4 +7,4 @@ Video tutorial: `https://www.youtube.com/watch?v=p75oQTJaLGo`
 
 ## BUILD ANDROID OVER EXPO GO
 `eas build --platform android --profile preview` - builds `.apk`
-`eas build --platform android --production preview` - builds `.aab`
+`eas build --platform android --production preview` - builds `.apk`
