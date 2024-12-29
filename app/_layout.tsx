@@ -9,12 +9,13 @@ import 'react-native-reanimated';
 import { storage } from './storage/storage';
 import useStore from './store/store';
 import { FirstAidQuestion, ImagesMetadata, Question } from './types/types';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 SplashScreen.preventAutoHideAsync();
 
 // Reseting storage and async storage when needed
-// storage.reset()
-// AsyncStorage.clear();
+ storage.reset()
+ AsyncStorage.clear();
 
 const loadQuestions = async (): Promise<Question[] | undefined> => {
   const questionsExist = await storage.fileExist('questions')
