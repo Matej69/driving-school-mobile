@@ -2,7 +2,7 @@
   "expo": {
     "name": "Autoškola - propisi/prva pomoć",
     "slug": "driving-school-mobile",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/images/logo.png",
     "scheme": "myapp",
