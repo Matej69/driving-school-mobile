@@ -57,7 +57,7 @@ export default function TabLayout() {
         name="exam-simulation"
         options={{          
           tabBarActiveTintColor: colors.base,
-          title: 'Simulacija ispita',
+          title: 'Ispit',
           tabBarIcon: ({ color }) => 
             <Animatable.View ref={(el) => navItemRefs.current[NavigationRoutes['exam-simulation']] = el }>
               <TabBarIcon name="clipboard" color={color} />
