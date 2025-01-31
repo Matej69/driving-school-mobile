@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { FlatList, TextInput } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { View } from 'react-native-animatable';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import colors from '../colors';
 import { CardContainer } from '../components/CardContainer';
 import { NoResultItem } from '../components/NoResultItem';
@@ -70,10 +70,10 @@ export default function Questions() {
     qListRef?.current?.scrollToOffset({ offset: 0, animated: false }); // scrolls back to start of list when items change
   }, [searchValue, currentPage]) 
   
-
+  const insets = useSafeAreaInsets();
 
   return (
-    <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
+    <View style={{ backgroundColor: colors.base, flex:1, paddingTop: insets.top }} className='flex flex-col'>
         { /* Header */}
         <View style={{ display: 'flex', flexDirection: 'row', padding: 6, height: 50}}>
           <View style={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
@@ -106,6 +106,6 @@ export default function Questions() {
           }
           keyExtractor={el => `question-card-${el.id}`} 
         />
-    </SafeAreaView>
+    </View>
   );
 }

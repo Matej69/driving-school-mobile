@@ -1,6 +1,6 @@
 
 import { Button, FlatList, Linking, Text, TextInput, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import useStore from '../store/store';
 import React, { useEffect, useMemo, useState } from 'react';
 import { FirstAidQuestion } from '../types/types';
@@ -31,8 +31,10 @@ export default function FirstAid() {
     search()
   }, [searchValue])
 
+  const insets = useSafeAreaInsets();
+
   return (
-    <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
+    <View style={{ backgroundColor: colors.base, flex:1, paddingTop: insets.top }} className='flex flex-col'>
       { /* Top Header */}
       <View style={{ display: 'flex', flexDirection: 'row', padding: 6}}>
         <View style={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
@@ -60,6 +62,6 @@ export default function FirstAid() {
         }
         keyExtractor={q => q.question} 
       />
-    </SafeAreaView>
+    </View>
   );
 }

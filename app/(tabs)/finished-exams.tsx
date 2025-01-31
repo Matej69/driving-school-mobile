@@ -1,10 +1,10 @@
 
 import { useLocalSearchParams } from "expo-router";
 import React, { useCallback, useEffect, useState } from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { asyncStorage } from '../async-storage/async-storage';
 import colors from '../colors';
 import { FinishedExamItem } from '../components/FinishedExamItem';
@@ -63,9 +63,10 @@ export default function FinishedExams() {
     }
   }, [exams])
 
+  const insets = useSafeAreaInsets();
 
   return (
-    <SafeAreaView style={{ backgroundColor: colors.base }} className='flex flex-col'>
+    <View style={{ backgroundColor: colors.base, flex: 1, paddingTop: insets.top }} className='flex flex-col'>
       { /* Exam list */
         screenType === 'finished-exams' &&
         <>
@@ -94,6 +95,8 @@ export default function FinishedExams() {
         screenType === 'finished-exam-questions' &&
         <FinishedExamQuestions questions={selectedExam?.questions ?? []}/>
       }
-    </SafeAreaView>
+      { /* View with rootBackground so that header with flex does not flicker whole page with blue on init */ }
+      <View style={{ backgroundColor: colors.rootBackground, flex: 1 }}></View>
+    </View>
   );
 }

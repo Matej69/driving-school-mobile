@@ -4,7 +4,7 @@ import BottomSheet from '@gorhom/bottom-sheet';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { asyncStorage } from '../async-storage/async-storage';
 import colors from '../colors';
 import { BottomDrawer } from '../components/BottomDrawer';
@@ -144,9 +144,10 @@ export default function ExamSimulationScreen() {
   
   const isOnLastQuestion = displayedNonSavedQuestion.id === examQuestions[QUESTIONS_PER_EXAM - 1].id
 
+  const insets = useSafeAreaInsets();
 
   return (
-    <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
+    <View style={{ backgroundColor: colors.base, flex:1, paddingTop: insets.top }} className='flex flex-col'>
       { /* Header */}
       <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: 10, padding: 6, height: 50}}>
         <PaginationComponent></PaginationComponent>
@@ -187,6 +188,6 @@ export default function ExamSimulationScreen() {
         }
       >
         </DsModal>
-    </SafeAreaView>
+    </View>
   );
 }
