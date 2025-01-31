@@ -10,7 +10,6 @@ import colors from '../colors';
 import { FinishedExamItem } from '../components/FinishedExamItem';
 import { FinishedExamQuestions } from '../components/FinishedExamQuestions';
 import { NoResultItem } from '../components/NoResultItem';
-import { SkeletonList } from '../components/SkeletonList';
 import { useBackHandler } from '../hooks/useBackHandler';
 import { useTabNavigation } from '../hooks/useTabNavigation';
 import { storageToFinishedExams } from '../mapper/mapper';
@@ -66,11 +65,7 @@ export default function FinishedExams() {
 
 
   return (
-    <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
-      {
-        !screenType &&
-        <SkeletonList itemsNumber={10}/>
-      }
+    <SafeAreaView style={{ backgroundColor: colors.base }} className='flex flex-col'>
       { /* Exam list */
         screenType === 'finished-exams' &&
         <>

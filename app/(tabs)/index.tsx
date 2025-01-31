@@ -75,7 +75,7 @@ export default function Questions() {
   return (
     <SafeAreaView style={{ backgroundColor: colors.base, flex:1 }} className='flex flex-col'>
         { /* Header */}
-        <View style={{ display: 'flex', flexDirection: 'row', padding: 6}}>
+        <View style={{ display: 'flex', flexDirection: 'row', padding: 6, height: 50}}>
           <View style={{ flex: 1, display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
             <TextInput
               onBlur={(e) => setSearchValue(unappliedSearchValue)} onChangeText={(text) => setUnappliedSearchValue(text)} value={unappliedSearchValue} placeholder='Pretraga pitanja...' placeholderTextColor={colors.base} 
