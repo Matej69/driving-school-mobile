@@ -40,6 +40,7 @@ export default function TabLayout() {
           fontWeight: 'bold',
           marginBottom: 6
         },
+        tabBarLabelPosition: 'below-icon'
       }}>
       <Tabs.Screen
         name="index"
