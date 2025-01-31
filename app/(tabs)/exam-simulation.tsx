@@ -147,7 +147,7 @@ export default function ExamSimulationScreen() {
   const insets = useSafeAreaInsets();
 
   return (
-    <View style={{ backgroundColor: colors.base, flex:1, paddingTop: insets.top }} className='flex flex-col'>
+    <View style={{ backgroundColor: colors.base, flex: 1, paddingTop: insets.top }} className='flex flex-col'>
       { /* Header */}
       <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', gap: 10, padding: 6, height: 50}}>
         <PaginationComponent></PaginationComponent>

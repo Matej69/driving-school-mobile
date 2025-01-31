@@ -1,6 +1,7 @@
-import BottomSheet from "@gorhom/bottom-sheet";
+import BottomSheet, { BottomSheetScrollView } from "@gorhom/bottom-sheet";
 import React, { Ref } from "react";
 import colors from "../colors";
+import { ScrollView } from "react-native";
 
 const snapPoints = ['25%', '50%', '75%'];
 
@@ -9,14 +10,17 @@ type BottomDrawerProps = {
 }
 
 export const BottomDrawer = React.forwardRef((props: BottomDrawerProps, ref: Ref<BottomSheet>) => (
-        <BottomSheet  
+        <BottomSheet
             //containerStyle={{ backgroundColor: 'rgba(52, 52, 52, 0.8)' }}
             backgroundStyle={{borderTopWidth: 2, borderTopColor: colors.base }} 
             handleIndicatorStyle={{ backgroundColor: colors.base }}
             ref={ref} 
             enablePanDownToClose 
             index={0} 
-            snapPoints={snapPoints}>
+            snapPoints={snapPoints}
+        >
+            <BottomSheetScrollView>
                 {props.children}
+            </BottomSheetScrollView>
         </BottomSheet>
     ));
