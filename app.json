@@ -17,6 +17,7 @@
     },
     "android": {
       "package": "com.drunkbearzz.autoskola",
+      "newArchEnabled": true,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/logo.png"
       }
